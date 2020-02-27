@@ -1,0 +1,3354 @@
+{
+	"lastBuffer": "main.cpp",
+	"PNGFlags": {
+		"ALL": [
+			"transparent=4",
+			"palette=${appPath}/PokittoLib/Pokitto/POKITTO_CORE/PALETTES/palPico.cpp"
+		]
+	},
+	"libs": {
+		"Pokitto": [
+			{
+				"recurse": "${appPath}/PokittoLib/Pokitto",
+				"ignore": "POKITTO_SIM|POKITTO_XTERNALS|Documentation|examples?|Physics|(?:.*_SIM.*)|main.cpp"
+			}
+		]
+	},
+	"SFlags": {
+		"Pokitto": [
+			"-I${projectPath}",
+			"-mcpu=cortex-m0plus",
+			"-mthumb"
+		]
+	},
+	"CPPFlags": {
+		"DEBUG": [
+			"-Og",
+			"-g3",
+			"-ggdb"
+		],
+		"RELEASE": [
+			"-O3"
+		],
+		"Pokitto": [
+			"-DPROJ_FPS=60",
+			"-I${projectPath}",
+			"-DPOKITTO",
+			"-fno-rtti",
+			"-Wno-pointer-arith",
+			"-c",
+			"-fno-exceptions",
+			"-fno-builtin",
+			"-ffunction-sections",
+			"-fdata-sections",
+			"-funsigned-char",
+			"-MMD",
+			"-fno-delete-null-pointer-checks",
+			"-fomit-frame-pointer",
+			"-mcpu=cortex-m0plus",
+			"-mthumb",
+			"-Wno-psabi",
+			"-Wno-conversion-null",
+			"-Wno-narrowing",
+			"-Wno-write-strings",
+			"-DTARGET_LPC11U68",
+			"-D__MBED__=1",
+			"-DDEVICE_I2CSLAVE=1",
+			"-DTARGET_LIKE_MBED",
+			"-DTARGET_NXP",
+			"-D__MBED_CMSIS_RTOS_CM",
+			"-DDEVICE_RTC=1",
+			"-DTOOLCHAIN_object",
+			"-D__CMSIS_RTOS",
+			"-DTOOLCHAIN_GCC",
+			"-DTARGET_CORTEX_M",
+			"-DTARGET_M0P",
+			"-DTARGET_UVISOR_UNSUPPORTED",
+			"-DDEVICE_SERIAL=1",
+			"-DDEVICE_INTERRUPTIN=1",
+			"-DTARGET_LPCTarget",
+			"-DTARGET_CORTEX",
+			"-DDEVICE_I2C=1",
+			"-D__CORTEX_M0PLUS",
+			"-DTARGET_FF_ARDUINO",
+			"-DTARGET_RELEASE",
+			"-DMBED_BUILD_TIMESTAMP=1526394586.66",
+			"-DARM_MATH_CM0PLUS",
+			"-DTARGET_LPC11U6X",
+			"-DDEVICE_SLEEP=1",
+			"-DTOOLCHAIN_GCC_ARM",
+			"-DDEVICE_SPI=1",
+			"-DDEVICE_ANALOGIN=1",
+			"-DDEVICE_PWMOUT=1",
+			"-DTARGET_LIKE_CORTEX_M0",
+			"-D_OSCT=2"
+		],
+		"Desktop": [
+			"-I${projectPath}",
+			"-DDESKTOP",
+			"-fno-rtti",
+			"-Wno-pointer-arith",
+			"-c",
+			"-fno-exceptions",
+			"-fno-builtin",
+			"-ffunction-sections",
+			"-fdata-sections",
+			"-funsigned-char",
+			"-MMD",
+			"-fno-delete-null-pointer-checks"
+		],
+		"ALL": [
+			"-std=c++14"
+		]
+	},
+	"CFlags": {
+		"DEBUG": [
+			"-Og",
+			"-g3",
+			"-ggdb"
+		],
+		"RELEASE": [
+			"-O3"
+		],
+		"Pokitto": [
+			"-I${projectPath}",
+			"-DPOKITTO",
+			"-Wno-pointer-arith",
+			"-c",
+			"-fno-exceptions",
+			"-fno-builtin",
+			"-ffunction-sections",
+			"-fdata-sections",
+			"-funsigned-char",
+			"-MMD",
+			"-fno-delete-null-pointer-checks",
+			"-fomit-frame-pointer",
+			"-mcpu=cortex-m0plus",
+			"-mthumb",
+			"-Wno-psabi",
+			"-Wwrite-strings",
+			"-DTARGET_LPC11U68",
+			"-D__MBED__=1",
+			"-DDEVICE_I2CSLAVE=1",
+			"-DTARGET_LIKE_MBED",
+			"-DTARGET_NXP",
+			"-D__MBED_CMSIS_RTOS_CM",
+			"-DDEVICE_RTC=1",
+			"-DTOOLCHAIN_object",
+			"-D__CMSIS_RTOS",
+			"-DTOOLCHAIN_GCC",
+			"-DTARGET_CORTEX_M",
+			"-DTARGET_M0P",
+			"-DTARGET_UVISOR_UNSUPPORTED",
+			"-DDEVICE_SERIAL=1",
+			"-DDEVICE_INTERRUPTIN=1",
+			"-DTARGET_LPCTarget",
+			"-DTARGET_CORTEX",
+			"-DDEVICE_I2C=1",
+			"-D__CORTEX_M0PLUS",
+			"-DTARGET_FF_ARDUINO",
+			"-DTARGET_RELEASE",
+			"-DMBED_BUILD_TIMESTAMP=1526394586.66",
+			"-DARM_MATH_CM0PLUS",
+			"-DTARGET_LPC11U6X",
+			"-DDEVICE_SLEEP=1",
+			"-DTOOLCHAIN_GCC_ARM",
+			"-DDEVICE_SPI=1",
+			"-DDEVICE_ANALOGIN=1",
+			"-DDEVICE_PWMOUT=1",
+			"-DTARGET_LIKE_CORTEX_M0",
+			"-D_OSCT=2"
+		],
+		"Desktop": [
+			"-I${projectPath}",
+			"-DDESKTOP",
+			"-fno-rtti",
+			"-Wno-pointer-arith",
+			"-c",
+			"-fno-exceptions",
+			"-fno-builtin",
+			"-ffunction-sections",
+			"-fdata-sections",
+			"-funsigned-char",
+			"-MMD",
+			"-fno-delete-null-pointer-checks"
+		],
+		"ALL": []
+	},
+	"GDBFlags": {
+		"Pokitto": [
+			"${projectPath}/${projectName}.elf"
+		]
+	},
+	"emuFlags": {
+		"Pokitto": [
+			"${projectPath}/${projectName}.bin"
+		]
+	},
+	"ELF2BINFlags": {
+		"Pokitto": [
+			"-O",
+			"binary",
+			"${projectPath}/${projectName}.elf",
+			"${projectPath}/${projectName}.bin"
+		]
+	},
+	"LDFlags": {
+		"RELEASE": [
+			"-O3"
+		],
+		"DEBUG": [
+			"-Og",
+			"-g3",
+			"-ggdb"
+		],
+		"Pokitto": [
+			"-Wl,--gc-sections",
+			"-Wl,-n",
+			"--specs=nano.specs",
+			"-mcpu=cortex-m0plus",
+			"-mthumb",
+			"-Wl,--undefined=g_pfnVectors",
+			"-Wl,--undefined=boot",
+			"-T",
+			"${appPath}/PokittoLib/Pokitto/mbed-pokitto/targets/cmsis/TARGET_NXP/TARGET_LPC11U6X/TOOLCHAIN_GCC_ARM/TARGET_LPC11U68/LPC11U68.ld",
+			"--output",
+			"${projectPath}/${projectName}.elf",
+			"$objectFiles",
+			"-Wl,--start-group",
+			"-lstdc++",
+			"-lsupc++",
+			"-lm",
+			"-lc",
+			"-lgcc",
+			"-lnosys",
+			"-Wl,--end-group"
+		]
+	},
+	"target": "Pokitto",
+	"pipelines": {
+		"Pokitto": [
+			"img-to-c",
+			"compile-cpp",
+			"compile-ld",
+			"compile-bin",
+			"make-img"
+		],
+		"Desktop": [
+			"compile-cpp",
+			"compile-ld",
+			"compile-bin"
+		]
+	},
+	"meta": {
+		"": {},
+		"/Bacon.png": {
+			"sdcard": false
+		},
+		"/Hello CPP.bin": {
+			"sdcard": false
+		},
+		"/File.cpp": {
+			"sdcard": false
+		},
+		"/Hello CPP.elf": {
+			"sdcard": false
+		},
+		"/My_settings.h": {
+			"sdcard": false
+		},
+		"/Smile.h": {
+			"sdcard": false
+		},
+		"/Smile.png": {
+			"sdcard": false
+		},
+		"/Test.h": {
+			"sdcard": false
+		},
+		"/Test.png": {
+			"sdcard": true
+		},
+		"/main.cpp": {
+			"sdcard": false
+		},
+		"/project.json": {
+			"sdcard": false
+		},
+		"/Assets": {
+			"sdcard": false
+		},
+		"/Assets/Birds": {
+			"sdcard": false
+		},
+		"/Assets/DKII_Clapper_F1_Mask.png": {
+			"sdcard": false
+		},
+		"/Assets/DKII_Clapper_F2.png": {
+			"sdcard": false
+		},
+		"/Assets/DKII_Clapper_Frames.png": {
+			"sdcard": false
+		},
+		"/Assets/DKII_Clapper_F2_Mask.png": {
+			"sdcard": false
+		},
+		"/Assets/DKII_GameA.png": {
+			"sdcard": false
+		},
+		"/Assets/DKII_GameA_Mask.png": {
+			"sdcard": false
+		},
+		"/Assets/DKII_GameB.png": {
+			"sdcard": false
+		},
+		"/Assets/DKII_GameB_Mask.png": {
+			"sdcard": false
+		},
+		"/Assets/DKII_Clapper_F1.png": {
+			"sdcard": false
+		},
+		"/Assets/DKII_HighScorePanel.png": {
+			"sdcard": false
+		},
+		"/Assets/DKII_Numbers.png": {
+			"sdcard": false
+		},
+		"/Assets/DKII_PPOT_BG_only.png": {
+			"sdcard": false
+		},
+		"/Assets/DKII_PPOT_Key.png": {
+			"sdcard": false
+		},
+		"/Assets/DKII_PPOT_Key_MASK.png": {
+			"sdcard": false
+		},
+		"/Assets/DKII_PPOT_Large.png": {
+			"sdcard": false
+		},
+		"/Assets/DKII_PPOT_Preview.png": {
+			"sdcard": false
+		},
+		"/Assets/DKII_PPOT_TitleScreen_WIP.png": {
+			"sdcard": false
+		},
+		"/Assets/DKII_UpperScreen.png": {
+			"sdcard": false
+		},
+		"/Assets/DonkeyKongII_NewLowerScreenBG.png": {
+			"sdcard": false
+		},
+		"/Assets/DKII_UpperScreenBG.png": {
+			"sdcard": false
+		},
+		"/Assets/DonkeyKongII_bothScreens.png": {
+			"sdcard": false
+		},
+		"/Assets/Keys": {
+			"sdcard": false
+		},
+		"/Assets/Kong": {
+			"sdcard": false
+		},
+		"/Assets/HighScore": {
+			"sdcard": false
+		},
+		"/Assets/Others": {
+			"sdcard": false
+		},
+		"/Assets/PPOT": {
+			"sdcard": false
+		},
+		"/Assets/Player": {
+			"sdcard": false
+		},
+		"/Assets/Scenery": {
+			"sdcard": false
+		},
+		"/Assets/Sounds": {
+			"sdcard": false
+		},
+		"/Assets/Spark": {
+			"sdcard": false
+		},
+		"/Assets/Title": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Bird_F0.png": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Bird_F1_Mask.png": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Bird_F2.png": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Bird_F0_Mask.png": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Bird_F1.png": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Bird_F2_Mask.png": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Bird_F3.png": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Bird_Turn_00.png": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Bird_F3_Mask.png": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Bird_Turn_00_Mask.png": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Bird_Turn_01.png": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Bird_Turn_01_Mask.png": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Bird_Turn_02.png": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Bird_Turn_02_Mask.png": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Bird_Turn_03.png": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Bird_Turn_03_Mask.png": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Bird_Turn_04.png": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Bird_Turn_04_Mask.png": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Bird_Turn_05.png": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Bird_Turn_05_Mask.png": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Bird_Upright.png": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Bird_Upright_Mask.png": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Orig": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Key_Rotate_F0_Mask.png": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Key_Rotate_F0.png": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Key_Rotate_F1_Mask.png": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Key_Rotate_F1.png": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Key_Rotate_F2_Mask.png": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Key_Rotate_F2.png": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Key_Rotate_F3.png": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Key_Rotate_F4.png": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Key_Rotate_F3_Mask.png": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Key_Rotate_F4_Mask.png": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Key_Rotate_F5.png": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Key_Rotate_F5_Mask.png": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Key_Rotate_F6.png": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Key_Rotate_F6_Mask.png": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Key_Rotate_F7_Mask.png": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Key_Rotate_F7.png": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Key_Spin_F0.png": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Key_Spin_F0_Mask.png": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Key_Spin_F1.png": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Key_Spin_F2.png": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Key_Spin_F1_Mask.png": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Key_Spin_F3.png": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Key_Spin_F3_Mask.png": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Key_Spin_F2_Mask.png": {
+			"sdcard": false
+		},
+		"/Assets/Kong/KongCharacter.png": {
+			"sdcard": false
+		},
+		"/Assets/Kong/KongCharacter_Mask.png": {
+			"sdcard": false
+		},
+		"/Assets/Kong/Kong_FacingRight_F0.png": {
+			"sdcard": false
+		},
+		"/Assets/Kong/Kong_FacingRight_F0_Mask.png": {
+			"sdcard": false
+		},
+		"/Assets/Kong/Kong_FacingRight_F1.png": {
+			"sdcard": false
+		},
+		"/Assets/Kong/Kong_FacingRight_F1_Mask.png": {
+			"sdcard": false
+		},
+		"/Assets/Kong/Kong_FacingRight_F2.png": {
+			"sdcard": false
+		},
+		"/Assets/Kong/Kong_FacingRight_F2_Mask.png": {
+			"sdcard": false
+		},
+		"/Assets/Kong/Kong_FacingRight_F3.png": {
+			"sdcard": false
+		},
+		"/Assets/Kong/Kong_FacingRight_F3_Mask.png": {
+			"sdcard": false
+		},
+		"/Assets/Kong/Kong_Falling_F0.png": {
+			"sdcard": false
+		},
+		"/Assets/Kong/Kong_Falling_F0_Mask.png": {
+			"sdcard": false
+		},
+		"/Assets/Kong/Kong_Falling_F1.png": {
+			"sdcard": false
+		},
+		"/Assets/Kong/Kong_Falling_F1_Mask.png": {
+			"sdcard": false
+		},
+		"/Assets/Kong/LockChain1_Mask.png": {
+			"sdcard": false
+		},
+		"/Assets/Kong/LockChain1.png": {
+			"sdcard": false
+		},
+		"/Assets/Kong/LockChain2.png": {
+			"sdcard": false
+		},
+		"/Assets/Kong/Kong_Screen3_preview.png": {
+			"sdcard": false
+		},
+		"/Assets/Kong/LockChain2_Mask.png": {
+			"sdcard": false
+		},
+		"/Assets/Kong/LockChain3_Mask.png": {
+			"sdcard": false
+		},
+		"/Assets/Kong/LockChain3.png": {
+			"sdcard": false
+		},
+		"/Assets/Kong/LockChain4_Mask.png": {
+			"sdcard": false
+		},
+		"/Assets/Kong/LockChain4.png": {
+			"sdcard": false
+		},
+		"/Assets/HighScore/HighScore_Bottom.png": {
+			"sdcard": false
+		},
+		"/Assets/HighScore/HighScore_Chain_Left.png": {
+			"sdcard": false
+		},
+		"/Assets/HighScore/HighScore_Chain_Right.png": {
+			"sdcard": false
+		},
+		"/Assets/HighScore/HighScore_Chains.png": {
+			"sdcard": false
+		},
+		"/Assets/HighScore/HighScore_Easy.png": {
+			"sdcard": false
+		},
+		"/Assets/HighScore/HighScore_Hard.png": {
+			"sdcard": false
+		},
+		"/Assets/HighScore/HighScore_Jnr.png": {
+			"sdcard": false
+		},
+		"/Assets/HighScore/HighScore_Left.png": {
+			"sdcard": false
+		},
+		"/Assets/HighScore/HighScore_Panel_Left.png": {
+			"sdcard": false
+		},
+		"/Assets/HighScore/HighScore_Panel_Mid.png": {
+			"sdcard": false
+		},
+		"/Assets/HighScore/HighScore_Panel_Right.png": {
+			"sdcard": false
+		},
+		"/Assets/HighScore/HighScore_Right.png": {
+			"sdcard": false
+		},
+		"/Assets/HighScore/KONGII_HighscoreBG.png": {
+			"sdcard": false
+		},
+		"/Assets/HighScore/KONGII_Highscore_panel.png": {
+			"sdcard": false
+		},
+		"/Assets/HighScore/KONGII_JuniorHoldingScore.png": {
+			"sdcard": false
+		},
+		"/Assets/HighScore/KONGII_Highscore_panel_Mask.png": {
+			"sdcard": false
+		},
+		"/Assets/HighScore/KONGII_JuniorHoldingScore_Mask.png": {
+			"sdcard": false
+		},
+		"/Assets/HighScore/KongII_HighscorePreview.png": {
+			"sdcard": false
+		},
+		"/Assets/Others/GameOver.png": {
+			"sdcard": false
+		},
+		"/Assets/Others/GameOver_Mask.png": {
+			"sdcard": false
+		},
+		"/Assets/Others/GameOver_New.png": {
+			"sdcard": false
+		},
+		"/Assets/Others/GameOver_New_Mask.png": {
+			"sdcard": false
+		},
+		"/Assets/Others/Pause.png": {
+			"sdcard": false
+		},
+		"/Assets/Others/Pause_Mask.png": {
+			"sdcard": false
+		},
+		"/Assets/PPOT/PPOT_Arrow.png": {
+			"sdcard": false
+		},
+		"/Assets/PPOT/PPOT_Full.png": {
+			"sdcard": false
+		},
+		"/Assets/PPOT/PPOT_logoAnim_Frames.png": {
+			"sdcard": false
+		},
+		"/Assets/PPOT/PPOT_Spindle.png": {
+			"sdcard": false
+		},
+		"/Assets/Player/DKII_Jnr_ClimbingVine_F0.png": {
+			"sdcard": false
+		},
+		"/Assets/Player/DKII_Jnr_ClimbingVine_F0_Mask.png": {
+			"sdcard": false
+		},
+		"/Assets/Player/DKII_Jnr_ClimbingVine_F1.png": {
+			"sdcard": false
+		},
+		"/Assets/Player/DKII_Jnr_ClimbingVine_F1_Mask.png": {
+			"sdcard": false
+		},
+		"/Assets/Player/DKII_Jnr_Idle_L_F0.png": {
+			"sdcard": false
+		},
+		"/Assets/Player/DKII_Jnr_Idle_L_F0_Mask.png": {
+			"sdcard": false
+		},
+		"/Assets/Player/DKII_Jnr_Idle_R_F0.png": {
+			"sdcard": false
+		},
+		"/Assets/Player/DKII_Jnr_Idle_R_F0_Mask.png": {
+			"sdcard": false
+		},
+		"/Assets/Player/DKII_JuniorOnRope_F0.png": {
+			"sdcard": false
+		},
+		"/Assets/Player/DKII_JuniorOnRope_F0_Mask.png": {
+			"sdcard": false
+		},
+		"/Assets/Player/DKII_JuniorOnRope_F1.png": {
+			"sdcard": false
+		},
+		"/Assets/Player/DKII_JuniorOnRope_F1_Mask.png": {
+			"sdcard": false
+		},
+		"/Assets/Player/DKII_JuniorOnRope_F2.png": {
+			"sdcard": false
+		},
+		"/Assets/Player/DKII_JuniorOnRope_F2_Mask.png": {
+			"sdcard": false
+		},
+		"/Assets/Player/DKII_JuniorOnRope_F3.png": {
+			"sdcard": false
+		},
+		"/Assets/Player/DKII_JuniorOnRope_F3_Mask.png": {
+			"sdcard": false
+		},
+		"/Assets/Player/DKJunior_Walking_L_F1.png": {
+			"sdcard": false
+		},
+		"/Assets/Player/DKJunior_Walking_L_F1_Mask.png": {
+			"sdcard": false
+		},
+		"/Assets/Player/DKJunior_Walking_L_F2.png": {
+			"sdcard": false
+		},
+		"/Assets/Player/DKJunior_Walking_L_F2_Mask.png": {
+			"sdcard": false
+		},
+		"/Assets/Player/DKJunior_Walking_R_F1.png": {
+			"sdcard": false
+		},
+		"/Assets/Player/DKJunior_Walking_R_F1_Mask.png": {
+			"sdcard": false
+		},
+		"/Assets/Player/DKJunior_Walking_R_F2.png": {
+			"sdcard": false
+		},
+		"/Assets/Player/DKJunior_Walking_R_F2_Mask.png": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/Background_00.png": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/Background_01.png": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/Background_02.png": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/Background_03.png": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/Background_04.png": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/Background_05.png": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/Background_06.png": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/Background_06_Orig.png": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/Background_08.png": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/Background_08_Orig.png": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/Background_07.png": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/Background_09.png": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/Background_10.png": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/Background_11.png": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/Background_11_Orig.png": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/Background_12.png": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/Background_12_Orig.png": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/Background_13.png": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/Background_14.png": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/Background_15.png": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/Cross_00_1.png": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/Cross_00_2.png": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/Cross_01_1.png": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/Cross_01_2.png": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/Cross_02_1.png": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/Cross_02_2.png": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/DKII.png": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/DKII_PPOT_BG_only.png": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/LHS_00.png": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/DKII_Spark_F2.png": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/LHS_02.png": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/LHS_01.png": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/LHS_03.png": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/LHS_Full.png": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/RHS_00.png": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/RHS_01.png": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/RHS_02.png": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/RHS_Full.png": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/RHS_03.png": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/DKII_PPOT_Large copy.png": {
+			"sdcard": false
+		},
+		"/Assets/Sounds/KONGII_Gameover.mid": {
+			"sdcard": false
+		},
+		"/Assets/Sounds/KONGII_StageStart.mid": {
+			"sdcard": false
+		},
+		"/Assets/Spark/DKII_Spark_F1.png": {
+			"sdcard": false
+		},
+		"/Assets/Spark/DKII_Spark_F1_Mask.png": {
+			"sdcard": false
+		},
+		"/Assets/Spark/DKII_Spark_F2.png": {
+			"sdcard": false
+		},
+		"/Assets/Spark/DKII_Spark_F2_Mask.png": {
+			"sdcard": false
+		},
+		"/Assets/Title/KONGII_NewTitlescreen.png": {
+			"sdcard": false
+		},
+		"/Assets/Title/Title_Chain_Long.png": {
+			"sdcard": false
+		},
+		"/Assets/Title/KONGII_NewTitlescreen_AnimationPreview.gif": {
+			"sdcard": false
+		},
+		"/Assets/Title/Title_Game.png": {
+			"sdcard": false
+		},
+		"/Assets/Title/Title_Chain_Short.png": {
+			"sdcard": false
+		},
+		"/Assets/Title/Title_Kong_Arm_Left.gif": {
+			"sdcard": false
+		},
+		"/Assets/Title/Title_Kong_Arm_Right.png": {
+			"sdcard": false
+		},
+		"/Assets/Title/Title_Kong_Body.png": {
+			"sdcard": false
+		},
+		"/Assets/Title/Title_Kong_Head.png": {
+			"sdcard": false
+		},
+		"/Assets/Title/Title_Kong_II.png": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Orig/Bird_F0_Mask.png": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Orig/Bird_F0.png": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Orig/Bird_F1.png": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Orig/Bird_F1_Mask.png": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Orig/Bird_F2.png": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Orig/Bird_F2_Mask.png": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Orig/Bird_F3.png": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Orig/Bird_F3_Mask.png": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Orig/Bird_Upright.png": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Orig/Bird_Upright_Mask.png": {
+			"sdcard": false
+		},
+		"/Screen.png": {
+			"sdcard": false
+		},
+		"/Assets/DKII_Clapper_F2_Mask.h": {
+			"sdcard": false
+		},
+		"/Assets/DKII_Clapper_F2.h": {
+			"sdcard": false
+		},
+		"/Assets/DKII_HighScorePanel.h": {
+			"sdcard": false
+		},
+		"/Assets/DKII_Clapper_F1_Mask.h": {
+			"sdcard": false
+		},
+		"/Assets/DKII_GameA.h": {
+			"sdcard": false
+		},
+		"/Assets/DKII_GameB.h": {
+			"sdcard": false
+		},
+		"/Assets/DKII_Clapper_Frames.h": {
+			"sdcard": false
+		},
+		"/Assets/DKII_GameB_Mask.h": {
+			"sdcard": false
+		},
+		"/Assets/DKII_Clapper_F1.h": {
+			"sdcard": false
+		},
+		"/Assets/DKII_GameA_Mask.h": {
+			"sdcard": false
+		},
+		"/Assets/DKII_Numbers.h": {
+			"sdcard": false
+		},
+		"/Assets/DKII_PPOT_TitleScreen_WIP.h": {
+			"sdcard": false
+		},
+		"/Assets/DKII_PPOT_Key_MASK.h": {
+			"sdcard": false
+		},
+		"/Assets/DonkeyKongII_NewLowerScreenBG.h": {
+			"sdcard": false
+		},
+		"/Assets/DonkeyKongII_bothScreens.h": {
+			"sdcard": false
+		},
+		"/Assets/DKII_PPOT_Key.h": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Bird_F0.h": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Bird_F2.h": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Bird_F1_Mask.h": {
+			"sdcard": false
+		},
+		"/Assets/DKII_PPOT_BG_only.h": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Bird_F0_Mask.h": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Bird_F1.h": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Bird_F3.h": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Bird_F2_Mask.h": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Bird_Turn_00.h": {
+			"sdcard": false
+		},
+		"/Assets/DKII_PPOT_Large.h": {
+			"sdcard": false
+		},
+		"/Assets/DKII_PPOT_Preview.h": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Bird_Turn_00_Mask.h": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Bird_Turn_01_Mask.h": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Bird_Turn_03_Mask.h": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Bird_F3_Mask.h": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Bird_Turn_02.h": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Bird_Turn_03.h": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Bird_Turn_04.h": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Bird_Turn_02_Mask.h": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Bird_Turn_04_Mask.h": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Bird_Turn_05.h": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Bird_Turn_05_Mask.h": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Bird_Turn_01.h": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Key_Rotate_F0_Mask.h": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Bird_Upright.h": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Key_Rotate_F1_Mask.h": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Key_Rotate_F1.h": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Key_Rotate_F2.h": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Bird_Upright_Mask.h": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Key_Rotate_F3.h": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Key_Rotate_F4.h": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Key_Rotate_F5.h": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Key_Rotate_F6.h": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Key_Rotate_F6_Mask.h": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Key_Rotate_F7_Mask.h": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Key_Rotate_F7.h": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Key_Rotate_F0.h": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Key_Rotate_F5_Mask.h": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Key_Spin_F0_Mask.h": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Key_Rotate_F3_Mask.h": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Key_Rotate_F4_Mask.h": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Key_Spin_F1.h": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Key_Spin_F0.h": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Key_Spin_F3_Mask.h": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Key_Spin_F2_Mask.h": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Key_Spin_F2.h": {
+			"sdcard": false
+		},
+		"/Assets/Kong/KongCharacter_Mask.h": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Key_Spin_F1_Mask.h": {
+			"sdcard": false
+		},
+		"/Assets/Kong/Kong_FacingRight_F0_Mask.h": {
+			"sdcard": false
+		},
+		"/Assets/Kong/Kong_FacingRight_F0.h": {
+			"sdcard": false
+		},
+		"/Assets/Kong/Kong_FacingRight_F2_Mask.h": {
+			"sdcard": false
+		},
+		"/Assets/Kong/KongCharacter.h": {
+			"sdcard": false
+		},
+		"/Assets/Kong/Kong_FacingRight_F2.h": {
+			"sdcard": false
+		},
+		"/Assets/Kong/Kong_FacingRight_F1.h": {
+			"sdcard": false
+		},
+		"/Assets/Kong/Kong_Falling_F0.h": {
+			"sdcard": false
+		},
+		"/Assets/Kong/Kong_FacingRight_F3.h": {
+			"sdcard": false
+		},
+		"/Assets/Kong/Kong_FacingRight_F3_Mask.h": {
+			"sdcard": false
+		},
+		"/Assets/DKII_UpperScreen.h": {
+			"sdcard": false
+		},
+		"/Assets/Kong/Kong_Falling_F0_Mask.h": {
+			"sdcard": false
+		},
+		"/Assets/Kong/Kong_Falling_F1.h": {
+			"sdcard": false
+		},
+		"/Assets/DKII_UpperScreenBG.h": {
+			"sdcard": false
+		},
+		"/Assets/Kong/Kong_Falling_F1_Mask.h": {
+			"sdcard": false
+		},
+		"/Assets/Kong/Kong_Screen3_preview.h": {
+			"sdcard": false
+		},
+		"/Assets/Kong/LockChain2_Mask.h": {
+			"sdcard": false
+		},
+		"/Assets/Kong/LockChain1.h": {
+			"sdcard": false
+		},
+		"/Assets/HighScore/HighScore_Chain_Right.h": {
+			"sdcard": false
+		},
+		"/Assets/Kong/LockChain3.h": {
+			"sdcard": false
+		},
+		"/Assets/HighScore/HighScore_Easy.h": {
+			"sdcard": false
+		},
+		"/Assets/Kong/LockChain1_Mask.h": {
+			"sdcard": false
+		},
+		"/Assets/Kong/LockChain3_Mask.h": {
+			"sdcard": false
+		},
+		"/Assets/Kong/LockChain2.h": {
+			"sdcard": false
+		},
+		"/Assets/Kong/LockChain4.h": {
+			"sdcard": false
+		},
+		"/Assets/HighScore/HighScore_Jnr.h": {
+			"sdcard": false
+		},
+		"/Assets/HighScore/HighScore_Hard.h": {
+			"sdcard": false
+		},
+		"/Assets/HighScore/KONGII_Highscore_panel.h": {
+			"sdcard": false
+		},
+		"/Assets/HighScore/HighScore_Chain_Left.h": {
+			"sdcard": false
+		},
+		"/Assets/HighScore/HighScore_Panel_Left.h": {
+			"sdcard": false
+		},
+		"/Assets/HighScore/HighScore_Panel_Mid.h": {
+			"sdcard": false
+		},
+		"/Assets/HighScore/HighScore_Left.h": {
+			"sdcard": false
+		},
+		"/Assets/HighScore/KONGII_HighscoreBG.h": {
+			"sdcard": false
+		},
+		"/Assets/Others/GameOver.h": {
+			"sdcard": false
+		},
+		"/Assets/HighScore/HighScore_Chains.h": {
+			"sdcard": false
+		},
+		"/Assets/HighScore/KONGII_JuniorHoldingScore.h": {
+			"sdcard": false
+		},
+		"/Assets/HighScore/HighScore_Panel_Right.h": {
+			"sdcard": false
+		},
+		"/Assets/Others/Pause.h": {
+			"sdcard": false
+		},
+		"/Assets/HighScore/KONGII_Highscore_panel_Mask.h": {
+			"sdcard": false
+		},
+		"/Assets/Others/GameOver_New_Mask.h": {
+			"sdcard": false
+		},
+		"/Assets/PPOT/PPOT_Spindle.h": {
+			"sdcard": false
+		},
+		"/Assets/PPOT/PPOT_Arrow.h": {
+			"sdcard": false
+		},
+		"/Assets/HighScore/KONGII_JuniorHoldingScore_Mask.h": {
+			"sdcard": false
+		},
+		"/Assets/HighScore/HighScore_Right.h": {
+			"sdcard": false
+		},
+		"/Assets/Others/GameOver_New.h": {
+			"sdcard": false
+		},
+		"/Assets/Others/GameOver_Mask.h": {
+			"sdcard": false
+		},
+		"/Assets/Others/Pause_Mask.h": {
+			"sdcard": false
+		},
+		"/Assets/PPOT/PPOT_logoAnim_Frames.h": {
+			"sdcard": false
+		},
+		"/Assets/HighScore/KongII_HighscorePreview.h": {
+			"sdcard": false
+		},
+		"/Assets/Player/DKII_Jnr_ClimbingVine_F0_Mask.h": {
+			"sdcard": false
+		},
+		"/Assets/Player/DKII_Jnr_ClimbingVine_F0.h": {
+			"sdcard": false
+		},
+		"/Assets/Player/DKII_Jnr_ClimbingVine_F1.h": {
+			"sdcard": false
+		},
+		"/Assets/Player/DKII_Jnr_Idle_L_F0.h": {
+			"sdcard": false
+		},
+		"/Assets/Player/DKII_Jnr_Idle_L_F0_Mask.h": {
+			"sdcard": false
+		},
+		"/Assets/Player/DKII_Jnr_Idle_R_F0.h": {
+			"sdcard": false
+		},
+		"/Assets/Player/DKII_Jnr_ClimbingVine_F1_Mask.h": {
+			"sdcard": false
+		},
+		"/Assets/Player/DKII_JuniorOnRope_F1.h": {
+			"sdcard": false
+		},
+		"/Assets/Player/DKII_JuniorOnRope_F0_Mask.h": {
+			"sdcard": false
+		},
+		"/Assets/Player/DKII_JuniorOnRope_F0.h": {
+			"sdcard": false
+		},
+		"/Assets/Player/DKII_Jnr_Idle_R_F0_Mask.h": {
+			"sdcard": false
+		},
+		"/Assets/Player/DKII_JuniorOnRope_F3.h": {
+			"sdcard": false
+		},
+		"/Assets/Player/DKII_JuniorOnRope_F1_Mask.h": {
+			"sdcard": false
+		},
+		"/Assets/Player/DKII_JuniorOnRope_F2.h": {
+			"sdcard": false
+		},
+		"/Assets/Player/DKII_JuniorOnRope_F2_Mask.h": {
+			"sdcard": false
+		},
+		"/Assets/Player/DKJunior_Walking_L_F1.h": {
+			"sdcard": false
+		},
+		"/Assets/Player/DKII_JuniorOnRope_F3_Mask.h": {
+			"sdcard": false
+		},
+		"/Assets/Player/DKJunior_Walking_L_F2_Mask.h": {
+			"sdcard": false
+		},
+		"/Assets/Player/DKJunior_Walking_R_F2_Mask.h": {
+			"sdcard": false
+		},
+		"/Assets/Player/DKJunior_Walking_R_F1_Mask.h": {
+			"sdcard": false
+		},
+		"/Assets/Player/DKJunior_Walking_L_F2.h": {
+			"sdcard": false
+		},
+		"/Assets/Player/DKJunior_Walking_R_F2.h": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/Background_00.h": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/Background_11.h": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/Background_10.h": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/Background_12_Orig.h": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/Background_13.h": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/Background_14.h": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/Background_15.h": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/Background_05.h": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/Cross_00_1.h": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/Cross_01_2.h": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/Cross_01_1.h": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/DKII.h": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/Cross_02_2.h": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/LHS_00.h": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/Cross_02_1.h": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/DKII_PPOT_BG_only.h": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/LHS_01.h": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/DKII_Spark_F2.h": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/LHS_02.h": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/LHS_03.h": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/LHS_Full.h": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/RHS_00.h": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/RHS_02.h": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/RHS_01.h": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/RHS_Full.h": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/RHS_03.h": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/Background_04.h": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/Background_03.h": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/DKII_PPOT_Large copy.h": {
+			"sdcard": false
+		},
+		"/Assets/Spark/DKII_Spark_F1.h": {
+			"sdcard": false
+		},
+		"/Assets/Spark/DKII_Spark_F2_Mask.h": {
+			"sdcard": false
+		},
+		"/Assets/Spark/DKII_Spark_F1_Mask.h": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/Background_06.h": {
+			"sdcard": false
+		},
+		"/Assets/Spark/DKII_Spark_F2.h": {
+			"sdcard": false
+		},
+		"/Assets/Title/Title_Game.h": {
+			"sdcard": false
+		},
+		"/Assets/Title/Title_Chain_Short.h": {
+			"sdcard": false
+		},
+		"/Assets/Title/Title_Kong_Head.h": {
+			"sdcard": false
+		},
+		"/Assets/Title/Title_Kong_Arm_Right.h": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/Background_06_Orig.h": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Orig/Bird_F0.h": {
+			"sdcard": false
+		},
+		"/Assets/Title/Title_Kong_Body.h": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Orig/Bird_F2.h": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Orig/Bird_F1.h": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Orig/Bird_F3_Mask.h": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Orig/Bird_F1_Mask.h": {
+			"sdcard": false
+		},
+		"/Screen.h": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Orig/Bird_F3.h": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Orig/Bird_Upright.h": {
+			"sdcard": false
+		},
+		"/Assets/Title/Title_Kong_II.h": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Orig/Bird_F0_Mask.h": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Orig/Bird_Upright_Mask.h": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Orig/Bird_F2_Mask.h": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/Background_07.h": {
+			"sdcard": false
+		},
+		"/Assets/Title/KONGII_NewTitlescreen.h": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Key_Rotate_F2_Mask.h": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Key_Spin_F3.h": {
+			"sdcard": false
+		},
+		"/Assets/Kong/Kong_FacingRight_F1_Mask.h": {
+			"sdcard": false
+		},
+		"/Assets/Kong/LockChain4_Mask.h": {
+			"sdcard": false
+		},
+		"/Assets/HighScore/HighScore_Bottom.h": {
+			"sdcard": false
+		},
+		"/Assets/PPOT/PPOT_Full.h": {
+			"sdcard": false
+		},
+		"/Assets/Player/DKJunior_Walking_L_F1_Mask.h": {
+			"sdcard": false
+		},
+		"/Assets/Player/DKJunior_Walking_R_F1.h": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/Background_01.h": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/Background_08.h": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/Background_08_Orig.h": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/Background_09.h": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/Background_11_Orig.h": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/Background_12.h": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/Cross_00_2.h": {
+			"sdcard": false
+		},
+		"/Assets/Title/Title_Chain_Long.h": {
+			"sdcard": false
+		},
+		"/Kong-II-Pokitto.elf": {
+			"sdcard": false
+		},
+		"/Kong-II-Pokitto.bin": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/Background_02.h": {
+			"sdcard": false
+		},
+		"/Screen2.png": {
+			"sdcard": false
+		},
+		"/Screen2 copy.png": {
+			"sdcard": false
+		},
+		"/Screen3.png": {
+			"sdcard": false
+		},
+		"/Screen3 copy.png": {
+			"sdcard": false
+		},
+		"/Screen4.png": {
+			"sdcard": false
+		},
+		"/Screen32.png": {
+			"sdcard": false
+		},
+		"/Screen4 copy.png": {
+			"sdcard": false
+		},
+		"/Screen42.png": {
+			"sdcard": false
+		},
+		"/Screen2.h": {
+			"sdcard": false
+		},
+		"/Screen3.h": {
+			"sdcard": false
+		},
+		"/Screen42.h": {
+			"sdcard": false
+		},
+		"/Screen4.h": {
+			"sdcard": false
+		},
+		"/Screen32.h": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Colored version": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Colored version/Bird_F0.png": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Colored version/Bird_F2.png": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Colored version/Bird_F1.png": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Colored version/Bird_F3.png": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Colored version/Bird_Turn_00.png": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Colored version/Bird_Turn_01.png": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Colored version/Bird_Turn_02.png": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Colored version/Bird_Turn_03.png": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Colored version/Bird_Turn_04.png": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Colored version/Bird_Turn_05.png": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Colored version/Bird_Upright.png": {
+			"sdcard": false
+		},
+		"/Assets/Clappers": {
+			"sdcard": false
+		},
+		"/Assets/Clappers/DKII_Clapper_F1.png": {
+			"sdcard": false
+		},
+		"/Assets/Clappers/DKII_Clapper_F2.png": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Colored versions": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Colored versions/Key_Rotate_F0.png": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Colored versions/Key_Rotate_F1.png": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Colored versions/Key_Rotate_F2.png": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Colored versions/Key_Rotate_F3.png": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Colored versions/Key_Rotate_F4.png": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Colored versions/Key_Rotate_F5.png": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Colored versions/Key_Rotate_F6.png": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Colored versions/Key_Rotate_F7.png": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Colored versions/Key_Spin_F1.png": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Colored versions/Key_Spin_F0.png": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Colored versions/Key_Spin_F2.png": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Colored versions/Key_Spin_F3.png": {
+			"sdcard": false
+		},
+		"/Assets/Kong/Colored versions": {
+			"sdcard": false
+		},
+		"/Assets/Kong/Colored versions/KongCharacter.png": {
+			"sdcard": false
+		},
+		"/Assets/Kong/Colored versions/Kong_FacingRight_F0.png": {
+			"sdcard": false
+		},
+		"/Assets/Kong/Colored versions/Kong_FacingRight_F1.png": {
+			"sdcard": false
+		},
+		"/Assets/Kong/Colored versions/Kong_FacingRight_F2.png": {
+			"sdcard": false
+		},
+		"/Assets/Kong/Colored versions/Kong_FacingRight_F3.png": {
+			"sdcard": false
+		},
+		"/Assets/Kong/Colored versions/Kong_Falling_F0.png": {
+			"sdcard": false
+		},
+		"/Assets/Kong/Colored versions/Kong_Falling_F1.png": {
+			"sdcard": false
+		},
+		"/Assets/Kong/Colored versions/LockChain1.png": {
+			"sdcard": false
+		},
+		"/Assets/Kong/Colored versions/LockChain2.png": {
+			"sdcard": false
+		},
+		"/Assets/Kong/Colored versions/LockChain3.png": {
+			"sdcard": false
+		},
+		"/Assets/Kong/Colored versions/LockChain4.png": {
+			"sdcard": false
+		},
+		"/Assets/Others/Colored versions": {
+			"sdcard": false
+		},
+		"/Assets/Others/Colored versions/GameOver_New.png": {
+			"sdcard": false
+		},
+		"/Assets/Others/Colored versions/Pause.png": {
+			"sdcard": false
+		},
+		"/Assets/Player/Colored versions": {
+			"sdcard": false
+		},
+		"/Assets/Player/Colored versions/DKII_Jnr_ClimbingVine_F0.png": {
+			"sdcard": false
+		},
+		"/Assets/Player/Colored versions/DKII_Jnr_ClimbingVine_F1.png": {
+			"sdcard": false
+		},
+		"/Assets/Player/Colored versions/DKII_Jnr_Idle_L_F0.png": {
+			"sdcard": false
+		},
+		"/Assets/Player/Colored versions/DKII_Jnr_Idle_R_F0.png": {
+			"sdcard": false
+		},
+		"/Assets/Player/Colored versions/DKII_JuniorOnRope_F1.png": {
+			"sdcard": false
+		},
+		"/Assets/Player/Colored versions/DKII_JuniorOnRope_F0.png": {
+			"sdcard": false
+		},
+		"/Assets/Player/Colored versions/DKII_JuniorOnRope_F2.png": {
+			"sdcard": false
+		},
+		"/Assets/Player/Colored versions/DKII_JuniorOnRope_F3.png": {
+			"sdcard": false
+		},
+		"/Assets/Player/Colored versions/DKJunior_Walking_L_F1.png": {
+			"sdcard": false
+		},
+		"/Assets/Player/Colored versions/DKJunior_Walking_L_F2.png": {
+			"sdcard": false
+		},
+		"/Assets/Player/Colored versions/DKJunior_Walking_R_F1.png": {
+			"sdcard": false
+		},
+		"/Assets/Player/Colored versions/DKJunior_Walking_R_F2.png": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/Colored versions": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/Colored versions/KongII_BlankSceneryAndBackgrounfColored.png": {
+			"sdcard": false
+		},
+		"/Assets/Spark/Colored versions": {
+			"sdcard": false
+		},
+		"/Assets/Spark/Colored versions/DKII_Spark_F1.png": {
+			"sdcard": false
+		},
+		"/Assets/Spark/Colored versions/DKII_Spark_F2.png": {
+			"sdcard": false
+		},
+		"/untitled folder": {
+			"sdcard": false
+		},
+		"/src": {
+			"sdcard": false
+		},
+		"/images": {
+			"sdcard": false
+		},
+		"/src/images": {
+			"sdcard": false
+		},
+		"/src/images/Title": {
+			"sdcard": false
+		},
+		"/src/images/Birds": {
+			"sdcard": false
+		},
+		"/src/images/Clappers": {
+			"sdcard": false
+		},
+		"/src/images/DKII_Clapper_F1_Mask.png": {
+			"sdcard": false
+		},
+		"/src/images/DKII_Clapper_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/DKII_Clapper_F2_Mask.png": {
+			"sdcard": false
+		},
+		"/src/images/DKII_Clapper_F2.png": {
+			"sdcard": false
+		},
+		"/src/images/DKII_GameB_Mask.png": {
+			"sdcard": false
+		},
+		"/src/images/DKII_GameB.png": {
+			"sdcard": false
+		},
+		"/src/images/DKII_HighScorePanel.png": {
+			"sdcard": false
+		},
+		"/src/images/DKII_Numbers.png": {
+			"sdcard": false
+		},
+		"/src/images/DKII_PPOT_TitleScreen_WIP.png": {
+			"sdcard": false
+		},
+		"/src/images/DKII_UpperScreen.png": {
+			"sdcard": false
+		},
+		"/src/images/DKII_UpperScreenBG.png": {
+			"sdcard": false
+		},
+		"/src/images/Keys": {
+			"sdcard": false
+		},
+		"/src/images/Kong": {
+			"sdcard": false
+		},
+		"/src/images/Others": {
+			"sdcard": false
+		},
+		"/src/images/Player": {
+			"sdcard": false
+		},
+		"/src/images/PPOT": {
+			"sdcard": false
+		},
+		"/src/images/Scenery": {
+			"sdcard": false
+		},
+		"/src/images/Sounds": {
+			"sdcard": false
+		},
+		"/src/images/Spark": {
+			"sdcard": false
+		},
+		"/src/images/Title/Title_Game.png": {
+			"sdcard": false
+		},
+		"/src/images/Title/Title_Kong_Body.png": {
+			"sdcard": false
+		},
+		"/src/images/Title/KONGII_NewTitlescreen.png": {
+			"sdcard": false
+		},
+		"/src/images/Birds/Bird_Upright.png": {
+			"sdcard": false
+		},
+		"/src/images/Birds/Bird_Upright_Mask.png": {
+			"sdcard": false
+		},
+		"/src/images/Birds/Colored version": {
+			"sdcard": false
+		},
+		"/src/images/Birds/Colored version/Bird_F0.png": {
+			"sdcard": false
+		},
+		"/src/images/Birds/Colored version/Bird_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/Birds/Colored version/Bird_F2.png": {
+			"sdcard": false
+		},
+		"/src/images/Birds/Colored version/Bird_F3.png": {
+			"sdcard": false
+		},
+		"/src/images/Birds/Colored version/Bird_Turn_00.png": {
+			"sdcard": false
+		},
+		"/src/images/Birds/Colored version/Bird_Turn_02.png": {
+			"sdcard": false
+		},
+		"/src/images/Birds/Colored version/Bird_Turn_03.png": {
+			"sdcard": false
+		},
+		"/src/images/Birds/Colored version/Bird_Turn_04.png": {
+			"sdcard": false
+		},
+		"/src/images/Birds/Colored version/Bird_Turn_05.png": {
+			"sdcard": false
+		},
+		"/src/images/Birds/Colored version/Bird_Upright.png": {
+			"sdcard": false
+		},
+		"/src/images/Birds/Colored version/Bird_Turn_01.png": {
+			"sdcard": false
+		},
+		"/src/images/Birds/Orig": {
+			"sdcard": false
+		},
+		"/src/images/Birds/Bird_Turn_01.png": {
+			"sdcard": false
+		},
+		"/src/images/Birds/Bird_F2_Mask.png": {
+			"sdcard": false
+		},
+		"/src/images/Birds/Orig/Bird_F0.png": {
+			"sdcard": false
+		},
+		"/src/images/Birds/Orig/Bird_F0_Mask.png": {
+			"sdcard": false
+		},
+		"/src/images/Birds/Orig/Bird_F1_Mask.png": {
+			"sdcard": false
+		},
+		"/src/images/Birds/Orig/Bird_F2.png": {
+			"sdcard": false
+		},
+		"/src/images/Birds/Orig/Bird_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/Birds/Orig/Bird_F2_Mask.png": {
+			"sdcard": false
+		},
+		"/src/images/Birds/Orig/Bird_F3.png": {
+			"sdcard": false
+		},
+		"/src/images/Birds/Orig/Bird_Upright.png": {
+			"sdcard": false
+		},
+		"/src/images/Birds/Orig/Bird_F3_Mask.png": {
+			"sdcard": false
+		},
+		"/src/images/Birds/Orig/Bird_Upright_Mask.png": {
+			"sdcard": false
+		},
+		"/src/images/Clappers/DKII_Clapper_F2.png": {
+			"sdcard": false
+		},
+		"/src/images/Clappers/DKII_Clapper_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/DKII_PPOT_Key.png": {
+			"sdcard": false
+		},
+		"/src/images/DKII_PPOT_Large.png": {
+			"sdcard": false
+		},
+		"/src/images/DKII_PPOT_Preview.png": {
+			"sdcard": false
+		},
+		"/src/images/DonkeyKongII_bothScreens.png": {
+			"sdcard": false
+		},
+		"/src/images/DonkeyKongII_NewLowerScreenBG.png": {
+			"sdcard": false
+		},
+		"/src/images/Keys/Key_Rotate_F3_Mask.png": {
+			"sdcard": false
+		},
+		"/src/images/Keys/Key_Rotate_F2_Mask.png": {
+			"sdcard": false
+		},
+		"/src/images/Keys/Colored versions": {
+			"sdcard": false
+		},
+		"/src/images/Keys/Key_Spin_F0.png": {
+			"sdcard": false
+		},
+		"/src/images/Keys/Key_Rotate_F4_Mask.png": {
+			"sdcard": false
+		},
+		"/src/images/Keys/Key_Rotate_F5_Mask.png": {
+			"sdcard": false
+		},
+		"/src/images/Keys/Key_Spin_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/Keys/Key_Spin_F3.png": {
+			"sdcard": false
+		},
+		"/src/images/Keys/Key_Spin_F2.png": {
+			"sdcard": false
+		},
+		"/src/images/Keys/Key_Spin_F1_Mask.png": {
+			"sdcard": false
+		},
+		"/src/images/Keys/Key_Spin_F0_Mask.png": {
+			"sdcard": false
+		},
+		"/src/images/Keys/Key_Rotate_F0_Mask.png": {
+			"sdcard": false
+		},
+		"/src/images/HighScore": {
+			"sdcard": false
+		},
+		"/src/images/Keys/Colored versions/Key_Rotate_F0.png": {
+			"sdcard": false
+		},
+		"/src/images/Keys/Colored versions/Key_Rotate_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/Keys/Colored versions/Key_Rotate_F2.png": {
+			"sdcard": false
+		},
+		"/src/images/Keys/Colored versions/Key_Rotate_F4.png": {
+			"sdcard": false
+		},
+		"/src/images/Keys/Colored versions/Key_Rotate_F5.png": {
+			"sdcard": false
+		},
+		"/src/images/Keys/Colored versions/Key_Rotate_F3.png": {
+			"sdcard": false
+		},
+		"/src/images/Keys/Colored versions/Key_Rotate_F6.png": {
+			"sdcard": false
+		},
+		"/src/images/Keys/Colored versions/Key_Rotate_F7.png": {
+			"sdcard": false
+		},
+		"/src/images/Keys/Colored versions/Key_Spin_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/Keys/Colored versions/Key_Spin_F0.png": {
+			"sdcard": false
+		},
+		"/src/images/Keys/Colored versions/Key_Spin_F3.png": {
+			"sdcard": false
+		},
+		"/src/images/Keys/Colored versions/Key_Spin_F2.png": {
+			"sdcard": false
+		},
+		"/src/images/HighScore/HighScore_Bottom.png": {
+			"sdcard": false
+		},
+		"/src/images/HighScore/HighScore_Chains.png": {
+			"sdcard": false
+		},
+		"/src/images/HighScore/HighScore_Chain_Right.png": {
+			"sdcard": false
+		},
+		"/src/images/HighScore/HighScore_Easy.png": {
+			"sdcard": false
+		},
+		"/src/images/HighScore/HighScore_Hard.png": {
+			"sdcard": false
+		},
+		"/src/images/HighScore/HighScore_Jnr.png": {
+			"sdcard": false
+		},
+		"/src/images/HighScore/HighScore_Left.png": {
+			"sdcard": false
+		},
+		"/src/images/HighScore/HighScore_Panel_Left.png": {
+			"sdcard": false
+		},
+		"/src/images/HighScore/HighScore_Panel_Mid.png": {
+			"sdcard": false
+		},
+		"/src/images/HighScore/HighScore_Panel_Right.png": {
+			"sdcard": false
+		},
+		"/src/images/HighScore/HighScore_Right.png": {
+			"sdcard": false
+		},
+		"/src/images/HighScore/KONGII_HighscoreBG.png": {
+			"sdcard": false
+		},
+		"/src/images/HighScore/KONGII_Highscore_panel.png": {
+			"sdcard": false
+		},
+		"/src/images/HighScore/KONGII_Highscore_panel_Mask.png": {
+			"sdcard": false
+		},
+		"/src/images/HighScore/KONGII_JuniorHoldingScore.png": {
+			"sdcard": false
+		},
+		"/src/images/HighScore/KONGII_JuniorHoldingScore_Mask.png": {
+			"sdcard": false
+		},
+		"/src/images/HighScore/KongII_HighscorePreview.png": {
+			"sdcard": false
+		},
+		"/src/images/HighScore/HighScore_Chain_Left.png": {
+			"sdcard": false
+		},
+		"/src/images/Kong/Kong_Falling_F0_Mask.png": {
+			"sdcard": false
+		},
+		"/src/images/Others/Colored versions": {
+			"sdcard": false
+		},
+		"/src/images/Others/Colored versions/Pause.png": {
+			"sdcard": false
+		},
+		"/src/images/Others/Colored versions/GameOver_New.png": {
+			"sdcard": false
+		},
+		"/src/images/Others/Pause_Mask.png": {
+			"sdcard": false
+		},
+		"/src/images/Others/GameOver_Mask.png": {
+			"sdcard": false
+		},
+		"/src/images/Player/DKII_Jnr_ClimbingVine_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/Player/DKII_Jnr_ClimbingVine_F0.png": {
+			"sdcard": false
+		},
+		"/src/images/Player/DKII_JuniorOnRope_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/Player/DKII_Jnr_Idle_R_F0_Mask.png": {
+			"sdcard": false
+		},
+		"/src/images/Player/Colored versions": {
+			"sdcard": false
+		},
+		"/src/images/Player/DKII_JuniorOnRope_F2.png": {
+			"sdcard": false
+		},
+		"/src/images/Player/DKJunior_Walking_R_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/Player/DKII_Jnr_ClimbingVine_F0_Mask.png": {
+			"sdcard": false
+		},
+		"/src/images/Player/DKII_Jnr_ClimbingVine_F1_Mask.png": {
+			"sdcard": false
+		},
+		"/src/images/Player/DKII_JuniorOnRope_F3.png": {
+			"sdcard": false
+		},
+		"/src/images/Player/DKJunior_Walking_L_F2_Mask.png": {
+			"sdcard": false
+		},
+		"/src/images/Player/DKJunior_Walking_R_F1_Mask.png": {
+			"sdcard": false
+		},
+		"/src/images/Player/DKII_Jnr_Idle_R_F0.png": {
+			"sdcard": false
+		},
+		"/src/images/Player/DKJunior_Walking_L_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/Player/DKJunior_Walking_L_F2.png": {
+			"sdcard": false
+		},
+		"/src/images/Player/DKII_JuniorOnRope_F3_Mask.png": {
+			"sdcard": false
+		},
+		"/src/images/Player/DKII_JuniorOnRope_F2_Mask.png": {
+			"sdcard": false
+		},
+		"/src/images/Player/DKJunior_Walking_L_F1_Mask.png": {
+			"sdcard": false
+		},
+		"/src/images/Player/DKJunior_Walking_R_F2_Mask.png": {
+			"sdcard": false
+		},
+		"/src/images/Player/DKII_Jnr_Idle_L_F0_Mask.png": {
+			"sdcard": false
+		},
+		"/src/images/Player/DKII_JuniorOnRope_F0_Mask.png": {
+			"sdcard": false
+		},
+		"/src/images/Player/DKII_JuniorOnRope_F1_Mask.png": {
+			"sdcard": false
+		},
+		"/src/images/PPOT/PPOT_Arrow.png": {
+			"sdcard": false
+		},
+		"/src/images/PPOT/PPOT_logoAnim_Frames.png": {
+			"sdcard": false
+		},
+		"/src/images/PPOT/PPOT_Spindle.png": {
+			"sdcard": false
+		},
+		"/src/images/PPOT/PPOT_Full.png": {
+			"sdcard": false
+		},
+		"/src/images/Player/Colored versions/DKII_Jnr_ClimbingVine_F0.png": {
+			"sdcard": false
+		},
+		"/src/images/Player/Colored versions/DKII_Jnr_ClimbingVine_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/Player/Colored versions/DKII_Jnr_Idle_R_F0.png": {
+			"sdcard": false
+		},
+		"/src/images/Player/Colored versions/DKII_JuniorOnRope_F0.png": {
+			"sdcard": false
+		},
+		"/src/images/Player/Colored versions/DKII_JuniorOnRope_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/Player/Colored versions/DKII_Jnr_Idle_L_F0.png": {
+			"sdcard": false
+		},
+		"/src/images/Player/Colored versions/DKII_JuniorOnRope_F2.png": {
+			"sdcard": false
+		},
+		"/src/images/Player/Colored versions/DKJunior_Walking_R_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/Player/Colored versions/DKJunior_Walking_L_F2.png": {
+			"sdcard": false
+		},
+		"/src/images/Player/Colored versions/DKJunior_Walking_L_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/Player/Colored versions/DKII_JuniorOnRope_F3.png": {
+			"sdcard": false
+		},
+		"/src/images/Player/Colored versions/DKJunior_Walking_R_F2.png": {
+			"sdcard": false
+		},
+		"/src/images/Scenery/Cross_00_2.png": {
+			"sdcard": false
+		},
+		"/src/images/Scenery/Background_12_Orig.png": {
+			"sdcard": false
+		},
+		"/src/images/Scenery/Cross_02_1.png": {
+			"sdcard": false
+		},
+		"/src/images/Sounds/KONGII_StageStart.mid": {
+			"sdcard": false
+		},
+		"/src/images/Sounds/KONGII_Gameover.mid": {
+			"sdcard": false
+		},
+		"/src/images/Spark/DKII_Spark_F2_Mask.png": {
+			"sdcard": false
+		},
+		"/src/images/Spark/Colored versions": {
+			"sdcard": false
+		},
+		"/src/images/Spark/Colored versions/DKII_Spark_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/Spark/Colored versions/DKII_Spark_F2.png": {
+			"sdcard": false
+		},
+		"/src/images/Spark/DKII_Spark_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/Spark/DKII_Spark_F2.png": {
+			"sdcard": false
+		},
+		"/src/images/Spark/DKII_Spark_F1_Mask.png": {
+			"sdcard": false
+		},
+		"/src/images/Birds/Bird_F0.png": {
+			"sdcard": false
+		},
+		"/src/images/Birds/Bird_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/Birds/Bird_F2.png": {
+			"sdcard": false
+		},
+		"/src/images/Birds/Bird_F3.png": {
+			"sdcard": false
+		},
+		"/src/images/Birds/Bird_Turn_00.png": {
+			"sdcard": false
+		},
+		"/src/images/Birds/Bird_Turn_02.png": {
+			"sdcard": false
+		},
+		"/src/images/Birds/Bird_Turn_03.png": {
+			"sdcard": false
+		},
+		"/src/images/Birds/Bird_Turn_04.png": {
+			"sdcard": false
+		},
+		"/src/images/Birds/Bird_Turn_05.png": {
+			"sdcard": false
+		},
+		"/src/images/Keys/Key_Rotate_F0.png": {
+			"sdcard": false
+		},
+		"/src/images/Keys/Key_Rotate_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/Keys/Key_Rotate_F2.png": {
+			"sdcard": false
+		},
+		"/src/images/Keys/Key_Rotate_F3.png": {
+			"sdcard": false
+		},
+		"/src/images/Keys/Key_Rotate_F4.png": {
+			"sdcard": false
+		},
+		"/src/images/Keys/Key_Rotate_F5.png": {
+			"sdcard": false
+		},
+		"/src/images/Keys/Key_Rotate_F6.png": {
+			"sdcard": false
+		},
+		"/src/images/Keys/Key_Rotate_F7.png": {
+			"sdcard": false
+		},
+		"/src/images/Kong/Kong_FacingRight_F0.png": {
+			"sdcard": false
+		},
+		"/src/images/Kong/Kong_FacingRight_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/Kong/Kong_FacingRight_F3.png": {
+			"sdcard": false
+		},
+		"/src/images/Kong/Kong_FacingRight_F2.png": {
+			"sdcard": false
+		},
+		"/src/images/Kong/Kong_Falling_F0.png": {
+			"sdcard": false
+		},
+		"/src/images/Kong/KongCharacter.png": {
+			"sdcard": false
+		},
+		"/src/images/Kong/LockChain1.png": {
+			"sdcard": false
+		},
+		"/src/images/Kong/Kong_Falling_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/Kong/LockChain2.png": {
+			"sdcard": false
+		},
+		"/src/images/Kong/LockChain3.png": {
+			"sdcard": false
+		},
+		"/src/images/Kong/LockChain4.png": {
+			"sdcard": false
+		},
+		"/src/images/Others/GameOver_New.png": {
+			"sdcard": false
+		},
+		"/src/images/Others/Pause.png": {
+			"sdcard": false
+		},
+		"/src/images/Player/DKII_Jnr_Idle_L_F0.png": {
+			"sdcard": false
+		},
+		"/src/images/Player/DKII_JuniorOnRope_F0.png": {
+			"sdcard": false
+		},
+		"/src/images/Player/DKJunior_Walking_R_F2.png": {
+			"sdcard": false
+		},
+		"/src/images/Scenery/KongII_BlankSceneryAndBackgrounfColored.png": {
+			"sdcard": false
+		},
+		"/src/entities": {
+			"sdcard": false
+		},
+		"/src/map": {
+			"sdcard": false
+		},
+		"/src/sounds": {
+			"sdcard": false
+		},
+		"/src/utils": {
+			"sdcard": false
+		},
+		"/src/entities/Kong.h": {
+			"sdcard": false
+		},
+		"/src/entities/Clappers.h": {
+			"sdcard": false
+		},
+		"/src/entities/Birds.cpp": {
+			"sdcard": false
+		},
+		"/src/entities/Birds.h": {
+			"sdcard": false
+		},
+		"/src/entities/Clappers.cpp": {
+			"sdcard": false
+		},
+		"/src/entities/Player.cpp": {
+			"sdcard": false
+		},
+		"/src/entities/Key.h": {
+			"sdcard": false
+		},
+		"/src/entities/Player.h": {
+			"sdcard": false
+		},
+		"/src/entities/Clapper.cpp": {
+			"sdcard": false
+		},
+		"/src/entities/Clapper.h": {
+			"sdcard": false
+		},
+		"/src/entities/Entities.h": {
+			"sdcard": false
+		},
+		"/src/entities/Bird.cpp": {
+			"sdcard": false
+		},
+		"/src/entities/Spark.cpp": {
+			"sdcard": false
+		},
+		"/src/entities/Spark.h": {
+			"sdcard": false
+		},
+		"/src/entities/Bird.h": {
+			"sdcard": false
+		},
+		"/src/entities/Key.cpp": {
+			"sdcard": false
+		},
+		"/src/entities/Sparks.h": {
+			"sdcard": false
+		},
+		"/src/entities/Kong.cpp": {
+			"sdcard": false
+		},
+		"/src/map/Kong.h": {
+			"sdcard": false
+		},
+		"/src/map/Coordinates.h": {
+			"sdcard": false
+		},
+		"/src/map/Key.h": {
+			"sdcard": false
+		},
+		"/src/map/Player.h": {
+			"sdcard": false
+		},
+		"/src/map/Spark.h": {
+			"sdcard": false
+		},
+		"/src/map/Bird.h": {
+			"sdcard": false
+		},
+		"/src/sounds/Sounds.h": {
+			"sdcard": false
+		},
+		"/src/utils/Utils.h": {
+			"sdcard": false
+		},
+		"/src/utils/Enums.h": {
+			"sdcard": false
+		},
+		"/src/utils/Arduboy2Ext.h": {
+			"sdcard": false
+		},
+		"/src/utils/EEPROM_Utils.h": {
+			"sdcard": false
+		},
+		"/src/utils/EEPROM_Utils.cpp": {
+			"sdcard": false
+		},
+		"/src/utils/Structs.h": {
+			"sdcard": false
+		},
+		"/src/utils/Arduboy2Ext.cpp": {
+			"sdcard": false
+		},
+		"/src/untitled folder": {
+			"sdcard": false
+		},
+		"/KongII.ino": {
+			"sdcard": false
+		},
+		"/PlayGameState_render.ino": {
+			"sdcard": false
+		},
+		"/PlayGameState_activate.ino": {
+			"sdcard": false
+		},
+		"/PlayGameState_update.ino": {
+			"sdcard": false
+		},
+		"/SplashScreenState.ino": {
+			"sdcard": false
+		},
+		"/PlayGameState_utils.ino": {
+			"sdcard": false
+		},
+		"/ScoreState.ino": {
+			"sdcard": false
+		},
+		"/PlayGameState_activate.h": {
+			"sdcard": false
+		},
+		"/PlayGameState_render.cpp": {
+			"sdcard": false
+		},
+		"/PlayGameState_activate.cpp": {
+			"sdcard": false
+		},
+		"/PlayGameState_update.cpp": {
+			"sdcard": false
+		},
+		"/PlayGameState_utils.cpp": {
+			"sdcard": false
+		},
+		"/src/Game.h": {
+			"sdcard": false
+		},
+		"/src/Game.cpp": {
+			"sdcard": false
+		},
+		"/src/images/Images.h": {
+			"sdcard": false
+		},
+		"/src/images/birds": {
+			"sdcard": false
+		},
+		"/src/images/birds/Bird_F0.png": {
+			"sdcard": false
+		},
+		"/src/images/birds/Bird_F2.png": {
+			"sdcard": false
+		},
+		"/src/images/birds/Bird_F3.png": {
+			"sdcard": false
+		},
+		"/src/images/birds/Bird_Turn_00.png": {
+			"sdcard": false
+		},
+		"/src/images/birds/Bird_Turn_01.png": {
+			"sdcard": false
+		},
+		"/src/images/birds/Bird_Turn_02.png": {
+			"sdcard": false
+		},
+		"/src/images/birds/Bird_Turn_03.png": {
+			"sdcard": false
+		},
+		"/src/images/birds/Bird_Turn_04.png": {
+			"sdcard": false
+		},
+		"/src/images/birds/Bird_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/birds/Bird_Turn_05.png": {
+			"sdcard": false
+		},
+		"/src/images/birds/Bird_Upright.png": {
+			"sdcard": false
+		},
+		"/src/images/birds/Birds.h": {
+			"sdcard": false
+		},
+		"/src/images/clappers": {
+			"sdcard": false
+		},
+		"/src/images/clappers/DKII_Clapper_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/clappers/DKII_Clapper_F2.png": {
+			"sdcard": false
+		},
+		"/src/images/clappers/Clapper_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/clappers/Clapper_F2.png": {
+			"sdcard": false
+		},
+		"/src/images/clappers/Clappers.h": {
+			"sdcard": false
+		},
+		"/src/images/highScore": {
+			"sdcard": false
+		},
+		"/src/images/highScore/HighScore_Chain_Left.png": {
+			"sdcard": false
+		},
+		"/src/images/highScore/HighScore_Chains.png": {
+			"sdcard": false
+		},
+		"/src/images/highScore/HighScore_Chain_Right.png": {
+			"sdcard": false
+		},
+		"/src/images/highScore/HighScore_Easy.png": {
+			"sdcard": false
+		},
+		"/src/images/highScore/HighScore_Hard.png": {
+			"sdcard": false
+		},
+		"/src/images/highScore/HighScore_Jnr.png": {
+			"sdcard": false
+		},
+		"/src/images/highScore/HighScore_Left.png": {
+			"sdcard": false
+		},
+		"/src/images/highScore/HighScore_Panel_Left.png": {
+			"sdcard": false
+		},
+		"/src/images/highScore/HighScore_Panel_Mid.png": {
+			"sdcard": false
+		},
+		"/src/images/highScore/HighScore_Panel_Right.png": {
+			"sdcard": false
+		},
+		"/src/images/highScore/HighScore_Right.png": {
+			"sdcard": false
+		},
+		"/src/images/highScore/KONGII_HighscoreBG.png": {
+			"sdcard": false
+		},
+		"/src/images/highScore/KONGII_Highscore_panel.png": {
+			"sdcard": false
+		},
+		"/src/images/highScore/KONGII_Highscore_panel_Mask.png": {
+			"sdcard": false
+		},
+		"/src/images/highScore/KONGII_JuniorHoldingScore.png": {
+			"sdcard": false
+		},
+		"/src/images/highScore/KongII_HighscorePreview.png": {
+			"sdcard": false
+		},
+		"/src/images/highScore/KONGII_JuniorHoldingScore_Mask.png": {
+			"sdcard": false
+		},
+		"/src/images/highScore/HighScore_Bottom.png": {
+			"sdcard": false
+		},
+		"/src/images/keys": {
+			"sdcard": false
+		},
+		"/src/images/keys/Key_Rotate_F0.png": {
+			"sdcard": false
+		},
+		"/src/images/keys/Key_Rotate_F2.png": {
+			"sdcard": false
+		},
+		"/src/images/keys/Key_Rotate_F3.png": {
+			"sdcard": false
+		},
+		"/src/images/keys/Key_Rotate_F4.png": {
+			"sdcard": false
+		},
+		"/src/images/keys/Key_Rotate_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/keys/Key_Rotate_F5.png": {
+			"sdcard": false
+		},
+		"/src/images/keys/Key_Rotate_F7.png": {
+			"sdcard": false
+		},
+		"/src/images/keys/Key_Rotate_F6.png": {
+			"sdcard": false
+		},
+		"/src/images/keys/Key_Spin_F0.png": {
+			"sdcard": false
+		},
+		"/src/images/keys/Key_Spin_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/keys/Key_Spin_F2.png": {
+			"sdcard": false
+		},
+		"/src/images/keys/Key_Spin_F3.png": {
+			"sdcard": false
+		},
+		"/src/images/keys/Keys.h": {
+			"sdcard": false
+		},
+		"/src/images/kong": {
+			"sdcard": false
+		},
+		"/src/images/kong/Kong_FacingRight_F0.png": {
+			"sdcard": false
+		},
+		"/src/images/kong/KongCharacter.png": {
+			"sdcard": false
+		},
+		"/src/images/kong/Kong_FacingRight_F3.png": {
+			"sdcard": false
+		},
+		"/src/images/kong/Kong_FacingRight_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/kong/Kong_Falling_F0.png": {
+			"sdcard": false
+		},
+		"/src/images/kong/Kong_FacingRight_F2.png": {
+			"sdcard": false
+		},
+		"/src/images/kong/Kong_Falling_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/kong/LockChain1.png": {
+			"sdcard": false
+		},
+		"/src/images/kong/LockChain2.png": {
+			"sdcard": false
+		},
+		"/src/images/kong/LockChain3.png": {
+			"sdcard": false
+		},
+		"/src/images/kong/LockChain4.png": {
+			"sdcard": false
+		},
+		"/src/images/kong/kong.h": {
+			"sdcard": false
+		},
+		"/src/images/kong/Lock_Chain_1.png": {
+			"sdcard": false
+		},
+		"/src/images/kong/Lock_Chain_2.png": {
+			"sdcard": false
+		},
+		"/src/images/kong/Lock_Chain_3.png": {
+			"sdcard": false
+		},
+		"/src/images/kong/Lock_Chain_4.png": {
+			"sdcard": false
+		},
+		"/src/images/kong/Kong_Character.png": {
+			"sdcard": false
+		},
+		"/src/images/kong/Kong.h": {
+			"sdcard": false
+		},
+		"/src/images/Player/Jnr_Climbing_Vine_F0.png": {
+			"sdcard": false
+		},
+		"/src/images/Player/Jnr_Climbing_Vine_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/Player/Jnr_Idle_L_F0.png": {
+			"sdcard": false
+		},
+		"/src/images/Player/Jnr_Idle_R_F0.png": {
+			"sdcard": false
+		},
+		"/src/images/Player/Jnr_OnRope_F0.png": {
+			"sdcard": false
+		},
+		"/src/images/Player/Jnr_OnRope_F3.png": {
+			"sdcard": false
+		},
+		"/src/images/Player/Jnr_OnRope_F2.png": {
+			"sdcard": false
+		},
+		"/src/images/Player/Jnr_Walking_R_F2.png": {
+			"sdcard": false
+		},
+		"/src/images/Player/Jnr_OnRope_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/Player/Jnr_Walking_L_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/Player/Jnr_Walking_L_F2.png": {
+			"sdcard": false
+		},
+		"/src/images/Player/Jnr_Walking_R_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/player": {
+			"sdcard": false
+		},
+		"/src/images/player/Jnr_Climbing_Vine_F0.png": {
+			"sdcard": false
+		},
+		"/src/images/player/Jnr_Climbing_Vine_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/player/Jnr_Idle_L_F0.png": {
+			"sdcard": false
+		},
+		"/src/images/player/Jnr_Idle_R_F0.png": {
+			"sdcard": false
+		},
+		"/src/images/player/Jnr_OnRope_F0.png": {
+			"sdcard": false
+		},
+		"/src/images/player/Jnr_OnRope_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/player/Jnr_OnRope_F2.png": {
+			"sdcard": false
+		},
+		"/src/images/player/Jnr_OnRope_F3.png": {
+			"sdcard": false
+		},
+		"/src/images/player/Jnr_Walking_L_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/player/Jnr_Walking_L_F2.png": {
+			"sdcard": false
+		},
+		"/src/images/player/Jnr_Walking_R_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/player/Jnr_Walking_R_F2.png": {
+			"sdcard": false
+		},
+		"/src/images/player/Player.h": {
+			"sdcard": false
+		},
+		"/src/images/ppot": {
+			"sdcard": false
+		},
+		"/src/images/ppot/PPOT_Full.png": {
+			"sdcard": false
+		},
+		"/src/images/ppot/PPOT_logoAnim_Frames.png": {
+			"sdcard": false
+		},
+		"/src/images/ppot/PPOT_Spindle.png": {
+			"sdcard": false
+		},
+		"/src/images/ppot/PPOT_Arrow.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery": {
+			"sdcard": false
+		},
+		"/src/images/scenery/KongII_BlankSceneryAndBackgrounfColored.png": {
+			"sdcard": false
+		},
+		"/src/images/spark": {
+			"sdcard": false
+		},
+		"/src/images/spark/DKII_Spark_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/spark/DKII_Spark_F2.png": {
+			"sdcard": false
+		},
+		"/src/images/spark/Spark_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/spark/Spark_F2.png": {
+			"sdcard": false
+		},
+		"/src/images/spark/Spark.h": {
+			"sdcard": false
+		},
+		"/src/images/birds/untitled folder": {
+			"sdcard": false
+		},
+		"/src/images/birds/normal": {
+			"sdcard": false
+		},
+		"/src/images/scenery/Scenery.png": {
+			"sdcard": false
+		},
+		"/src/Game_PlayGameState_render.cpp": {
+			"sdcard": false
+		},
+		"/src/Game_PlayGameState_activate.cpp": {
+			"sdcard": false
+		},
+		"/src/Game_PlayGameState_utils.cpp": {
+			"sdcard": false
+		},
+		"/src/Game_PlayGameState_update.cpp": {
+			"sdcard": false
+		},
+		"/src/Game_ScoreState.cpp": {
+			"sdcard": false
+		},
+		"/src/Game_SplashScreenState.ino": {
+			"sdcard": false
+		},
+		"/src/Game_TitleScreenState.cpp": {
+			"sdcard": false
+		},
+		"/src/entities/Sparks.cpp": {
+			"sdcard": false
+		},
+		"/src/images/title": {
+			"sdcard": false
+		},
+		"/src/utils/GameCookie.h": {
+			"sdcard": false
+		},
+		"/src/images/kong/Kong_Normal.png": {
+			"sdcard": false
+		},
+		"/src/images/ppot/PPOT.h": {
+			"sdcard": false
+		},
+		"/src/images/ppot/Ppot_00.png": {
+			"sdcard": false
+		},
+		"/src/images/ppot/Ppot_00.h": {
+			"sdcard": false
+		},
+		"/src/images/ppot/Ppot_01.h": {
+			"sdcard": false
+		},
+		"/src/images/ppot/Ppot_01.png": {
+			"sdcard": false
+		},
+		"/src/images/ppot/Ppot_02.h": {
+			"sdcard": false
+		},
+		"/src/images/ppot/Ppot_02.png": {
+			"sdcard": false
+		},
+		"/src/images/ppot/Ppot_03.h": {
+			"sdcard": false
+		},
+		"/src/images/ppot/Ppot_03.png": {
+			"sdcard": false
+		},
+		"/src/images/title/TitleScreen.png": {
+			"sdcard": false
+		},
+		"/Assets/Clappers/DKII_Clapper_F1.h": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Colored version/Bird_F1.h": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Colored version/Bird_F2.h": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Colored version/Bird_Turn_00.h": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Colored version/Bird_Turn_01.h": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Colored version/Bird_Turn_03.h": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Colored version/Bird_Turn_02.h": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Colored version/Bird_Turn_04.h": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Colored version/Bird_Upright.h": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Colored version/Bird_Turn_05.h": {
+			"sdcard": false
+		},
+		"/Assets/Kong/Colored versions/Kong_FacingRight_F2.h": {
+			"sdcard": false
+		},
+		"/Assets/Kong/Colored versions/Kong_FacingRight_F3.h": {
+			"sdcard": false
+		},
+		"/Assets/Kong/Colored versions/Kong_FacingRight_F1.h": {
+			"sdcard": false
+		},
+		"/Assets/Kong/Colored versions/Kong_FacingRight_F0.h": {
+			"sdcard": false
+		},
+		"/Assets/Kong/Colored versions/Kong_Falling_F1.h": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Colored version/Bird_F3.h": {
+			"sdcard": false
+		},
+		"/Assets/Kong/Colored versions/LockChain2.h": {
+			"sdcard": false
+		},
+		"/Assets/Kong/Colored versions/LockChain3.h": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Colored versions/Key_Rotate_F1.h": {
+			"sdcard": false
+		},
+		"/Assets/Kong/Colored versions/LockChain4.h": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Colored versions/Key_Rotate_F0.h": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Colored versions/Key_Rotate_F3.h": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Colored versions/Key_Rotate_F4.h": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Colored versions/Key_Rotate_F2.h": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Colored versions/Key_Rotate_F7.h": {
+			"sdcard": false
+		},
+		"/Assets/Kong/Colored versions/KongCharacter.h": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Colored versions/Key_Spin_F3.h": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Colored versions/Key_Spin_F1.h": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Colored versions/Key_Spin_F0.h": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Colored versions/Key_Spin_F2.h": {
+			"sdcard": false
+		},
+		"/Assets/Others/Colored versions/Pause.h": {
+			"sdcard": false
+		},
+		"/Assets/Player/Colored versions/DKII_Jnr_ClimbingVine_F0.h": {
+			"sdcard": false
+		},
+		"/Assets/Player/Colored versions/DKII_Jnr_Idle_L_F0.h": {
+			"sdcard": false
+		},
+		"/Assets/Player/Colored versions/DKII_Jnr_ClimbingVine_F1.h": {
+			"sdcard": false
+		},
+		"/Assets/Player/Colored versions/DKII_Jnr_Idle_R_F0.h": {
+			"sdcard": false
+		},
+		"/Assets/Player/Colored versions/DKII_JuniorOnRope_F0.h": {
+			"sdcard": false
+		},
+		"/Assets/Player/Colored versions/DKII_JuniorOnRope_F2.h": {
+			"sdcard": false
+		},
+		"/Assets/Player/Colored versions/DKII_JuniorOnRope_F1.h": {
+			"sdcard": false
+		},
+		"/Assets/Player/Colored versions/DKII_JuniorOnRope_F3.h": {
+			"sdcard": false
+		},
+		"/Assets/Player/Colored versions/DKJunior_Walking_R_F1.h": {
+			"sdcard": false
+		},
+		"/Assets/Player/Colored versions/DKJunior_Walking_L_F2.h": {
+			"sdcard": false
+		},
+		"/Assets/Player/Colored versions/DKJunior_Walking_R_F2.h": {
+			"sdcard": false
+		},
+		"/Assets/Scenery/Colored versions/KongII_BlankSceneryAndBackgrounfColored.h": {
+			"sdcard": false
+		},
+		"/Assets/Spark/Colored versions/DKII_Spark_F1.h": {
+			"sdcard": false
+		},
+		"/src/images/birds/Bird_F0.h": {
+			"sdcard": false
+		},
+		"/Assets/Spark/Colored versions/DKII_Spark_F2.h": {
+			"sdcard": false
+		},
+		"/src/images/birds/Bird_F1.h": {
+			"sdcard": false
+		},
+		"/src/images/birds/Bird_F2.h": {
+			"sdcard": false
+		},
+		"/src/images/birds/Bird_Turn_00.h": {
+			"sdcard": false
+		},
+		"/src/images/birds/Bird_F3.h": {
+			"sdcard": false
+		},
+		"/src/images/birds/Bird_Turn_03.h": {
+			"sdcard": false
+		},
+		"/src/images/birds/Bird_Turn_05.h": {
+			"sdcard": false
+		},
+		"/src/images/birds/Bird_Turn_04.h": {
+			"sdcard": false
+		},
+		"/src/images/Others/Pause.h": {
+			"sdcard": false
+		},
+		"/src/images/birds/Bird_Upright.h": {
+			"sdcard": false
+		},
+		"/src/images/Others/GameOver_New.h": {
+			"sdcard": false
+		},
+		"/src/images/clappers/Clapper_F2.h": {
+			"sdcard": false
+		},
+		"/src/images/clappers/Clapper_F1.h": {
+			"sdcard": false
+		},
+		"/src/images/highScore/HighScore_Bottom.h": {
+			"sdcard": false
+		},
+		"/src/images/highScore/HighScore_Chain_Left.h": {
+			"sdcard": false
+		},
+		"/src/images/highScore/HighScore_Chains.h": {
+			"sdcard": false
+		},
+		"/src/images/highScore/HighScore_Chain_Right.h": {
+			"sdcard": false
+		},
+		"/src/images/highScore/HighScore_Panel_Mid.h": {
+			"sdcard": false
+		},
+		"/src/images/highScore/HighScore_Panel_Left.h": {
+			"sdcard": false
+		},
+		"/src/images/highScore/HighScore_Left.h": {
+			"sdcard": false
+		},
+		"/src/images/highScore/HighScore_Panel_Right.h": {
+			"sdcard": false
+		},
+		"/src/images/highScore/HighScore_Easy.h": {
+			"sdcard": false
+		},
+		"/src/images/highScore/KONGII_Highscore_panel.h": {
+			"sdcard": false
+		},
+		"/src/images/highScore/KONGII_HighscoreBG.h": {
+			"sdcard": false
+		},
+		"/src/images/highScore/KONGII_JuniorHoldingScore.h": {
+			"sdcard": false
+		},
+		"/src/images/highScore/KONGII_Highscore_panel_Mask.h": {
+			"sdcard": false
+		},
+		"/src/images/highScore/KONGII_JuniorHoldingScore_Mask.h": {
+			"sdcard": false
+		},
+		"/src/images/keys/Key_Rotate_F1.h": {
+			"sdcard": false
+		},
+		"/src/images/highScore/KongII_HighscorePreview.h": {
+			"sdcard": false
+		},
+		"/src/images/keys/Key_Rotate_F2.h": {
+			"sdcard": false
+		},
+		"/src/images/keys/Key_Rotate_F3.h": {
+			"sdcard": false
+		},
+		"/src/images/keys/Key_Rotate_F0.h": {
+			"sdcard": false
+		},
+		"/src/images/keys/Key_Rotate_F4.h": {
+			"sdcard": false
+		},
+		"/src/images/keys/Key_Rotate_F6.h": {
+			"sdcard": false
+		},
+		"/src/images/keys/Key_Rotate_F5.h": {
+			"sdcard": false
+		},
+		"/src/images/keys/Key_Spin_F0.h": {
+			"sdcard": false
+		},
+		"/src/images/keys/Key_Spin_F1.h": {
+			"sdcard": false
+		},
+		"/src/images/keys/Key_Rotate_F7.h": {
+			"sdcard": false
+		},
+		"/src/images/keys/Key_Spin_F2.h": {
+			"sdcard": false
+		},
+		"/src/images/highScore/HighScore_Right.h": {
+			"sdcard": false
+		},
+		"/src/images/kong/Kong_FacingRight_F0.h": {
+			"sdcard": false
+		},
+		"/src/images/kong/Kong_FacingRight_F3.h": {
+			"sdcard": false
+		},
+		"/src/images/kong/Kong_Falling_F1.h": {
+			"sdcard": false
+		},
+		"/src/images/kong/Kong_Normal.h": {
+			"sdcard": false
+		},
+		"/src/images/kong/Kong_Falling_F0.h": {
+			"sdcard": false
+		},
+		"/src/images/kong/Lock_Chain_1.h": {
+			"sdcard": false
+		},
+		"/src/images/kong/Lock_Chain_2.h": {
+			"sdcard": false
+		},
+		"/src/images/kong/Lock_Chain_3.h": {
+			"sdcard": false
+		},
+		"/src/images/player/Jnr_Climbing_Vine_F1.h": {
+			"sdcard": false
+		},
+		"/src/images/kong/Lock_Chain_4.h": {
+			"sdcard": false
+		},
+		"/src/images/player/Jnr_Idle_L_F0.h": {
+			"sdcard": false
+		},
+		"/src/images/player/Jnr_OnRope_F0.h": {
+			"sdcard": false
+		},
+		"/src/images/player/Jnr_OnRope_F2.h": {
+			"sdcard": false
+		},
+		"/src/images/player/Jnr_OnRope_F1.h": {
+			"sdcard": false
+		},
+		"/src/images/player/Jnr_Walking_L_F2.h": {
+			"sdcard": false
+		},
+		"/src/images/player/Jnr_Walking_R_F1.h": {
+			"sdcard": false
+		},
+		"/src/images/kong/Kong_FacingRight_F1.h": {
+			"sdcard": false
+		},
+		"/src/images/spark/Spark_F2.h": {
+			"sdcard": false
+		},
+		"/src/images/title/TitleScreen.h": {
+			"sdcard": false
+		},
+		"/src/images/player/Jnr_Walking_L_F1.h": {
+			"sdcard": false
+		},
+		"/src/images/spark/Spark_F1.h": {
+			"sdcard": false
+		},
+		"/Assets/Clappers/DKII_Clapper_F2.h": {
+			"sdcard": false
+		},
+		"/Assets/Birds/Colored version/Bird_F0.h": {
+			"sdcard": false
+		},
+		"/Assets/Kong/Colored versions/Kong_Falling_F0.h": {
+			"sdcard": false
+		},
+		"/Assets/Kong/Colored versions/LockChain1.h": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Colored versions/Key_Rotate_F5.h": {
+			"sdcard": false
+		},
+		"/Assets/Keys/Colored versions/Key_Rotate_F6.h": {
+			"sdcard": false
+		},
+		"/Assets/Player/Colored versions/DKJunior_Walking_L_F1.h": {
+			"sdcard": false
+		},
+		"/src/images/birds/Bird_Turn_02.h": {
+			"sdcard": false
+		},
+		"/src/images/birds/Bird_Turn_01.h": {
+			"sdcard": false
+		},
+		"/src/images/highScore/HighScore_Hard.h": {
+			"sdcard": false
+		},
+		"/src/images/highScore/HighScore_Jnr.h": {
+			"sdcard": false
+		},
+		"/src/images/keys/Key_Spin_F3.h": {
+			"sdcard": false
+		},
+		"/src/images/player/Jnr_Climbing_Vine_F0.h": {
+			"sdcard": false
+		},
+		"/src/images/player/Jnr_Idle_R_F0.h": {
+			"sdcard": false
+		},
+		"/src/images/player/Jnr_Walking_R_F2.h": {
+			"sdcard": false
+		},
+		"/src/images/player/Jnr_OnRope_F3.h": {
+			"sdcard": false
+		},
+		"/src/images/scenery/Scenery.h": {
+			"sdcard": false
+		},
+		"/Assets/Others/Colored versions/GameOver_New.h": {
+			"sdcard": false
+		},
+		"/src/images/kong/Kong_FacingRight_F2.h": {
+			"sdcard": false
+		},
+		"/src/images/spark/Sparks.h": {
+			"sdcard": false
+		},
+		"/src/images/sparks": {
+			"sdcard": false
+		},
+		"/src/images/sparks/Spark_F1.h": {
+			"sdcard": false
+		},
+		"/src/images/sparks/Spark_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/sparks/Spark_F2.h": {
+			"sdcard": false
+		},
+		"/src/images/sparks/Spark_F2.png": {
+			"sdcard": false
+		},
+		"/src/images/sparks/Sparks.h": {
+			"sdcard": false
+		},
+		"/Game_PlayGameState_activate.cpp": {
+			"sdcard": false
+		},
+		"/Game_PlayGameState_render.cpp": {
+			"sdcard": false
+		},
+		"/Game_PlayGameState_update.cpp": {
+			"sdcard": false
+		},
+		"/Game_PlayGameState_utils.cpp": {
+			"sdcard": false
+		},
+		"/Game_ScoreState.cpp": {
+			"sdcard": false
+		},
+		"/Game_SplashScreenState.ino": {
+			"sdcard": false
+		},
+		"/Game_TitleScreenState.cpp": {
+			"sdcard": false
+		},
+		"/src/Game_SplashScreenState.cpp": {
+			"sdcard": false
+		}
+	}
+}

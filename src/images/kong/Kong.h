@@ -1,0 +1,13 @@
+#include "Pokitto.h"
+
+#include "Kong_FacingRight_F0.h"
+#include "Kong_FacingRight_F1.h"
+#include "Kong_FacingRight_F2.h"
+#include "Kong_FacingRight_F3.h"
+#include "Kong_Falling_F0.h"
+#include "Kong_Falling_F1.h"
+#include "Kong_Normal.h"
+#include "Lock_Chain_1.h"
+#include "Lock_Chain_2.h"
+#include "Lock_Chain_3.h"
+#include "Lock_Chain_4.h"

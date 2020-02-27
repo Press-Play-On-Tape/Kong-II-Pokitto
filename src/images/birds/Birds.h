@@ -1,0 +1,13 @@
+#include "Pokitto.h"
+
+#include "Bird_F0.h"
+#include "Bird_F1.h"
+#include "Bird_F2.h"
+#include "Bird_F3.h"
+#include "Bird_Turn_00.h"
+#include "Bird_Turn_01.h"
+#include "Bird_Turn_02.h"
+#include "Bird_Turn_03.h"
+#include "Bird_Turn_04.h"
+#include "Bird_Turn_05.h"
+#include "Bird_Upright.h"
