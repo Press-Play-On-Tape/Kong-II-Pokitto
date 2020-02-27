@@ -4,21 +4,39 @@
 
 Clapper::Clapper() { }
 
-int16_t Clapper::getXPosition() {
+int16_t Clapper::getXPosition(ViewSize viewSize) {
 
-    return this->x;
+    if (viewSize == ViewSize::Normal) {
+        return this->x + VIEW_NORMAL_X_OFFSET;
+    }
+    else {
+        return this->x;
+    }
 
 }
 
-int8_t Clapper::getYPosition(uint8_t yOffset) {
+uint8_t Clapper::getYPosition(ViewSize viewSize, uint8_t yOffset) {
 
-    return this->y - yOffset;
+    if (viewSize == ViewSize::Normal) {
+
+        if (this->y < 64) {
+            return this->y + VIEW_NORMAL_Y_UPPER_OFFSET;
+        }
+        else {
+            return this->y + VIEW_NORMAL_Y_LOWER_OFFSET;
+        }
+
+    }
+    else {
+        return this->y - yOffset;
+    }
 
 }
 
-uint8_t Clapper::getImage() {
+uint8_t Clapper::getImage(ViewSize viewSize) {
 
-    return (this->x % 8 < 4 ? 1 : 0);
+    int16_t x = this->getXPosition(viewSize);
+    return (x % 8 < 4 ? 1 : 0);
 
 }
 
@@ -31,7 +49,7 @@ bool Clapper::isEnabled() {
 void Clapper::setEnabled(bool enabled) {
 
     this->enabled = enabled;
-    this->x = 128;
+    this->x = 126;
 
 }
 
@@ -43,8 +61,8 @@ void Clapper::setY(uint8_t y) {
 
 void Clapper::updatePosition() {
 
-    if (x > -9) x--;
-    if (x == -9) enabled = false;
+    if (x > -7) x--;
+    if (x == -7) enabled = false;
 
 }
 

@@ -10,16 +10,36 @@ uint8_t Spark::getPosition() {
 
 }
 
-int8_t Spark::getXPosition() {
+uint8_t Spark::getXPosition(ViewSize viewSize) {
 
-    return pgm_read_byte(&this->path[(this->position * 3)]);
+    uint8_t x = pgm_read_byte(&this->path[(this->position * 3)]);
+
+    if (viewSize == ViewSize::Normal) {
+        return x + VIEW_NORMAL_X_OFFSET;
+    }
+    else {
+        return x;
+    }
 
 }
 
-int8_t Spark::getYPosition(uint8_t yOffset) {
+uint8_t Spark::getYPosition(ViewSize viewSize, uint8_t yOffset) {
 
     uint8_t y = pgm_read_byte(&this->path[(this->position * 3) + 1]);
-    return y - yOffset;
+    
+    if (viewSize == ViewSize::Normal) {
+
+        if (y < 64) {
+            return y + VIEW_NORMAL_Y_UPPER_OFFSET;
+        }
+        else {
+            return y + VIEW_NORMAL_Y_LOWER_OFFSET;
+        }
+
+    }
+    else {
+        return y - yOffset;
+    }
 
 }
 

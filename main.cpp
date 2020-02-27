@@ -28,7 +28,8 @@ int main() {
     PD::loadRGBPalette(palettePico);   
     PD::persistence = true;
     PD::setColor(5);
-    PC::setFrameRate(60);
+    PD::setInvisibleColor(14);
+    PC::setFrameRate(70);
 
     // #if POK_HIGH_RAM == HIGH_RAM_MUSIC
     // memset(buffers[0], 128, BUFFER_SIZE);

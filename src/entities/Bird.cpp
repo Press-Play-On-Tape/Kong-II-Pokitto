@@ -10,16 +10,36 @@ uint16_t Bird::getPosition() {
 
 }
 
-int8_t Bird::getXPosition() {
+uint8_t Bird::getXPosition(ViewSize viewSize) {
 
-    return pgm_read_byte(&Coordinates::Bird[(this->position * 3)]);
+    uint8_t x = pgm_read_byte(&Coordinates::Bird[(this->position * 3)]);
+
+    if (viewSize == ViewSize::Normal) {
+        return x + VIEW_NORMAL_X_OFFSET;
+    }
+    else {
+        return x;
+    }
 
 }
 
-int8_t Bird::getYPosition(uint8_t yOffset) {
+uint8_t Bird::getYPosition(ViewSize viewSize, uint8_t yOffset) {
 
     uint8_t y = pgm_read_byte(&Coordinates::Bird[(this->position * 3) + 1]);
-    return y - yOffset;
+    
+    if (viewSize == ViewSize::Normal) {
+
+        if (y < 64) {
+            return y + VIEW_NORMAL_Y_UPPER_OFFSET;
+        }
+        else {
+            return y + VIEW_NORMAL_Y_LOWER_OFFSET;
+        }
+
+    }
+    else {
+        return y - yOffset;
+    }
 
 }
 

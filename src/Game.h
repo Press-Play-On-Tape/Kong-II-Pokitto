@@ -24,27 +24,27 @@ class Game {
         void titleScreen_Update();
         void titleScreen_Render();
 
-        // void PlayGame_Activate();
-        // void PlayGame_Update();
-        // void PlayGame_CheckLastKey(uint8_t chain);
-        // void PlayGame_ScrollToBottom(bool renderKong);
-        // void PlayGame_DrawScenery(uint8_t yOffset);
-        // void PlayGame_KillPlayer();
-        // void PlayGame_ResetLevel(uint8_t introDelay);
-        // void PlayGame_RenderScore(uint8_t yOffset);
-        // bool PlayGame_GetPaused();
-        // void PlayGame_SetPaused(bool value);
-        // void PlayGame_HandleCommonButtons();
-        // void PlayGame_RenderGameOverOrPause();
+        void playGame_Activate();
+        void playGame_Update();
+        void playGame_CheckLastKey(uint8_t chain);
+        void playGame_ScrollToBottom(bool renderKong);
+        void playGame_DrawScenery(uint8_t yOffset);
+        void playGame_KillPlayer();
+        void playGame_ResetLevel(uint8_t introDelay);
+        void playGame_RenderScore(uint8_t yOffset);
+        bool playGame_GetPaused();
+        void playGame_SetPaused(bool value);
+        void playGame_HandleCommonButtons();
+        void playGame_RenderGameOverOrPause();
 
-        // void PlayGame_Render();
-        // void PlayGame_RenderKong(uint8_t yOffset);
-        // void PlayGame_RenderKey(uint8_t yOffset);
+        void playGame_Render();
+        void playGame_RenderKong(uint8_t yOffset);
+        void playGame_RenderKey(uint8_t yOffset);
 
-        // void HighScore_Activate();
-        // void HighScore_Update();
-        // void HighScore_RenderHighScore(uint16_t score);
-        // void HighScore_Render();
+        void highScore_Activate();
+        void highScore_Update();
+        void highScore_RenderHighScore(uint16_t score);
+        void highScore_Render();
 
     private:
 

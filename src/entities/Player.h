@@ -16,8 +16,8 @@ class Player {
 
         uint16_t getPosition();
         uint8_t getJumpPosition();
-        int8_t getXPosition(bool updatePrevPosition);
-        int8_t getYPosition();
+        uint8_t getXPosition(ViewSize viewSize, bool updatePrevPosition);
+        uint8_t getYPosition(ViewSize viewSize);
         uint8_t getMovements();
         uint8_t getYOffset();
         bool isDead();

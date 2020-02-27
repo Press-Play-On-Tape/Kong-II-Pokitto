@@ -7,6 +7,10 @@
 #define _IGNORE_COLLISIONS
 #define _PLAY_SOUNDS
 
+#define VIEW_NORMAL_X_OFFSET 46
+#define VIEW_NORMAL_Y_UPPER_OFFSET 19
+#define VIEW_NORMAL_Y_LOWER_OFFSET 27
+
 
 // - Game play stuff ---------------------
 
@@ -172,6 +176,11 @@ enum class GameMode : uint8_t {
     Hard
 };
 
+enum class ViewSize : uint8_t {
+    Normal,
+    Large
+};
+
 struct GameStats {
 
     public: 
@@ -180,7 +189,7 @@ struct GameStats {
 
         uint16_t score = 0;
         uint8_t numberOfLivesLeft = 4; 
-        uint8_t level = 1;
+        ViewSize viewSize = ViewSize::Normal;
 
         GameMode mode = GameMode::Easy;
 
@@ -190,8 +199,8 @@ struct GameStats {
 
             this->numberOfLivesLeft = 4; 
             this->score = 0; 
-            this->level = 1;
             this->gameOver = false;
+            this->viewSize = ViewSize::Normal;
 
         }
 

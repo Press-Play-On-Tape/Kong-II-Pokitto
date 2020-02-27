@@ -43,27 +43,27 @@ void Game::loop(void) {
             //arduboy.displayWithBackground(Background::Black);
             break;
 
-    //     case GameStateType::PlayGame_Activate:
-    //         playGame_Activate();
-    //         gameState = GameStateType::PlayGame;
-    //         [[fallthrough]];
+        case GameStateType::PlayGame_Activate:
+            playGame_Activate();
+            gameState = GameStateType::PlayGame;
+            [[fallthrough]];
 
-    //     case GameStateType::PlayGame:
-    //         playGame_Update();
-    //         playGame_Render();
-    //         arduboy.displayWithBackground(Background::None);
-    //         break;
+        case GameStateType::PlayGame:
+            playGame_Update();
+            playGame_Render();
+//            arduboy.displayWithBackground(Background::None);
+            break;
 
-    //     case GameStateType::HighScore_Activate:
-    //         highScore_Activate();
-    //         gameState = GameStateType::HighScore;
-    //         [[fallthrough]];
+        case GameStateType::HighScore_Activate:
+            highScore_Activate();
+            gameState = GameStateType::HighScore;
+            [[fallthrough]];
 
-    //     case GameStateType::HighScore:
-    //         highScore_Update();
-    //         highScore_Render();
-    //         arduboy.displayWithBackground(Background::White);
-    //         break;
+        case GameStateType::HighScore:
+            highScore_Update();
+            highScore_Render();
+//            arduboy.displayWithBackground(Background::White);
+            break;
 
         default: break;
 

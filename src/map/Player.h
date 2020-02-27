@@ -8,8 +8,8 @@ namespace Coordinates {
 
     struct PlayerData {
 
-        int8_t x;
-        int8_t y;
+        uint8_t x;
+        uint8_t y;
         uint8_t yOffset;
         Stance stance;
         uint8_t movements;

@@ -3349,6 +3349,213 @@
 		},
 		"/src/Game_SplashScreenState.cpp": {
 			"sdcard": false
+		},
+		"/src/images/scenery/Scenery copy.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/Scenery copy.h": {
+			"sdcard": false
+		},
+		"/src/images/clappers/Clapper_F1_00.h": {
+			"sdcard": false
+		},
+		"/src/images/clappers/Clapper_F1_00 copy.h": {
+			"sdcard": false
+		},
+		"/src/images/clappers/Clapper_F1_00 copy 2.h": {
+			"sdcard": false
+		},
+		"/src/images/clappers/Clapper_F1_00 copy 3.h": {
+			"sdcard": false
+		},
+		"/src/images/clappers/Clapper_F1_00 copy 4.h": {
+			"sdcard": false
+		},
+		"/src/images/clappers/Clapper_F1_00 copy 5.h": {
+			"sdcard": false
+		},
+		"/src/images/clappers/Clapper_F1_00 copy 6.h": {
+			"sdcard": false
+		},
+		"/src/images/clappers/Clapper_F1_00 copy 7.h": {
+			"sdcard": false
+		},
+		"/src/images/clappers/Clapper_F1_01.h": {
+			"sdcard": false
+		},
+		"/src/images/clappers/Clapper_F1_02.h": {
+			"sdcard": false
+		},
+		"/src/images/clappers/Clapper_F1_03.h": {
+			"sdcard": false
+		},
+		"/src/images/clappers/Clapper_F1_04.h": {
+			"sdcard": false
+		},
+		"/src/images/clappers/Clapper_F1_05.h": {
+			"sdcard": false
+		},
+		"/src/images/clappers/Clapper_F1_06.h": {
+			"sdcard": false
+		},
+		"/src/images/clappers/Clapper_F1_07.h": {
+			"sdcard": false
+		},
+		"/src/images/clappers/Clapper_F1 copy.png": {
+			"sdcard": false
+		},
+		"/src/images/clappers/Clapper_F1_00.png": {
+			"sdcard": false
+		},
+		"/src/images/clappers/Clapper_F1_00 copy.png": {
+			"sdcard": false
+		},
+		"/src/images/clappers/Clapper_F1_00 copy 2.png": {
+			"sdcard": false
+		},
+		"/src/images/clappers/Clapper_F1_00 copy 3.png": {
+			"sdcard": false
+		},
+		"/src/images/clappers/Clapper_F1_00 copy 4.png": {
+			"sdcard": false
+		},
+		"/src/images/clappers/Clapper_F1_00 copy 5.png": {
+			"sdcard": false
+		},
+		"/src/images/clappers/Clapper_F1_00 copy 6.png": {
+			"sdcard": false
+		},
+		"/src/images/clappers/Clapper_F1_00 copy 7.png": {
+			"sdcard": false
+		},
+		"/src/images/clappers/Clapper_F1_01.png": {
+			"sdcard": false
+		},
+		"/src/images/clappers/Clapper_F1_02.png": {
+			"sdcard": false
+		},
+		"/src/images/clappers/Clapper_F1_03.png": {
+			"sdcard": false
+		},
+		"/src/images/clappers/Clapper_F1_04.png": {
+			"sdcard": false
+		},
+		"/src/images/clappers/Clapper_F1_05.png": {
+			"sdcard": false
+		},
+		"/src/images/clappers/Clapper_F1_06.png": {
+			"sdcard": false
+		},
+		"/src/images/clappers/Clapper_F1_07.png": {
+			"sdcard": false
+		},
+		"/src/images/clappers/Clapper_F2 copy.png": {
+			"sdcard": false
+		},
+		"/src/images/clappers/Clapper_F2_00.png": {
+			"sdcard": false
+		},
+		"/src/images/clappers/Clapper_F2_00 copy.png": {
+			"sdcard": false
+		},
+		"/src/images/clappers/Clapper_F2_00 copy 2.png": {
+			"sdcard": false
+		},
+		"/src/images/clappers/Clapper_F2_00 copy 3.png": {
+			"sdcard": false
+		},
+		"/src/images/clappers/Clapper_F2_00 copy 4.png": {
+			"sdcard": false
+		},
+		"/src/images/clappers/Clapper_F2_00 copy 5.png": {
+			"sdcard": false
+		},
+		"/src/images/clappers/Clapper_F2_01.png": {
+			"sdcard": false
+		},
+		"/src/images/clappers/Clapper_F2_02.png": {
+			"sdcard": false
+		},
+		"/src/images/clappers/Clapper_F2_03.png": {
+			"sdcard": false
+		},
+		"/src/images/clappers/Clapper_F2_04.png": {
+			"sdcard": false
+		},
+		"/src/images/clappers/Clapper_F2_05.png": {
+			"sdcard": false
+		},
+		"/src/images/clappers/Clapper_F2_05 copy.png": {
+			"sdcard": false
+		},
+		"/src/images/clappers/Clapper_F2_06.png": {
+			"sdcard": false
+		},
+		"/src/images/clappers/Clapper_F2_00.h": {
+			"sdcard": false
+		},
+		"/src/images/clappers/Clapper_F2_01.h": {
+			"sdcard": false
+		},
+		"/src/images/clappers/Clapper_F2_02.h": {
+			"sdcard": false
+		},
+		"/src/images/clappers/Clapper_F2_04.h": {
+			"sdcard": false
+		},
+		"/src/images/clappers/Clapper_F2_05.h": {
+			"sdcard": false
+		},
+		"/src/images/clappers/Clapper_F2_03.h": {
+			"sdcard": false
+		},
+		"/src/images/clappers/Clapper_F2_06.h": {
+			"sdcard": false
+		},
+		"/src/images/clappers/Clapper_F2_00 copy 6.png": {
+			"sdcard": false
+		},
+		"/src/images/clappers/Clapper_F1 copy.h": {
+			"sdcard": false
+		},
+		"/src/images/Scenery.png": {
+			"sdcard": false
+		},
+		"/src/images/Scenery_Edge_L.png": {
+			"sdcard": false
+		},
+		"/src/images/Scenery_Edge_L copy.png": {
+			"sdcard": false
+		},
+		"/src/images/Scenery_Edge_R.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/Scenery_Edge_L.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/Scenery_Edge_R.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/Scenery_Edge_R.h": {
+			"sdcard": false
+		},
+		"/src/images/Scenery.h": {
+			"sdcard": false
+		},
+		"/src/images/scenery/Scenery_Edge_L.h": {
+			"sdcard": false
+		},
+		"/src/images/scenery/Scenery_Base.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/Scenerys.h": {
+			"sdcard": false
+		},
+		"/src/images/scenery/Scenery_Edge_R_Large.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/Scenery_Edge_R_Large.h": {
+			"sdcard": false
 		}
 	}
 }

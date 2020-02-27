@@ -7,7 +7,7 @@ namespace Images {
     #include "keys/Keys.h"
     #include "kong/Kong.h"
     #include "player/Player.h"
-    #include "scenery/Scenery.h"
+    #include "scenery/Scenerys.h"
     #include "sparks/Sparks.h"
     #include "ppot/PPOT.h"
     #include "title/TitleScreen.h"

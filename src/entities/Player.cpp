@@ -36,38 +36,89 @@ uint8_t Player::getJumpPosition() {
 
 }
 
-int8_t Player::getXPosition(bool updatePrevPosition) {
+uint8_t Player::getXPosition(ViewSize viewSize, bool updatePrevPosition) {
 
-    if (updatePrevPosition) {
-        this->prevXPosition = this->playerData.x;
+    if (viewSize == ViewSize::Normal) {
+
+        if (updatePrevPosition) {
+            this->prevXPosition = this->playerData.x;
+        }
+
+        switch (this->playerData.stance) {
+
+            case Stance::OnRope_01:
+                return this->playerData.x + 7 + VIEW_NORMAL_X_OFFSET;
+
+            case Stance::OnRope_02:
+                return this->playerData.x + 6 + VIEW_NORMAL_X_OFFSET;
+
+            case Stance::OnRope_03:
+                return this->playerData.x - 2 + VIEW_NORMAL_X_OFFSET;
+
+            case Stance::OnRope_04:
+                return this->playerData.x - 3 + VIEW_NORMAL_X_OFFSET;
+
+            default:
+                Coordinates::readPlayerData(this->playerData, this->getPosition());
+                return this->playerData.x + VIEW_NORMAL_X_OFFSET;
+
+        }
+    
     }
+    else {
 
-    switch (this->playerData.stance) {
+        if (updatePrevPosition) {
+            this->prevXPosition = this->playerData.x;
+        }
 
-        case Stance::OnRope_01:
-            return this->playerData.x + 7;
+        switch (this->playerData.stance) {
 
-        case Stance::OnRope_02:
-            return this->playerData.x + 6;
+            case Stance::OnRope_01:
+                return this->playerData.x + 7;
 
-        case Stance::OnRope_03:
-            return this->playerData.x - 2;
+            case Stance::OnRope_02:
+                return this->playerData.x + 6;
 
-        case Stance::OnRope_04:
-            return this->playerData.x - 3;
+            case Stance::OnRope_03:
+                return this->playerData.x - 2;
 
-        default:
-            Coordinates::readPlayerData(this->playerData, this->getPosition());
-            return this->playerData.x;
+            case Stance::OnRope_04:
+                return this->playerData.x - 3;
+
+            default:
+                Coordinates::readPlayerData(this->playerData, this->getPosition());
+                return this->playerData.x + 9;
+
+        }
 
     }
 
 }
 
-int8_t Player::getYPosition() {
+uint8_t Player::getYPosition(ViewSize viewSize) {
 
-    int8_t y = this->playerData.y - this->playerData.yOffset - pgm_read_byte(&jumpPositions[this->jumpPosition]);
-    return y;
+    if (viewSize == ViewSize::Normal) {
+
+        int8_t y = this->playerData.y - pgm_read_byte(&jumpPositions[this->jumpPosition]);
+
+        if (y < 64) {
+
+            y = y + VIEW_NORMAL_Y_UPPER_OFFSET;
+        }
+        else {
+
+            y = y + VIEW_NORMAL_Y_LOWER_OFFSET;
+        }
+        
+        return y;
+
+    }
+    else {
+
+        int8_t y = this->playerData.y - this->playerData.yOffset - pgm_read_byte(&jumpPositions[this->jumpPosition]);
+        return y;
+
+    }
 
 }
 
@@ -295,8 +346,8 @@ uint8_t Player::getImage(bool update) {
 
                         if (update) this->runCounter++;
                         this->runMovement = Movements::Right;
-                        if (this->runCounter == 16) this->runCounter = 0;
-                        imageIndex = static_cast<uint8_t>(Stance::Running_01_RHS) + (this->runCounter / 8);
+                        if (this->runCounter == 8) this->runCounter = 0;
+                        imageIndex = static_cast<uint8_t>(Stance::Running_01_RHS) + (this->runCounter / 4);
 
                         break;
 
@@ -306,8 +357,8 @@ uint8_t Player::getImage(bool update) {
 
                         if (update) this->runCounter++;
                         this->runMovement = Movements::Left;
-                        if (this->runCounter == 16) this->runCounter = 0;
-                        imageIndex = static_cast<uint8_t>(Stance::Running_01) + (this->runCounter / 8);
+                        if (this->runCounter == 8) this->runCounter = 0;
+                        imageIndex = static_cast<uint8_t>(Stance::Running_01) + (this->runCounter / 4);
 
                         break;
 

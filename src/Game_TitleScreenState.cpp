@@ -33,6 +33,7 @@ void Game::titleScreen_Activate() {
 // ----------------------------------------------------------------------------
 //  Handle state updates ..
 //
+
 void Game::titleScreen_Update() {
 
     if (PC::buttons.pressed(BTN_A)) { 
