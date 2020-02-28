@@ -24,14 +24,15 @@ void Game::splashScreen_Update() {
 
     if (PC::buttons.pressed(BTN_A))  { this->gameState = GameStateType::TitleScreen_Activate; }
 
-}
 
+    auto justPressed = PC::buttons.pressed(BTN_A) || PC::buttons.pressed(BTN_B) || PC::buttons.pressed(BTN_C);
 
-// ----------------------------------------------------------------------------
-//  Render the state ..
-//
-void Game::splashScreen_Render() {
+    if (justPressed > 0) {
 
+        this->gameState = GameStateType::TitleScreen_Activate; 
+
+    }
+    
     if (Utils::isFrameCount(12)) {
      
         splashScreenVars.counter++;
@@ -44,6 +45,17 @@ void Game::splashScreen_Render() {
         
     }
     
-    PD::drawBitmap(38, 48, Images_Normal::PPOT[splashScreenVars.counter]);
+}
+
+
+// ----------------------------------------------------------------------------
+//  Render the state ..
+//
+void Game::splashScreen_Render() {
+
+    PD::drawBitmap(44, 54, Images_Normal::Ppot_Full);
+    PD::drawBitmap(64, 76, Images_Normal::Ppot[splashScreenVars.counter]);
+
+    if (splashScreenVars.counter < 2) PD::drawBitmap(163, 72, Images_Normal::Ppot_Arrow);
 
 }

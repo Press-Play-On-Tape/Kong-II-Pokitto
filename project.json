@@ -5020,6 +5020,18 @@
 		},
 		"/src/images/keys/normal/Keys.h": {
 			"sdcard": false
+		},
+		"/src/images/ppot/Ppot_Arrow.h": {
+			"sdcard": false
+		},
+		"/src/images/ppot/Ppot_Arrow.png": {
+			"sdcard": false
+		},
+		"/src/images/ppot/Ppot_Full.h": {
+			"sdcard": false
+		},
+		"/src/images/ppot/Ppot_Full.png": {
+			"sdcard": false
 		}
 	}
 }

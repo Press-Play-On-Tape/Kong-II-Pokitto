@@ -106,7 +106,7 @@ namespace Images_Normal {
     Spark_F2
     };
 
-    const uint8_t * const PROGMEM PPOT[] = { 
+    const uint8_t * const PROGMEM Ppot[] = { 
     Ppot_00,
     Ppot_01,
     Ppot_02,
