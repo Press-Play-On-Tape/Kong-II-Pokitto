@@ -10,13 +10,13 @@ Clapper & Clappers::getClapper(uint8_t index) {
 
 }
 
-void Clappers::updatePositions() {
+void Clappers::updatePositions(ViewSize viewSize) {
 
     for (auto &clapper : this->clappers) {
 
         if (clapper.isEnabled()) {
 
-            clapper.updatePosition();
+            clapper.updatePosition(viewSize);
         }
 
     }
@@ -28,7 +28,7 @@ void Clappers::updatePositions() {
     }
     else {
 
-        this->launchClapper();
+        this->launchClapper(viewSize);
 
     }
 
@@ -42,13 +42,13 @@ void Clappers::setDelayMax(uint8_t delayMax, bool updateDelay) {
 
 }
 
-void Clappers::launchClapper() {
+void Clappers::launchClapper(ViewSize viewSize) {
 
     for (auto &clapper : this->clappers) {
 
         if (!clapper.isEnabled()) {
 
-            clapper.setEnabled(true);
+            clapper.setEnabled(viewSize, true);
             this->delay = random(this->delayMax / 2, this->delayMax);
             return;
 
@@ -58,12 +58,12 @@ void Clappers::launchClapper() {
 
 }
 
-void Clappers::reset(uint8_t y) {
+void Clappers::reset(ViewSize viewSize, uint8_t y) {
 
     for (auto &clapper : this->clappers) {
 
-        clapper.setEnabled(false);
-        clapper.setY(y);
+        clapper.setEnabled(viewSize, false);
+        clapper.setY(viewSize, y);
 
     }
 

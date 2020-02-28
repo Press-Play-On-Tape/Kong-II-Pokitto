@@ -72,21 +72,21 @@ void Game::playGame_RenderScore(uint8_t yOffset) {
     else {
 
         if (gameStats.numberOfLivesLeft >= 3) {
-            PD::drawBitmap(27, 118 - yOffset, Images_Normal::Jnr_Walking_L_F2);
+            PD::drawBitmap(47, 235 - yOffset, Images_Large::Jnr_Walking_L_F2);
         }
 
         if (gameStats.numberOfLivesLeft >= 2) {
-            PD::drawBitmap(44, 118 - yOffset, Images_Normal::Jnr_Walking_L_F2);
+            PD::drawBitmap(85, 235 - yOffset, Images_Large::Jnr_Walking_L_F2);
         }
 
-        PD::drawBitmap(81, 118, Images_Normal::Game_Icon[this->gameStats.mode == GameMode::Easy, 0, 1]);
+        PD::drawBitmap(135, 235 - yOffset, Images_Large::Game_Icon[this->gameStats.mode == GameMode::Easy, 0, 1]);
 
         uint8_t digits[4] = {};
         Utils::extractDigits(digits, gameStats.score);
 
         for (uint8_t j = 4; j > 0; --j) {
 
-            PD::drawBitmap(122 - (j*7), 120 - yOffset, Images_Normal::Numbers[digits[j - 1]]);
+            PD::drawBitmap(217 - (j*14), 238 - yOffset, Images_Large::Numbers[digits[j - 1]]);
 
         }
     
@@ -112,7 +112,7 @@ void Game::playGame_HandleCommonButtons() {
     if (gameStats.gameOver) {
 
         if (PC::buttons.pressed(BTN_A)) {
-            gameState = GameStateType::HighScore_Activate; 
+            gameState = GameStateType::TitleScreen_Activate; 
         }
 
     }
@@ -153,7 +153,7 @@ void Game::playGame_RenderGameOverOrPause() {
 
         if (gameStats.gameOver) {
 
-            PD::drawBitmap(28, 13, Images_Normal::GameOver); 
+            PD::drawBitmap(38, 54, Images_Large::GameOver); 
 
         }
 
@@ -161,7 +161,7 @@ void Game::playGame_RenderGameOverOrPause() {
 
         if (playGameVars.paused) {
 
-            PD::drawBitmap(39, 16, Images_Normal::Pause); 
+            PD::drawBitmap(58, 60, Images_Large::Pause); 
 
         }
 

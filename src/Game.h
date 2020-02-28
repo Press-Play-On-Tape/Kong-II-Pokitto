@@ -42,11 +42,6 @@ class Game {
         void playGame_RenderKong(uint8_t yOffset);
         void playGame_RenderKey(uint8_t yOffset);
 
-        void highScore_Activate();
-        void highScore_Update();
-        void highScore_RenderHighScore(uint16_t score);
-        void highScore_Render();
-
     private:
 
         SplashScreenStateVars splashScreenVars;

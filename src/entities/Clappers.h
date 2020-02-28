@@ -12,10 +12,10 @@ class Clappers {
 
         Clapper & getClapper(uint8_t index);
 
-        void updatePositions();
+        void updatePositions(ViewSize viewSize);
         void setDelayMax(uint8_t delayMax, bool updateDelay);
-        void launchClapper();
-        void reset(uint8_t y);
+        void launchClapper(ViewSize viewSize);
+        void reset(ViewSize viewSize, uint8_t y);
 
     protected:
 

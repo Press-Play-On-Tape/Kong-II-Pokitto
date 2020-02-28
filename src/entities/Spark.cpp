@@ -12,20 +12,20 @@ uint8_t Spark::getPosition() {
 
 uint8_t Spark::getXPosition(ViewSize viewSize) {
 
-    uint8_t x = pgm_read_byte(&this->path[(this->position * 3)]);
+    uint8_t x = this->path[(this->position * 3)];
 
     if (viewSize == ViewSize::Normal) {
         return x + VIEW_NORMAL_X_OFFSET;
     }
     else {
-        return x;
+        return (x - 9) * 2;
     }
 
 }
 
 uint8_t Spark::getYPosition(ViewSize viewSize, uint8_t yOffset) {
 
-    uint8_t y = pgm_read_byte(&this->path[(this->position * 3) + 1]);
+    uint8_t y = this->path[(this->position * 3) + 1];
     
     if (viewSize == ViewSize::Normal) {
 
@@ -38,7 +38,7 @@ uint8_t Spark::getYPosition(ViewSize viewSize, uint8_t yOffset) {
 
     }
     else {
-        return y - yOffset;
+        return (y * 2) - yOffset;
     }
 
 }
@@ -92,17 +92,30 @@ void Spark::updatePosition() {
   
 }
 
-Rect Spark::getRect(uint8_t yOffset, GameMode mode) {
+Rect Spark::getRect(ViewSize viewSize, uint8_t yOffset, GameMode mode) {
 
+    uint8_t x = this->getXPosition(viewSize);
+    uint8_t y = this->getYPosition(viewSize, yOffset);
 
-  int8_t x = pgm_read_byte(&this->path[(this->position * 3)]);
-  uint8_t y = pgm_read_byte(&this->path[(this->position * 3) + 1]) - yOffset;
+    if (viewSize == ViewSize::Normal) {
 
-    if (mode == GameMode::Easy) {
-        return Rect{x + 3, y + 2, 2, 3 };
+        if (mode == GameMode::Easy) {
+            return Rect{x + 2, y + 2, 2, 1 };
+        }
+        else {
+            return Rect{x + 1, y + 1, 4, 3 };
+        }
+
     }
     else {
-        return Rect{x + 2, y + 1, 4, 5 };
+
+        if (mode == GameMode::Easy) {
+            return Rect{x + 6, y + 6, 4, 2 };
+        }
+        else {
+            return Rect{x + 4, y + 4, 8, 6 };
+        }
+
     }
 
 }

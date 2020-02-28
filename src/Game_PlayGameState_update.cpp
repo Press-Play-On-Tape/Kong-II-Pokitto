@@ -30,33 +30,33 @@ void Game::playGame_Update() {
                 if (playGameVars.player.canMove(Movements::Reverse)) {
 
                     if ((PC::buttons.pressed(BTN_LEFT) || PC::buttons.repeat(BTN_LEFT, 1)) && playGameVars.player.canMove(Movements::Left)) {
-                        playGameVars.player.incPlayerPosition();
+                        playGameVars.player.incPlayerPosition(this->gameStats.viewSize);
                     }
 
                     if ((PC::buttons.pressed(BTN_RIGHT) || PC::buttons.repeat(BTN_RIGHT, 1)) && playGameVars.player.canMove(Movements::Right)) {
-                        playGameVars.player.decPlayerPosition(false);
+                        playGameVars.player.decPlayerPosition(this->gameStats.viewSize, false);
                     }
 
                 }
                 else {
 
                     if ((PC::buttons.pressed(BTN_RIGHT) || PC::buttons.repeat(BTN_RIGHT, 1)) && playGameVars.player.canMove(Movements::Right)) {
-                        playGameVars.player.incPlayerPosition();
+                        playGameVars.player.incPlayerPosition(this->gameStats.viewSize);
                     }
 
                     if ((PC::buttons.pressed(BTN_LEFT) || PC::buttons.repeat(BTN_LEFT, 1)) && playGameVars.player.canMove(Movements::Left)) {
-                        playGameVars.player.decPlayerPosition(false);
+                        playGameVars.player.decPlayerPosition(this->gameStats.viewSize, false);
                     }
 
                 }
 
                 if ((PC::buttons.pressed(BTN_DOWN) || PC::buttons.repeat(BTN_DOWN, 1)) && playGameVars.player.canMove(Movements::Down)) {
-                    playGameVars.player.decPlayerPosition(false);
+                    playGameVars.player.decPlayerPosition(this->gameStats.viewSize, false);
                 }
 
                 if ((PC::buttons.pressed(BTN_UP) || PC::buttons.repeat(BTN_UP, 1)) && playGameVars.player.canMove(Movements::Up)) {
                     
-                    playGameVars.player.incPlayerPosition();
+                    playGameVars.player.incPlayerPosition(this->gameStats.viewSize);
 
                     if (playGameVars.player.getPosition() == PLAYER_CHAIN_0_END - 1 && playGameVars.key.getKeyLocation() == KeyLocation::Position_00 && !playGameVars.kong.getFlashChain(0)) {
 
@@ -219,32 +219,32 @@ void Game::playGame_Update() {
 
                             case PLAYER_VINE_0_MIN ... PLAYER_VINE_0:
                                 playGameVars.player.setJumpPosition(0);
-                                playGameVars.player.setPosition(PLAYER_VINE_0_CLIMBING);
+                                playGameVars.player.setPosition(this->gameStats.viewSize, PLAYER_VINE_0_CLIMBING);
                                 break;
 
                             case PLAYER_VINE_1_MIN ... PLAYER_VINE_1:
                                 playGameVars.player.setJumpPosition(0);
-                                playGameVars.player.setPosition(PLAYER_VINE_1_CLIMBING);
+                                playGameVars.player.setPosition(this->gameStats.viewSize, PLAYER_VINE_1_CLIMBING);
                                 break;
 
                             case PLAYER_CHAIN_0_GROUND_MIN ... PLAYER_CHAIN_0_GROUND_MAX - 1:
                                 playGameVars.player.setJumpPosition(0);
-                                playGameVars.player.setPosition(PLAYER_CHAIN_0_CLIMBING);
+                                playGameVars.player.setPosition(this->gameStats.viewSize, PLAYER_CHAIN_0_CLIMBING);
                                 break;
 
                             case PLAYER_CHAIN_1_GROUND_MIN ... PLAYER_CHAIN_1_GROUND_MAX - 1:
                                 playGameVars.player.setJumpPosition(0);
-                                playGameVars.player.setPosition(PLAYER_CHAIN_1_CLIMBING);
+                                playGameVars.player.setPosition(this->gameStats.viewSize, PLAYER_CHAIN_1_CLIMBING);
                                 break;
 
                             case PLAYER_CHAIN_2_GROUND_MIN ... PLAYER_CHAIN_2_GROUND_MAX - 1:
                                 playGameVars.player.setJumpPosition(0);
-                                playGameVars.player.setPosition(PLAYER_CHAIN_2_CLIMBING);
+                                playGameVars.player.setPosition(this->gameStats.viewSize, PLAYER_CHAIN_2_CLIMBING);
                                 break;
 
                             case PLAYER_CHAIN_3_GROUND_MIN ... PLAYER_CHAIN_3_GROUND_MAX - 1:
                                 playGameVars.player.setJumpPosition(0);
-                                playGameVars.player.setPosition(PLAYER_CHAIN_3_CLIMBING);
+                                playGameVars.player.setPosition(this->gameStats.viewSize, PLAYER_CHAIN_3_CLIMBING);
                                 break;
                                 
 
@@ -255,7 +255,7 @@ void Game::playGame_Update() {
                 }
 
                 if (!playGameVars.exitSequence && playGameVars.player.isFalling()) {
-                    playGameVars.player.decPlayerPosition(false);
+                    playGameVars.player.decPlayerPosition(this->gameStats.viewSize, false);
                 }
 
             }
@@ -285,24 +285,24 @@ void Game::playGame_Update() {
                     case PLAYER_CHAIN_3_BACKTOGROUND + 1 ... PLAYER_CHAIN_3_END:
 //                        if (Utils::isFrameCount(3)) {
                         if (Utils::isFrameCount(2)) {
-                            playGameVars.player.decPlayerPosition(true);
+                            playGameVars.player.decPlayerPosition(this->gameStats.viewSize, true);
                         }
                         break;
 
                     case PLAYER_CHAIN_MOVE_TO_EXIT_0 ... PLAYER_CHAIN_MOVE_TO_EXIT_END:
 //                        if (Utils::isFrameCount(2)) {
-                            playGameVars.player.incPlayerPosition();
+                            playGameVars.player.incPlayerPosition(this->gameStats.viewSize);
 //                        }
                         break;
 
                 }
 
-                bool exitComplete = playGameVars.kong.updatePosition();
+                bool exitComplete = playGameVars.kong.updatePosition(this->gameStats.viewSize);
 
                 if (exitComplete) {
 
                     playGameVars.kong.reset();
-                    playGameVars.player.setPosition(0);
+                    playGameVars.player.setPosition(this->gameStats.viewSize, 0);
                     playGameVars.exitSequence = false;
 
                     playGame_ScrollToBottom(false);
@@ -322,8 +322,8 @@ void Game::playGame_Update() {
 
                 bool updateChains = playGameVars.kong.updateChains();
 
-                playGameVars.lowerClappers.updatePositions();
-                playGameVars.upperClappers.updatePositions();
+                playGameVars.lowerClappers.updatePositions(this->gameStats.viewSize);
+                playGameVars.upperClappers.updatePositions(this->gameStats.viewSize);
                 playGameVars.key.updatePosition();
                 playGameVars.birds.updatePositions();
 
@@ -356,7 +356,7 @@ void Game::playGame_Update() {
 
         #ifndef IGNORE_COLLISIONS
                 
-            Rect playerRect = playGameVars.player.getRect();
+            Rect playerRect = playGameVars.player.getRect(this->gameStats.viewSize);
 
             for (uint8_t i = 0; i < NUMBER_OF_ENTITIES; i++) {
 
@@ -364,7 +364,7 @@ void Game::playGame_Update() {
 
                 if (lowerClapper.isEnabled()) {
 
-                    Rect clapperRect = lowerClapper.getRect(yOffset, gameStats.mode);
+                    Rect clapperRect = lowerClapper.getRect(this->gameStats.viewSize, yOffset, gameStats.mode);
 
                     if (Utils::collide(playerRect, clapperRect)) {
 
@@ -378,7 +378,7 @@ void Game::playGame_Update() {
 
                 if (upperClapper.isEnabled()) {
 
-                    Rect clapperRect = upperClapper.getRect(yOffset, gameStats.mode);
+                    Rect clapperRect = upperClapper.getRect(this->gameStats.viewSize, yOffset, gameStats.mode);
 
                     if (Utils::collide(playerRect, clapperRect)) {
 
@@ -395,7 +395,7 @@ void Game::playGame_Update() {
 
                     if (lowerSpark.isEnabled()) {
 
-                        Rect sparkRect = lowerSpark.getRect(yOffset, gameStats.mode);
+                        Rect sparkRect = lowerSpark.getRect(this->gameStats.viewSize, yOffset, gameStats.mode);
 
                         if (Utils::collide(playerRect, sparkRect)) {
 
@@ -411,7 +411,7 @@ void Game::playGame_Update() {
 
                 if (upperSpark.isEnabled()) {
 
-                    Rect sparkRect = upperSpark.getRect(yOffset, gameStats.mode);
+                    Rect sparkRect = upperSpark.getRect(this->gameStats.viewSize, yOffset, gameStats.mode);
 
                     if (Utils::collide(playerRect, sparkRect)) {
 
@@ -425,7 +425,7 @@ void Game::playGame_Update() {
 
                 if (bird.isEnabled()) {
 
-                    Rect birdRect = bird.getRect(yOffset, gameStats.mode);
+                    Rect birdRect = bird.getRect(this->gameStats.viewSize, yOffset, gameStats.mode);
 
                     if (Utils::collide(playerRect, birdRect)) {
 
@@ -506,7 +506,7 @@ void Game::playGame_Update() {
 
         case 1:
             if (gameStats.numberOfLivesLeft > 0) {
-                playGameVars.player.reset();
+                playGameVars.player.reset(this->gameStats.viewSize);
                 playGameVars.playing = true;
                 gameStats.numberOfLivesLeft--;
             }
@@ -530,7 +530,7 @@ void Game::playGame_Update() {
 
             playGameVars.playing = true;
             playGameVars.introDelay = 0;
-            playGameVars.player.reset();
+            playGameVars.player.reset(this->gameStats.viewSize);
             gameStats.numberOfLivesLeft--;
 
             if (PC::buttons.pressed(BTN_A)) {
@@ -558,7 +558,7 @@ void Game::playGame_CheckLastKey(uint8_t chain) {
 
     if (gameStats.mode == GameMode::Easy) {
 
-        playGameVars.upperClappers.reset(54);
+        playGameVars.upperClappers.reset(this->gameStats.viewSize, 54);
         playGameVars.birds.reset();                            
         
     }
@@ -573,8 +573,8 @@ void Game::playGame_CheckLastKey(uint8_t chain) {
 
     }
 
-    playGameVars.lowerClappers.reset(107);
-    playGameVars.upperClappers.reset(54);
+    playGameVars.lowerClappers.reset(this->gameStats.viewSize, 107);
+    playGameVars.upperClappers.reset(this->gameStats.viewSize, 54);
     playGameVars.lowerSparks.reset(Coordinates::LowerSpark);
     playGameVars.upperSparks.reset(Coordinates::UpperSpark);
     playGameVars.birds.reset();

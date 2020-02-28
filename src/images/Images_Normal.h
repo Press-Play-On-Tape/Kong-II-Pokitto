@@ -2,17 +2,17 @@
 
 namespace Images_Normal {
 
-    #include "birds/Birds.h"
-    #include "clappers/Clappers.h"
-    #include "keys/Keys.h"
-    #include "kong/Kong.h"
+    #include "birds/normal/Birds.h"
+    #include "clappers/normal/Clappers.h"
+    #include "keys/normal/Keys.h"
+    #include "kong/normal/Kong.h"
     #include "player/normal/Player.h"
     #include "scenery/normal/Scenerys.h"
-    #include "sparks/Sparks.h"
+    #include "sparks/normal/Sparks.h"
     #include "ppot/PPOT.h"
     #include "title/TitleScreen.h"
-    #include "others/Others.h"
-    #include "numbers/Numbers.h"
+    #include "others/normal/Others.h"
+    #include "numbers/normal/Numbers.h"
 
     const uint8_t * const PROGMEM Numbers[] = { 
     Number_0,

@@ -13,7 +13,6 @@ using PS = Pokitto::Sound;
 void Game::playGame_Render() {
 
     const uint8_t yOffset = playGameVars.player.getYOffset();
-printf("%i\n", yOffset);
 
 
     // Draw Scenery ..
@@ -132,7 +131,6 @@ printf("%i\n", yOffset);
 
     }
 
-
     // Draw Kong
 
     if (playGameVars.kong.getEnabled()) {
@@ -154,7 +152,12 @@ printf("%i\n", yOffset);
             uint8_t y = lowerClapper.getYPosition(this->gameStats.viewSize, yOffset);
             uint8_t index = lowerClapper.getImage(this->gameStats.viewSize);
 
-            PD::drawBitmap(x, y, Images_Normal::Clappers[index]);
+            if (this->gameStats.viewSize == ViewSize::Normal) {
+                PD::drawBitmap(x, y, Images_Normal::Clappers[index]);
+            }
+            else {
+                PD::drawBitmap(x, y, Images_Large::Clappers[index]);    
+            }
 
         }
 
@@ -166,7 +169,12 @@ printf("%i\n", yOffset);
             uint8_t y = upperClapper.getYPosition(this->gameStats.viewSize, yOffset);
             uint8_t index = upperClapper.getImage(this->gameStats.viewSize);
 
-            PD::drawBitmap(x, y, Images_Normal::Clappers[index]);
+            if (this->gameStats.viewSize == ViewSize::Normal) {
+                PD::drawBitmap(x, y, Images_Normal::Clappers[index]);
+            }
+            else {
+                PD::drawBitmap(x, y, Images_Large::Clappers[index]);    
+            }
 
         }
 
@@ -179,7 +187,14 @@ printf("%i\n", yOffset);
             uint8_t index = lowerSpark.getImage();
 
             if (static_cast<SparkImage>(index) != SparkImage::None) {
-                PD::drawBitmap(x, y, Images_Normal::Spark[index]);
+
+                if (this->gameStats.viewSize == ViewSize::Normal) {
+                    PD::drawBitmap(x, y, Images_Normal::Spark[index]);
+                }
+                else {
+                    PD::drawBitmap(x, y, Images_Large::Spark[index]);    
+                }
+
             }
 
         }
@@ -193,7 +208,14 @@ printf("%i\n", yOffset);
             uint8_t index = upperSpark.getImage();
 
             if (static_cast<SparkImage>(index) != SparkImage::None) {
-                PD::drawBitmap(x, y, Images_Normal::Spark[index]);
+
+                if (this->gameStats.viewSize == ViewSize::Normal) {
+                    PD::drawBitmap(x, y, Images_Normal::Spark[index]);
+                }
+                else {
+                    PD::drawBitmap(x, y, Images_Large::Spark[index]);    
+                }
+
             }
 
         }
@@ -208,7 +230,12 @@ printf("%i\n", yOffset);
 
             if (static_cast<BirdImage>(index) != BirdImage::None) {
 
-                PD::drawBitmap(x, y, Images_Normal::Birds[index]);
+                if (this->gameStats.viewSize == ViewSize::Normal) {
+                    PD::drawBitmap(x, y, Images_Normal::Birds[index]);
+                }
+                else {
+                    PD::drawBitmap(x, y, Images_Large::Birds[index]);    
+                }
 
             }
 
@@ -248,10 +275,15 @@ printf("%i\n", yOffset);
 void Game::playGame_RenderKong(uint8_t yOffset) {
 
     uint8_t x = playGameVars.kong.getXPosition(this->gameStats.viewSize);
-    uint8_t y = playGameVars.kong.getYPosition(this->gameStats.viewSize, yOffset);
+    int8_t y = playGameVars.kong.getYPosition(this->gameStats.viewSize, yOffset);
     KongImage image = playGameVars.kong.getImage();
 
-    PD::drawBitmap(x, y, Images_Normal::Kong[static_cast<uint8_t>(image)]);
+    if (this->gameStats.viewSize == ViewSize::Normal) {
+        PD::drawBitmap(x, y, Images_Normal::Kong[static_cast<uint8_t>(image)]);
+    }
+    else {
+        PD::drawBitmap(x, y, Images_Large::Kong[static_cast<uint8_t>(image)]);
+    }
     
     if (this->gameStats.viewSize == ViewSize::Normal) {
 
@@ -271,14 +303,17 @@ void Game::playGame_RenderKong(uint8_t yOffset) {
     }
     else {
 
-        const uint8_t xPos[] = { 30, 47, 76, 83 };
-        const uint8_t yPos[] = { 6, 11, 11, 6 };
+        // const uint8_t xPos[] = { 30, 47, 76, 83 };
+        // const uint8_t yPos[] = { 6, 11, 11, 6 };
+//        const uint8_t xPos[] = { 60, 94, 152, 166 };
+        const uint8_t xPos[] = { 46, 81, 138, 153 };
+        const uint8_t yPos[] = { 12, 22, 22, 12 };
         
         for (uint8_t i = 0; i < 4 ; i++) {
 
             if (playGameVars.kong.getDisplayChain(i)) {
 
-                PD::drawBitmap(xPos[i], yPos[i] - yOffset, Images_Normal::Lock_Chains[i]);
+                PD::drawBitmap(xPos[i], yPos[i] - yOffset, Images_Large::Lock_Chains[i]);
 
             }
 
@@ -302,16 +337,37 @@ void Game::playGame_RenderKey(uint8_t yOffset) {
         uint8_t y = playGameVars.key.getYPosition(this->gameStats.viewSize, yOffset);
         uint8_t index = playGameVars.key.getImage();
 
-        if (index == NO_IMAGE) {
+        if (this->gameStats.viewSize == ViewSize::Normal) {
 
-            index = Utils::getFrameCount(59) / 15;
-            PD::drawBitmap(x, y, Images_Normal::Key_Spin[index]);
+            if (index == NO_IMAGE) {
+                
+                index = Utils::getFrameCount(59) / 15;
+                PD::drawBitmap(x, y, Images_Normal::Key_Spin[index]);
+
+            }
+            else {
+
+                if (playGameVars.key.getDisplay()) {
+                    PD::drawBitmap(x, y, Images_Normal::Key_Rotate[index]);
+                }
+
+            }
 
         }
         else {
 
-            if (playGameVars.key.getDisplay()) {
-                PD::drawBitmap(x, y, Images_Normal::Key_Rotate[index]);
+            if (index == NO_IMAGE) {
+                
+                index = Utils::getFrameCount(59) / 15;
+                PD::drawBitmap(x, y, Images_Large::Key_Spin[index]);
+
+            }
+            else {
+
+                if (playGameVars.key.getDisplay()) {
+                    PD::drawBitmap(x, y, Images_Large::Key_Rotate[index]);
+                }
+
             }
 
         }

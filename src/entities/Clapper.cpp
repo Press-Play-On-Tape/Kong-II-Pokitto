@@ -10,7 +10,7 @@ int16_t Clapper::getXPosition(ViewSize viewSize) {
         return this->x + VIEW_NORMAL_X_OFFSET;
     }
     else {
-        return this->x;
+        return this->x - 18;
     }
 
 }
@@ -46,33 +46,75 @@ bool Clapper::isEnabled() {
 
 }
 
-void Clapper::setEnabled(bool enabled) {
+void Clapper::setEnabled(ViewSize viewSize, bool enabled) {
 
     this->enabled = enabled;
-    this->x = 126;
 
-}
-
-void Clapper::setY(uint8_t y) {
-
-    this->y = y;
-
-}
-
-void Clapper::updatePosition() {
-
-    if (x > -7) x--;
-    if (x == -7) enabled = false;
-
-}
-
-Rect Clapper::getRect(uint8_t yOffset, GameMode mode) {
-
-    if (mode == GameMode::Easy) {
-        return Rect{this->x + 2, this->y - yOffset + 2, 5, 3 };
+    if (viewSize == ViewSize::Normal) {
+        this->x = 126;
     }
     else {
-        return Rect{this->x + 1, this->y - yOffset + 1, 7, 5 };
+        this->x = 126 * 2;
+    }
+
+}
+
+void Clapper::setY(ViewSize viewSize, uint8_t y) {
+
+    if (viewSize == ViewSize::Normal) {
+
+        this->y = y;
+
+    }
+    else {
+
+        this->y = y * 2;
+
+    }
+
+}
+
+void Clapper::updatePosition(ViewSize viewSize) {
+
+    if (viewSize == ViewSize::Normal) {
+
+        if (x > -7) x--;
+        if (x == -7) enabled = false;
+
+    }
+    else {
+
+        if (x > -14) x = x - 2;
+        if (x == -14) enabled = false;
+
+    }
+
+}
+
+Rect Clapper::getRect(ViewSize viewSize, uint8_t yOffset, GameMode mode) {
+
+    int16_t x = this->getXPosition(viewSize);
+    uint8_t y = this->getYPosition(viewSize, yOffset);
+
+    if (viewSize == ViewSize::Normal) {
+
+        if (mode == GameMode::Easy) {
+            return Rect{x + 2, y + 2, 5, 3 };
+        }
+        else {
+            return Rect{x + 1, y + 1, 7, 5 };
+        }
+
+    }
+    else {
+
+        if (mode == GameMode::Easy) {
+            return Rect{x + 4, y + 4, 10, 6 };
+        }
+        else {
+            return Rect{x + 2, y + 2, 14, 10 };
+        }
+
     }
 
 }

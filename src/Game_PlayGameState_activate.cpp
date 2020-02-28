@@ -11,7 +11,7 @@ using PS = Pokitto::Sound;
 //
 void Game::playGame_Activate() {
 
-    playGameVars.player.reset();
+    playGameVars.player.reset(this->gameStats.viewSize);
 
     playGameVars.clappersLowerDelay = (gameStats.mode == GameMode::Easy ? CLAPPERS_LOWER_MAX_EASY : CLAPPERS_LOWER_MAX_HARD);
     playGameVars.clappersUpperDelay = (gameStats.mode == GameMode::Easy ? CLAPPERS_UPPER_MAX_EASY : CLAPPERS_UPPER_MAX_HARD);
@@ -20,10 +20,10 @@ void Game::playGame_Activate() {
     playGameVars.birdsDelay = (gameStats.mode == GameMode::Easy ? BIRDS_MAX_EASY : BIRDS_MAX_HARD);
 
     playGameVars.lowerClappers.setDelayMax(playGameVars.clappersLowerDelay, true);
-    playGameVars.lowerClappers.reset(107);
+    playGameVars.lowerClappers.reset(this->gameStats.viewSize, 107);
 
     playGameVars.upperClappers.setDelayMax(playGameVars.clappersUpperDelay, true);
-    playGameVars.upperClappers.reset(54);
+    playGameVars.upperClappers.reset(this->gameStats.viewSize, 54);
 
     playGameVars.lowerSparks.setDelayMax(playGameVars.sparksUpperDelay, true);
     playGameVars.lowerSparks.reset(Coordinates::LowerSpark);

@@ -66,8 +66,6 @@ enum class GameStateType : uint8_t {
 	TitleScreen,
     PlayGame_Activate,
     PlayGame,
-    HighScore_Activate,
-    HighScore,
 };
 
 enum class Background : uint8_t {

@@ -12,7 +12,7 @@ class Kong {
 
         KongImage getImage();
         uint8_t getXPosition(ViewSize viewSize);
-        uint8_t getYPosition(ViewSize viewSize, uint8_t yOffset);
+        int8_t getYPosition(ViewSize viewSize, uint8_t yOffset);
         bool getChain(uint8_t index);
         bool getFlashChain(uint8_t index);
         bool getExit();
@@ -25,8 +25,8 @@ class Kong {
         void setExit(bool value);
         void setEnabled(bool value);
 
-        bool updateChains();                    // Returns true if all 4 chains gone.
-        bool updatePosition();                  // Returns tru if exit sequence is complete.
+        bool updateChains();                                    // Returns true if all 4 chains gone.
+        bool updatePosition(ViewSize viewSize);                 // Returns tru if exit sequence is complete.
         bool getDisplayChain(uint8_t index);
         void reset();
 

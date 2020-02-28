@@ -15,7 +15,7 @@ uint8_t Kong::getXPosition(ViewSize viewSize) {
         }
         else {
     
-            return pgm_read_byte(&Coordinates::Kong_Exit[(this->position * 3)]) + VIEW_NORMAL_X_OFFSET;
+            return Coordinates::Kong_Exit[(this->position * 3)] + VIEW_NORMAL_X_OFFSET;
 
         }
 
@@ -24,12 +24,12 @@ uint8_t Kong::getXPosition(ViewSize viewSize) {
 
         if (!this->enabled) {
 
-            return 52;
+            return 76;
 
         }
         else {
     
-            return pgm_read_byte(&Coordinates::Kong_Exit[(this->position * 3)]);
+            return (Coordinates::Kong_Exit[(this->position * 3)] * 2) - 14;
 
         }
 
@@ -46,14 +46,14 @@ KongImage Kong::getImage() {
     }
     else {
  
-        return static_cast<KongImage>(pgm_read_byte(&Coordinates::Kong_Exit[(this->position * 3) + 2]));
+        return static_cast<KongImage>(Coordinates::Kong_Exit[(this->position * 3) + 2]);
 
     }
 
 }
 
 
-uint8_t Kong::getYPosition(ViewSize viewSize, uint8_t yOffset) {
+int8_t Kong::getYPosition(ViewSize viewSize, uint8_t yOffset) {
 
     if (viewSize == ViewSize::Normal) {
             
@@ -64,7 +64,7 @@ uint8_t Kong::getYPosition(ViewSize viewSize, uint8_t yOffset) {
         }
         else {
     
-            int8_t y = pgm_read_byte(&Coordinates::Kong_Exit[(this->position * 3) + 1]);
+            int8_t y = Coordinates::Kong_Exit[(this->position * 3) + 1];
             return y + VIEW_NORMAL_Y_UPPER_OFFSET;
 
         }
@@ -79,7 +79,7 @@ uint8_t Kong::getYPosition(ViewSize viewSize, uint8_t yOffset) {
         }
         else {
     
-            int8_t y = pgm_read_byte(&Coordinates::Kong_Exit[(this->position * 3) + 1]);
+            int8_t y = Coordinates::Kong_Exit[(this->position * 3) + 1] * 2;
             return y - yOffset;
 
         }
@@ -194,14 +194,21 @@ bool Kong::updateChains() {
 
 }
 
-bool Kong::updatePosition() {
+bool Kong::updatePosition(ViewSize viewSize) {
 
     if (!this->enabled) return false;
 
     this->position++;
 
-    uint8_t x = pgm_read_byte(&Coordinates::Kong_Exit[(this->position * 3)]);
-    uint8_t y = pgm_read_byte(&Coordinates::Kong_Exit[(this->position * 3) + 1]);
+    uint8_t x = Coordinates::Kong_Exit[(this->position * 3)];
+    uint8_t y = Coordinates::Kong_Exit[(this->position * 3) + 1];
+
+    if (viewSize == ViewSize::Large) {
+
+        x = x * 2;
+        y = y * 2;
+
+    }
 
     if (x == 0 && y == 0) {
 

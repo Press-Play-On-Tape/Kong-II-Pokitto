@@ -29,7 +29,6 @@ void Game::loop(void) {
         case GameStateType::SplashScreen:
             splashScreen_Update();
             splashScreen_Render();
-            //arduboy.displayWithBackground(Background::Black);
             break;
 
         case GameStateType::TitleScreen_Activate:
@@ -40,7 +39,6 @@ void Game::loop(void) {
         case GameStateType::TitleScreen:
             titleScreen_Update();
             titleScreen_Render();
-            //arduboy.displayWithBackground(Background::Black);
             break;
 
         case GameStateType::PlayGame_Activate:
@@ -51,18 +49,6 @@ void Game::loop(void) {
         case GameStateType::PlayGame:
             playGame_Update();
             playGame_Render();
-//            arduboy.displayWithBackground(Background::None);
-            break;
-
-        case GameStateType::HighScore_Activate:
-            highScore_Activate();
-            gameState = GameStateType::HighScore;
-            [[fallthrough]];
-
-        case GameStateType::HighScore:
-            highScore_Update();
-            highScore_Render();
-//            arduboy.displayWithBackground(Background::White);
             break;
 
         default: break;

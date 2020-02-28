@@ -24,7 +24,7 @@ class Player {
         bool isFalling();
         bool getExit();
 
-        void setPosition(uint16_t position);
+        void setPosition(ViewSize viewSize, uint16_t position);
         void setJumpPosition(uint8_t jumpPosition);
         void setDead(bool dead);
         void setFalling(bool falling);
@@ -36,8 +36,8 @@ class Player {
         uint8_t getImage();
         uint8_t getImage(bool update);
 
-        void incPlayerPosition();
-        void decPlayerPosition(bool exitSequence);
+        void incPlayerPosition(ViewSize viewSize);
+        void decPlayerPosition(ViewSize viewSize, bool exitSequence);
 
         bool canMove(Movements movement);
         void updateJump();
@@ -45,9 +45,9 @@ class Player {
         bool isJumping();
         bool atTopOfJump();
         bool canGrabChain();
-        void reset();
+        void reset(ViewSize viewSize);
 
-        Rect getRect();
+        Rect getRect(ViewSize viewSize);
 
     protected:
 
@@ -55,7 +55,7 @@ class Player {
         uint8_t jumpPosition;
         uint8_t movements;
 
-        int8_t prevXPosition;
+        uint8_t prevXPosition;
         uint8_t runCounter;
         uint8_t prevImage;
         Movements runMovement = Movements::Right;

@@ -20,7 +20,7 @@ const uint8_t PROGMEM jumpPositions[JUMP_POSITIONS] = {
 
 Player::Player() { 
 
-    this->setPosition(0);
+//    this->setPosition(0);
 
 }
 
@@ -59,7 +59,7 @@ uint8_t Player::getXPosition(ViewSize viewSize, bool updatePrevPosition) {
                 return this->playerData.x - 3 + VIEW_NORMAL_X_OFFSET;
 
             default:
-                Coordinates::readPlayerData(this->playerData, this->getPosition());
+                Coordinates::readPlayerData(viewSize, this->playerData, this->getPosition());
                 return this->playerData.x + VIEW_NORMAL_X_OFFSET;
 
         }
@@ -74,20 +74,20 @@ uint8_t Player::getXPosition(ViewSize viewSize, bool updatePrevPosition) {
         switch (this->playerData.stance) {
 
             case Stance::OnRope_01:
-                return this->playerData.x + 7;
+                return (this->playerData.x + 1);
 
             case Stance::OnRope_02:
-                return this->playerData.x + 6;
+                return (this->playerData.x - 1);
 
             case Stance::OnRope_03:
-                return this->playerData.x - 2;
+                return (this->playerData.x - 17);
 
             case Stance::OnRope_04:
-                return this->playerData.x - 3;
+                return (this->playerData.x - 18);
 
             default:
-                Coordinates::readPlayerData(this->playerData, this->getPosition());
-                return this->playerData.x + 9;
+                Coordinates::readPlayerData(viewSize, this->playerData, this->getPosition());
+                return (this->playerData.x - 14);
 
         }
 
@@ -99,7 +99,7 @@ uint8_t Player::getYPosition(ViewSize viewSize) {
 
     if (viewSize == ViewSize::Normal) {
 
-        int8_t y = this->playerData.y - pgm_read_byte(&jumpPositions[this->jumpPosition]);
+        uint8_t y = this->playerData.y - jumpPositions[this->jumpPosition];
 
         if (y < 63) {
             y = y + VIEW_NORMAL_Y_UPPER_OFFSET;
@@ -114,7 +114,7 @@ uint8_t Player::getYPosition(ViewSize viewSize) {
     }
     else {
 
-        int8_t y = this->playerData.y - this->playerData.yOffset - pgm_read_byte(&jumpPositions[this->jumpPosition]);
+        int8_t y = this->playerData.y - this->playerData.yOffset - (jumpPositions[this->jumpPosition] * 2);
         return y;
 
     }
@@ -151,11 +151,11 @@ bool Player::getExit() {
 
 }
 
-void Player::setPosition(uint16_t position) {
+void Player::setPosition(ViewSize viewSize, uint16_t position) {
 
     this->position = position;
     this->jumpPosition = 0;
-    Coordinates::readPlayerData(this->playerData, this->getPosition());
+    Coordinates::readPlayerData(viewSize, this->playerData, this->getPosition());
 
 }
 
@@ -183,20 +183,20 @@ void Player::setExit(bool exit) {
 
 }
 
-void Player::incPlayerPosition() {
+void Player::incPlayerPosition(ViewSize viewSize) {
 
     this->prevXPosition = this->playerData.x;
     this->position++;
-    Coordinates::readPlayerData(this->playerData, this->getPosition());
+    Coordinates::readPlayerData(viewSize, this->playerData, this->getPosition());
 
 }
 
-void Player::decPlayerPosition(bool exitSequence) {
+void Player::decPlayerPosition(ViewSize viewSize, bool exitSequence) {
 
     this->prevXPosition = this->playerData.x;
     this->position--;
 
-    Coordinates::readPlayerData(this->playerData, this->getPosition());
+    Coordinates::readPlayerData(viewSize, this->playerData, this->getPosition());
 
     if (this->playerData.stance == Stance::Falling_01 || this->playerData.stance == Stance::Falling_02) {
 
@@ -256,7 +256,7 @@ void Player::decPlayerPosition(bool exitSequence) {
 
         if (!this->falling) {
 
-            Coordinates::readPlayerData(this->playerData, this->getPosition());
+            Coordinates::readPlayerData(viewSize, this->playerData, this->getPosition());
 
         }
 
@@ -411,54 +411,85 @@ uint8_t Player::getImage(bool update) {
 }
 
 
-Rect Player::getRect() {
+Rect Player::getRect(ViewSize viewSize) {
 
-    int8_t y = this->playerData.y - this->playerData.yOffset - pgm_read_byte(&jumpPositions[this->jumpPosition]);
+    uint8_t x = this->getXPosition(viewSize, false);
+    uint8_t y = this->getYPosition(viewSize);
 
-    switch (static_cast<Stance>(this->getImage(false))) {
+    if (viewSize == ViewSize::Normal) {
 
-        case Stance::Normal ... Stance::Normal_RHS:
-            return Rect {this->playerData.x + 5, y + 1, 8, 10};
+        switch (static_cast<Stance>(this->getImage(false))) {
 
-        case Stance::Running_01 ... Stance::Running_02_RHS:
-            return Rect {this->playerData.x + 1, y + 1, 16, 10};
+            case Stance::Normal ... Stance::Normal_RHS:
+                return Rect {x + 4, y + 1, 9, 10};
 
-        // case Stance::OnRope_01 ... Stance::OnRope_04:
-        //     return Rect {this->playerData.x + 1, y + 1, 12, 11};
+            case Stance::Running_01 ... Stance::Running_02_RHS:
+                return Rect {x + 1, y + 1, 16, 10};
 
-        case Stance::OnRope_01:
-            //return this->playerData.x + 7;
-            return Rect {this->playerData.x + 8, y + 1, 12, 11};
+            case Stance::OnRope_01:
+                return Rect {x + 1, y + 1, 12, 11};
 
-        case Stance::OnRope_02:
-            //return this->playerData.x + 6;
-            return Rect {this->playerData.x + 7, y + 1, 12, 11};
+            case Stance::OnRope_02:
+                return Rect {x + 1, y + 1, 12, 11};
 
-        case Stance::OnRope_03:
-            //return this->playerData.x - 2;
-            return Rect {this->playerData.x - 1, y + 1, 12, 11};
+            case Stance::OnRope_03:
+                return Rect {x + 1, y + 1, 12, 11};
 
-        case Stance::OnRope_04:
-            //return this->playerData.x - 3;
-            return Rect {this->playerData.x - 2, y + 1, 12, 11};
+            case Stance::OnRope_04:
+                return Rect {x + 1, y + 1, 12, 11};
 
+            case Stance::Falling_01 ... Stance::Falling_02:
+                return Rect {x + 3, y + 1, 16, 10};
 
-        case Stance::Falling_01 ... Stance::Falling_02:
-            return Rect {this->playerData.x + 1, y + 1, 16, 10};
+            case Stance::Climbing_Vine_01 ... Stance::Climbing_Vine_02:
+                return Rect {x + 1, y + 1, 14, 12};
 
-        case Stance::Climbing_Vine_01 ... Stance::Climbing_Vine_02:
-            return Rect {this->playerData.x + 1, y + 1, 14, 12};
+            default: // case Stance::Jump:
+                return Rect {x + 1, y + 1, 16, 10};
 
-        default: // case Stance::Jump:
-            return Rect {this->playerData.x + 1, y + 1, 16, 10};
+        }
+
+    }
+    else {
+
+        switch (static_cast<Stance>(this->getImage(false))) {
+
+            case Stance::Normal ... Stance::Normal_RHS:
+                return Rect {x + 8, y + 2, 19, 22};
+
+            case Stance::Running_01 ... Stance::Running_02_RHS:
+                return Rect {x + 2, y + 2, 32, 21};
+
+            case Stance::OnRope_01:
+                return Rect {x + 2, y + 2, 24, 22};
+
+            case Stance::OnRope_02:
+                return Rect {x + 2, y + 2, 24, 22};
+
+            case Stance::OnRope_03:
+                return Rect {x + 2, y + 2, 24, 22};
+
+            case Stance::OnRope_04:
+                return Rect {x + 1, y + 2, 24, 22};
+
+            case Stance::Falling_01 ... Stance::Falling_02:
+                return Rect {x + 2, y + 2, 32, 20};
+
+            case Stance::Climbing_Vine_01 ... Stance::Climbing_Vine_02:
+                return Rect {x + 2, y + 2, 28, 24};
+
+            default: // case Stance::Jump:
+                return Rect {x + 2, y + 2, 31, 21};
+
+        }
 
     }
 
 }
 
-void Player::reset() {
+void Player::reset(ViewSize viewSize) {
 
-    this->setPosition(0);
+    this->setPosition(viewSize, 0);
     this->setJumpPosition(0);
     this->dead = false;
     this->falling = false;

@@ -4288,6 +4288,738 @@
 		},
 		"/src/images/player/normal/Jnr_Walking_R_F2.png": {
 			"sdcard": false
+		},
+		"/src/images/untitled folder": {
+			"sdcard": false
+		},
+		"/src/images/normal": {
+			"sdcard": false
+		},
+		"/src/images/numbers/normal": {
+			"sdcard": false
+		},
+		"/src/images/numbers/untitled folder": {
+			"sdcard": false
+		},
+		"/src/images/numbers/large": {
+			"sdcard": false
+		},
+		"/src/images/numbers/large/Number_0.h": {
+			"sdcard": false
+		},
+		"/src/images/numbers/large/Number_0.png": {
+			"sdcard": false
+		},
+		"/src/images/numbers/large/Number_1.h": {
+			"sdcard": false
+		},
+		"/src/images/numbers/large/Number_1.png": {
+			"sdcard": false
+		},
+		"/src/images/numbers/large/Number_4.h": {
+			"sdcard": false
+		},
+		"/src/images/numbers/large/Number_4.png": {
+			"sdcard": false
+		},
+		"/src/images/numbers/large/Number_6.png": {
+			"sdcard": false
+		},
+		"/src/images/numbers/large/Number_7.h": {
+			"sdcard": false
+		},
+		"/src/images/numbers/large/Number_7.png": {
+			"sdcard": false
+		},
+		"/src/images/numbers/large/Number_9.png": {
+			"sdcard": false
+		},
+		"/src/images/numbers/large/Numbers.h": {
+			"sdcard": false
+		},
+		"/src/images/numbers/large/Number_2.h": {
+			"sdcard": false
+		},
+		"/src/images/numbers/large/Number_2.png": {
+			"sdcard": false
+		},
+		"/src/images/numbers/large/Number_3.h": {
+			"sdcard": false
+		},
+		"/src/images/numbers/large/Number_3.png": {
+			"sdcard": false
+		},
+		"/src/images/numbers/large/Number_9.h": {
+			"sdcard": false
+		},
+		"/src/images/numbers/normal/Number_0.h": {
+			"sdcard": false
+		},
+		"/src/images/numbers/normal/Number_0.png": {
+			"sdcard": false
+		},
+		"/src/images/numbers/normal/Number_1.h": {
+			"sdcard": false
+		},
+		"/src/images/numbers/normal/Number_1.png": {
+			"sdcard": false
+		},
+		"/src/images/numbers/normal/Number_2.h": {
+			"sdcard": false
+		},
+		"/src/images/numbers/normal/Number_2.png": {
+			"sdcard": false
+		},
+		"/src/images/numbers/normal/Number_3.h": {
+			"sdcard": false
+		},
+		"/src/images/numbers/normal/Number_3.png": {
+			"sdcard": false
+		},
+		"/src/images/numbers/normal/Number_4.h": {
+			"sdcard": false
+		},
+		"/src/images/numbers/large/Number_5.png": {
+			"sdcard": false
+		},
+		"/src/images/numbers/large/Number_8.png": {
+			"sdcard": false
+		},
+		"/src/images/numbers/large/Number_6.h": {
+			"sdcard": false
+		},
+		"/src/images/numbers/large/Number_5.h": {
+			"sdcard": false
+		},
+		"/src/images/numbers/large/Number_8.h": {
+			"sdcard": false
+		},
+		"/src/images/numbers/normal/Number_4.png": {
+			"sdcard": false
+		},
+		"/src/images/numbers/normal/Number_5.h": {
+			"sdcard": false
+		},
+		"/src/images/numbers/normal/Number_6.h": {
+			"sdcard": false
+		},
+		"/src/images/numbers/normal/Number_5.png": {
+			"sdcard": false
+		},
+		"/src/images/numbers/normal/Number_7.h": {
+			"sdcard": false
+		},
+		"/src/images/numbers/normal/Number_6.png": {
+			"sdcard": false
+		},
+		"/src/images/numbers/normal/Number_7.png": {
+			"sdcard": false
+		},
+		"/src/images/numbers/normal/Number_8.h": {
+			"sdcard": false
+		},
+		"/src/images/numbers/normal/Number_8.png": {
+			"sdcard": false
+		},
+		"/src/images/numbers/normal/Number_9.h": {
+			"sdcard": false
+		},
+		"/src/images/numbers/normal/Number_9.png": {
+			"sdcard": false
+		},
+		"/src/images/numbers/normal/Numbers.h": {
+			"sdcard": false
+		},
+		"/src/images/others/untitled folder": {
+			"sdcard": false
+		},
+		"/src/images/others/ormal": {
+			"sdcard": false
+		},
+		"/src/images/others/normal": {
+			"sdcard": false
+		},
+		"/src/images/others/large": {
+			"sdcard": false
+		},
+		"/src/images/others/large/GameA.h": {
+			"sdcard": false
+		},
+		"/src/images/others/large/GameA.png": {
+			"sdcard": false
+		},
+		"/src/images/others/large/GameB.h": {
+			"sdcard": false
+		},
+		"/src/images/others/large/GameB.png": {
+			"sdcard": false
+		},
+		"/src/images/others/large/Pause.h": {
+			"sdcard": false
+		},
+		"/src/images/others/large/Pause.png": {
+			"sdcard": false
+		},
+		"/src/images/others/large/GameOver.h": {
+			"sdcard": false
+		},
+		"/src/images/others/large/GameOver.png": {
+			"sdcard": false
+		},
+		"/src/images/others/large/Others.h": {
+			"sdcard": false
+		},
+		"/src/images/others/normal/Others.h": {
+			"sdcard": false
+		},
+		"/src/images/others/normal/Pause.h": {
+			"sdcard": false
+		},
+		"/src/images/others/normal/Pause.png": {
+			"sdcard": false
+		},
+		"/src/images/others/normal/GameA.h": {
+			"sdcard": false
+		},
+		"/src/images/others/normal/GameA.png": {
+			"sdcard": false
+		},
+		"/src/images/others/normal/GameB.h": {
+			"sdcard": false
+		},
+		"/src/images/others/normal/GameOver.h": {
+			"sdcard": false
+		},
+		"/src/images/others/normal/GameB.png": {
+			"sdcard": false
+		},
+		"/src/images/others/normal/GameOver.png": {
+			"sdcard": false
+		},
+		"/src/images/sparks/untitled folder": {
+			"sdcard": false
+		},
+		"/src/images/sparks/ormal": {
+			"sdcard": false
+		},
+		"/src/images/sparks/normal": {
+			"sdcard": false
+		},
+		"/src/images/sparks/large": {
+			"sdcard": false
+		},
+		"/src/images/sparks/large/Spark_F1.h": {
+			"sdcard": false
+		},
+		"/src/images/sparks/large/Spark_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/sparks/large/Spark_F2.h": {
+			"sdcard": false
+		},
+		"/src/images/sparks/large/Spark_F2.png": {
+			"sdcard": false
+		},
+		"/src/images/sparks/large/Sparks.h": {
+			"sdcard": false
+		},
+		"/src/images/sparks/normal/Spark_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/sparks/normal/Spark_F1.h": {
+			"sdcard": false
+		},
+		"/src/images/sparks/normal/Sparks.h": {
+			"sdcard": false
+		},
+		"/src/images/sparks/normal/Spark_F2.h": {
+			"sdcard": false
+		},
+		"/src/images/sparks/normal/Spark_F2.png": {
+			"sdcard": false
+		},
+		"/src/images/clappers/untitled folder": {
+			"sdcard": false
+		},
+		"/src/images/clappers/normal": {
+			"sdcard": false
+		},
+		"/src/images/clappers/large": {
+			"sdcard": false
+		},
+		"/src/images/clappers/large/Clappers.h": {
+			"sdcard": false
+		},
+		"/src/images/clappers/large/Clapper_F2.png": {
+			"sdcard": false
+		},
+		"/src/images/clappers/large/Clapper_F2.h": {
+			"sdcard": false
+		},
+		"/src/images/clappers/large/Clapper_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/clappers/large/Clapper_F1.h": {
+			"sdcard": false
+		},
+		"/src/images/clappers/normal/Clappers.h": {
+			"sdcard": false
+		},
+		"/src/images/clappers/normal/Clapper_F2.h": {
+			"sdcard": false
+		},
+		"/src/images/clappers/normal/Clapper_F1.h": {
+			"sdcard": false
+		},
+		"/src/images/clappers/normal/Clapper_F2.png": {
+			"sdcard": false
+		},
+		"/src/images/clappers/normal/Clapper_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/birds/large": {
+			"sdcard": false
+		},
+		"/src/images/birds/large/Birds.h": {
+			"sdcard": false
+		},
+		"/src/images/birds/large/Bird_F0.png": {
+			"sdcard": false
+		},
+		"/src/images/birds/large/Bird_F0.h": {
+			"sdcard": false
+		},
+		"/src/images/birds/large/Bird_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/birds/large/Bird_F2.h": {
+			"sdcard": false
+		},
+		"/src/images/birds/large/Bird_F2.png": {
+			"sdcard": false
+		},
+		"/src/images/birds/large/Bird_F3.png": {
+			"sdcard": false
+		},
+		"/src/images/birds/large/Bird_Turn_00.h": {
+			"sdcard": false
+		},
+		"/src/images/birds/large/Bird_Turn_00.png": {
+			"sdcard": false
+		},
+		"/src/images/birds/large/Bird_Turn_01.png": {
+			"sdcard": false
+		},
+		"/src/images/birds/large/Bird_Turn_02.h": {
+			"sdcard": false
+		},
+		"/src/images/birds/large/Bird_Turn_03.h": {
+			"sdcard": false
+		},
+		"/src/images/birds/large/Bird_Turn_04.h": {
+			"sdcard": false
+		},
+		"/src/images/birds/large/Bird_Turn_04.png": {
+			"sdcard": false
+		},
+		"/src/images/birds/large/Bird_Turn_05.h": {
+			"sdcard": false
+		},
+		"/src/images/birds/large/Bird_Turn_05.png": {
+			"sdcard": false
+		},
+		"/src/images/birds/large/Bird_Upright.h": {
+			"sdcard": false
+		},
+		"/src/images/birds/large/Bird_F1.h": {
+			"sdcard": false
+		},
+		"/src/images/birds/large/Bird_F3.h": {
+			"sdcard": false
+		},
+		"/src/images/birds/large/Bird_Turn_01.h": {
+			"sdcard": false
+		},
+		"/src/images/birds/large/Bird_Turn_02.png": {
+			"sdcard": false
+		},
+		"/src/images/birds/normal/Bird_F0.h": {
+			"sdcard": false
+		},
+		"/src/images/birds/normal/Bird_F0.png": {
+			"sdcard": false
+		},
+		"/src/images/birds/normal/Bird_F1.h": {
+			"sdcard": false
+		},
+		"/src/images/birds/normal/Bird_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/birds/normal/Bird_F2.h": {
+			"sdcard": false
+		},
+		"/src/images/birds/normal/Bird_F2.png": {
+			"sdcard": false
+		},
+		"/src/images/birds/normal/Bird_F3.h": {
+			"sdcard": false
+		},
+		"/src/images/birds/normal/Bird_F3.png": {
+			"sdcard": false
+		},
+		"/src/images/birds/large/Bird_Turn_03.png": {
+			"sdcard": false
+		},
+		"/src/images/birds/large/Bird_Upright.png": {
+			"sdcard": false
+		},
+		"/src/images/birds/normal/Bird_Turn_00.h": {
+			"sdcard": false
+		},
+		"/src/images/birds/normal/Bird_Turn_00.png": {
+			"sdcard": false
+		},
+		"/src/images/birds/normal/Bird_Turn_01.h": {
+			"sdcard": false
+		},
+		"/src/images/birds/normal/Bird_Turn_01.png": {
+			"sdcard": false
+		},
+		"/src/images/birds/normal/Bird_Turn_02.h": {
+			"sdcard": false
+		},
+		"/src/images/birds/normal/Bird_Turn_02.png": {
+			"sdcard": false
+		},
+		"/src/images/birds/normal/Bird_Turn_03.h": {
+			"sdcard": false
+		},
+		"/src/images/birds/normal/Bird_Turn_03.png": {
+			"sdcard": false
+		},
+		"/src/images/birds/normal/Bird_Turn_04.h": {
+			"sdcard": false
+		},
+		"/src/images/birds/normal/Bird_Turn_04.png": {
+			"sdcard": false
+		},
+		"/src/images/birds/normal/Bird_Turn_05.h": {
+			"sdcard": false
+		},
+		"/src/images/birds/normal/Bird_Upright.h": {
+			"sdcard": false
+		},
+		"/src/images/birds/normal/Bird_Turn_05.png": {
+			"sdcard": false
+		},
+		"/src/images/birds/normal/Bird_Upright.png": {
+			"sdcard": false
+		},
+		"/src/images/birds/normal/Birds.h": {
+			"sdcard": false
+		},
+		"/src/images/kong/untitled folder": {
+			"sdcard": false
+		},
+		"/src/images/kong/normal": {
+			"sdcard": false
+		},
+		"/src/images/kong/large": {
+			"sdcard": false
+		},
+		"/src/images/kong/large/Kong_FacingRight_F0.h": {
+			"sdcard": false
+		},
+		"/src/images/kong/large/Kong_FacingRight_F0.png": {
+			"sdcard": false
+		},
+		"/src/images/kong/large/Kong_FacingRight_F1.h": {
+			"sdcard": false
+		},
+		"/src/images/kong/large/Kong_FacingRight_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/kong/large/Kong_FacingRight_F2.h": {
+			"sdcard": false
+		},
+		"/src/images/kong/large/Kong_FacingRight_F2.png": {
+			"sdcard": false
+		},
+		"/src/images/kong/large/Kong_FacingRight_F3.h": {
+			"sdcard": false
+		},
+		"/src/images/kong/large/Kong_FacingRight_F3.png": {
+			"sdcard": false
+		},
+		"/src/images/kong/large/Kong_Falling_F0.h": {
+			"sdcard": false
+		},
+		"/src/images/kong/large/Kong_Falling_F0.png": {
+			"sdcard": false
+		},
+		"/src/images/kong/large/Kong_Falling_F1.h": {
+			"sdcard": false
+		},
+		"/src/images/kong/large/Kong_Falling_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/kong/large/Kong_Normal.h": {
+			"sdcard": false
+		},
+		"/src/images/kong/large/Kong_Normal.png": {
+			"sdcard": false
+		},
+		"/src/images/kong/large/Kong.h": {
+			"sdcard": false
+		},
+		"/src/images/kong/large/Lock_Chain_1.h": {
+			"sdcard": false
+		},
+		"/src/images/kong/large/Lock_Chain_1.png": {
+			"sdcard": false
+		},
+		"/src/images/kong/large/Lock_Chain_2.h": {
+			"sdcard": false
+		},
+		"/src/images/kong/large/Lock_Chain_2.png": {
+			"sdcard": false
+		},
+		"/src/images/kong/large/Lock_Chain_3.h": {
+			"sdcard": false
+		},
+		"/src/images/kong/large/Lock_Chain_3.png": {
+			"sdcard": false
+		},
+		"/src/images/kong/large/Lock_Chain_4.h": {
+			"sdcard": false
+		},
+		"/src/images/kong/large/Lock_Chain_4.png": {
+			"sdcard": false
+		},
+		"/src/images/kong/normal/Lock_Chain_1.h": {
+			"sdcard": false
+		},
+		"/src/images/kong/normal/Lock_Chain_1.png": {
+			"sdcard": false
+		},
+		"/src/images/kong/normal/Lock_Chain_2.h": {
+			"sdcard": false
+		},
+		"/src/images/kong/normal/Lock_Chain_3.h": {
+			"sdcard": false
+		},
+		"/src/images/kong/normal/Lock_Chain_2.png": {
+			"sdcard": false
+		},
+		"/src/images/kong/normal/Lock_Chain_3.png": {
+			"sdcard": false
+		},
+		"/src/images/kong/normal/Lock_Chain_4.h": {
+			"sdcard": false
+		},
+		"/src/images/kong/normal/Lock_Chain_4.png": {
+			"sdcard": false
+		},
+		"/src/images/kong/normal/Kong_FacingRight_F0.h": {
+			"sdcard": false
+		},
+		"/src/images/kong/normal/Kong_FacingRight_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/kong/normal/Kong_FacingRight_F0.png": {
+			"sdcard": false
+		},
+		"/src/images/kong/normal/Kong_FacingRight_F1.h": {
+			"sdcard": false
+		},
+		"/src/images/kong/normal/Kong_FacingRight_F2.h": {
+			"sdcard": false
+		},
+		"/src/images/kong/normal/Kong_FacingRight_F2.png": {
+			"sdcard": false
+		},
+		"/src/images/kong/normal/Kong_FacingRight_F3.h": {
+			"sdcard": false
+		},
+		"/src/images/kong/normal/Kong_FacingRight_F3.png": {
+			"sdcard": false
+		},
+		"/src/images/kong/normal/Kong_Falling_F0.h": {
+			"sdcard": false
+		},
+		"/src/images/kong/normal/Kong_Falling_F0.png": {
+			"sdcard": false
+		},
+		"/src/images/kong/normal/Kong.h": {
+			"sdcard": false
+		},
+		"/src/images/kong/normal/Kong_Falling_F1.h": {
+			"sdcard": false
+		},
+		"/src/images/kong/normal/Kong_Falling_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/kong/normal/Kong_Normal.h": {
+			"sdcard": false
+		},
+		"/src/images/kong/normal/Kong_Normal.png": {
+			"sdcard": false
+		},
+		"/src/images/keys/large": {
+			"sdcard": false
+		},
+		"/src/images/keys/normal": {
+			"sdcard": false
+		},
+		"/src/images/keys/large/Key_Rotate_F0.h": {
+			"sdcard": false
+		},
+		"/src/images/keys/large/Key_Rotate_F0.png": {
+			"sdcard": false
+		},
+		"/src/images/keys/large/Key_Rotate_F1.h": {
+			"sdcard": false
+		},
+		"/src/images/keys/large/Key_Rotate_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/keys/large/Key_Rotate_F2.h": {
+			"sdcard": false
+		},
+		"/src/images/keys/large/Key_Rotate_F2.png": {
+			"sdcard": false
+		},
+		"/src/images/keys/large/Key_Rotate_F3.h": {
+			"sdcard": false
+		},
+		"/src/images/keys/large/Key_Rotate_F3.png": {
+			"sdcard": false
+		},
+		"/src/images/keys/large/Key_Rotate_F4.h": {
+			"sdcard": false
+		},
+		"/src/images/keys/large/Key_Rotate_F4.png": {
+			"sdcard": false
+		},
+		"/src/images/keys/large/Key_Rotate_F5.h": {
+			"sdcard": false
+		},
+		"/src/images/keys/large/Key_Rotate_F5.png": {
+			"sdcard": false
+		},
+		"/src/images/keys/large/Key_Rotate_F6.h": {
+			"sdcard": false
+		},
+		"/src/images/keys/large/Key_Rotate_F6.png": {
+			"sdcard": false
+		},
+		"/src/images/keys/large/Key_Rotate_F7.h": {
+			"sdcard": false
+		},
+		"/src/images/keys/large/Key_Rotate_F7.png": {
+			"sdcard": false
+		},
+		"/src/images/keys/large/Key_Spin_F0.h": {
+			"sdcard": false
+		},
+		"/src/images/keys/large/Key_Spin_F0.png": {
+			"sdcard": false
+		},
+		"/src/images/keys/large/Key_Spin_F1.h": {
+			"sdcard": false
+		},
+		"/src/images/keys/large/Key_Spin_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/keys/large/Key_Spin_F2.h": {
+			"sdcard": false
+		},
+		"/src/images/keys/large/Key_Spin_F2.png": {
+			"sdcard": false
+		},
+		"/src/images/keys/large/Key_Spin_F3.h": {
+			"sdcard": false
+		},
+		"/src/images/keys/large/Key_Spin_F3.png": {
+			"sdcard": false
+		},
+		"/src/images/keys/large/Keys.h": {
+			"sdcard": false
+		},
+		"/src/images/keys/normal/Key_Rotate_F0.h": {
+			"sdcard": false
+		},
+		"/src/images/keys/normal/Key_Rotate_F0.png": {
+			"sdcard": false
+		},
+		"/src/images/keys/normal/Key_Rotate_F1.h": {
+			"sdcard": false
+		},
+		"/src/images/keys/normal/Key_Rotate_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/keys/normal/Key_Rotate_F2.h": {
+			"sdcard": false
+		},
+		"/src/images/keys/normal/Key_Rotate_F2.png": {
+			"sdcard": false
+		},
+		"/src/images/keys/normal/Key_Rotate_F3.h": {
+			"sdcard": false
+		},
+		"/src/images/keys/normal/Key_Rotate_F3.png": {
+			"sdcard": false
+		},
+		"/src/images/keys/normal/Key_Rotate_F4.h": {
+			"sdcard": false
+		},
+		"/src/images/keys/normal/Key_Rotate_F4.png": {
+			"sdcard": false
+		},
+		"/src/images/keys/normal/Key_Rotate_F5.h": {
+			"sdcard": false
+		},
+		"/src/images/keys/normal/Key_Rotate_F5.png": {
+			"sdcard": false
+		},
+		"/src/images/keys/normal/Key_Rotate_F6.h": {
+			"sdcard": false
+		},
+		"/src/images/keys/normal/Key_Rotate_F6.png": {
+			"sdcard": false
+		},
+		"/src/images/keys/normal/Key_Rotate_F7.h": {
+			"sdcard": false
+		},
+		"/src/images/keys/normal/Key_Rotate_F7.png": {
+			"sdcard": false
+		},
+		"/src/images/keys/normal/Key_Spin_F0.h": {
+			"sdcard": false
+		},
+		"/src/images/keys/normal/Key_Spin_F0.png": {
+			"sdcard": false
+		},
+		"/src/images/keys/normal/Key_Spin_F1.h": {
+			"sdcard": false
+		},
+		"/src/images/keys/normal/Key_Spin_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/keys/normal/Key_Spin_F2.h": {
+			"sdcard": false
+		},
+		"/src/images/keys/normal/Key_Spin_F2.png": {
+			"sdcard": false
+		},
+		"/src/images/keys/normal/Key_Spin_F3.h": {
+			"sdcard": false
+		},
+		"/src/images/keys/normal/Key_Spin_F3.png": {
+			"sdcard": false
+		},
+		"/src/images/keys/normal/Keys.h": {
+			"sdcard": false
 		}
 	}
 }

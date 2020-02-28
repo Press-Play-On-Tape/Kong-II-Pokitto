@@ -26,7 +26,7 @@ class Bird {
         // Methods
 
         void updatePosition();
-        Rect getRect(uint8_t yOffset, GameMode mode);
+        Rect getRect(ViewSize viewSize, uint8_t yOffset, GameMode mode);
 
     protected:
 

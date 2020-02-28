@@ -17,14 +17,14 @@ class Clapper {
         uint8_t getImage(ViewSize viewSize);
         bool isEnabled();
 
-        void setEnabled(bool enabled);
-        void setY(uint8_t y);
+        void setEnabled(ViewSize viewSize, bool enabled);
+        void setY(ViewSize viewSize, uint8_t y);
 
 
         // Methods
 
-        void updatePosition();
-        Rect getRect(uint8_t yOffset, GameMode mode);
+        void updatePosition(ViewSize viewSize);
+        Rect getRect(ViewSize viewSize, uint8_t yOffset, GameMode mode);
 
     protected:
 

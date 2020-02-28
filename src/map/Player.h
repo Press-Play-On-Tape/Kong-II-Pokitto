@@ -25,140 +25,140 @@ namespace Coordinates {
     const uint8_t PROGMEM Player[] = {
 
     // 0
-    11, 116, 86, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Up),
-    11, 115, 86, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Up) | static_cast<uint8_t>(Movements::Down),
-    11, 114, 64, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Up) | static_cast<uint8_t>(Movements::Down),
-    11, 113, 64, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Up) | static_cast<uint8_t>(Movements::Down),
+    11, 116, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Up),
+    11, 115, 40, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Up) | static_cast<uint8_t>(Movements::Down),
+    11, 114, 40, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Up) | static_cast<uint8_t>(Movements::Down),
+    11, 113, 40, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Up) | static_cast<uint8_t>(Movements::Down),
 
-    11, 112, 64, static_cast<uint8_t>(Stance::Climbing_Vine_02), static_cast<uint8_t>(Movements::Up) | static_cast<uint8_t>(Movements::Down),
-    11, 111, 64, static_cast<uint8_t>(Stance::Climbing_Vine_02), static_cast<uint8_t>(Movements::Up) | static_cast<uint8_t>(Movements::Down),
-    11, 110, 64, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Up) | static_cast<uint8_t>(Movements::Down),
-    11, 109, 64, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Up) | static_cast<uint8_t>(Movements::Down),
+    11, 112, 40, static_cast<uint8_t>(Stance::Climbing_Vine_02), static_cast<uint8_t>(Movements::Up) | static_cast<uint8_t>(Movements::Down),
+    11, 111, 40, static_cast<uint8_t>(Stance::Climbing_Vine_02), static_cast<uint8_t>(Movements::Up) | static_cast<uint8_t>(Movements::Down),
+    11, 110, 40, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Up) | static_cast<uint8_t>(Movements::Down),
+    11, 109, 40, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Up) | static_cast<uint8_t>(Movements::Down),
 
-    11, 108, 64, static_cast<uint8_t>(Stance::Climbing_Vine_02), static_cast<uint8_t>(Movements::Up) | static_cast<uint8_t>(Movements::Down),
-    11, 107, 64, static_cast<uint8_t>(Stance::Climbing_Vine_02), static_cast<uint8_t>(Movements::Up) | static_cast<uint8_t>(Movements::Down),
-    11, 106, 64, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Up) | static_cast<uint8_t>(Movements::Down),
-    11, 105, 64, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Up) | static_cast<uint8_t>(Movements::Down),
+    11, 108, 40, static_cast<uint8_t>(Stance::Climbing_Vine_02), static_cast<uint8_t>(Movements::Up) | static_cast<uint8_t>(Movements::Down),
+    11, 107, 40, static_cast<uint8_t>(Stance::Climbing_Vine_02), static_cast<uint8_t>(Movements::Up) | static_cast<uint8_t>(Movements::Down),
+    11, 106, 40, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Up) | static_cast<uint8_t>(Movements::Down),
+    11, 105, 40, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Up) | static_cast<uint8_t>(Movements::Down),
 
-    11, 104, 64, static_cast<uint8_t>(Stance::Climbing_Vine_02), static_cast<uint8_t>(Movements::Up) | static_cast<uint8_t>(Movements::Down),
-    11, 103, 64, static_cast<uint8_t>(Stance::Climbing_Vine_02), static_cast<uint8_t>(Movements::Up) | static_cast<uint8_t>(Movements::Down),
-    11, 102, 64, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Up) | static_cast<uint8_t>(Movements::Down),
-    11, 101, 64, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Jump),
+    11, 104, 40, static_cast<uint8_t>(Stance::Climbing_Vine_02), static_cast<uint8_t>(Movements::Up) | static_cast<uint8_t>(Movements::Down),
+    11, 103, 40, static_cast<uint8_t>(Stance::Climbing_Vine_02), static_cast<uint8_t>(Movements::Up) | static_cast<uint8_t>(Movements::Down),
+    11, 102, 40, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Up) | static_cast<uint8_t>(Movements::Down),
+    11, 101, 40, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Jump),
 
     #define PLAYER_CLAPPER_LOWER_START 16
-    12, 100, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    13, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    14, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    15, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    12, 100, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    13, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    14, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    15, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
 
     // 20
-    16, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    17, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    18, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    19, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    16, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    17, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    18, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    19, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
 
     #define PLAYER_SPARK_LOWER_IGNORE 24
-    20, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    21, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    22, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    23, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    20, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    21, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    22, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    23, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
 
-    24, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    25, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    26, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    27, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    24, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    25, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    26, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    27, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
 
-    28, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    29, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    30, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    31, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    28, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    29, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    30, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    31, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
 
-    32, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    33, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    34, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    35, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    32, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    33, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    34, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    35, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
 
     // 40
-    36, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    37, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    38, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    39, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    36, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    37, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    38, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    39, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
 
-    40, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    41, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    42, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    43, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    40, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    41, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    42, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    43, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
 
-    44, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    45, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    46, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    47, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    44, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    45, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    46, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    47, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
 
-    48, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    49, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    50, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    51, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    48, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    49, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    50, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    51, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
 
-    52, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    53, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    54, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    55, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    52, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    53, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    54, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    55, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
 
     // 60
-    56, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    57, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    58, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    59, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    56, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    57, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    58, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    59, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
 
-    60, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    61, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    62, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    63, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    60, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    61, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    62, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    63, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
 
-    64, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    65, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    66, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    67, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    64, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    65, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    66, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    67, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
 
-    68, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    69, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    70, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    71, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    68, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    69, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    70, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    71, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
 
-    72, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    73, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    74, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    75, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    72, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    73, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    74, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    75, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
 
     // 80
-    76, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    77, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    78, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    79, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    76, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    77, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    78, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    79, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
 
-    80, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    81, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    82, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    83, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    80, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    81, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    82, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    83, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
 
-    84, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    84, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
 
     #define PLAYER_VINE_0_MIN         89
-    85, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::JumpUp),
-    86, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::JumpUp),
-    87, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::JumpUp),
-    88, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::JumpUp),
+    85, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::JumpUp),
+    86, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::JumpUp),
+    87, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::JumpUp),
+    88, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::JumpUp),
 
     #define PLAYER_CLAPPER_LOWER_END  PLAYER_VINE_0_MIN + 4
     #define PLAYER_VINE_0             PLAYER_VINE_0_MIN + 4
-    89, 101, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::JumpUp),
+    89, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::JumpUp),
     #define PLAYER_VINE_0_MAX         PLAYER_VINE_0 + 1
-    89, 100, 64, static_cast<uint8_t>(Stance::Falling_01), static_cast<uint8_t>(Movements::None),
-    89, 99, 64, static_cast<uint8_t>(Stance::Falling_01), static_cast<uint8_t>(Movements::None),
-    89, 98, 64, static_cast<uint8_t>(Stance::Falling_01), static_cast<uint8_t>(Movements::None),
-    89, 97, 64, static_cast<uint8_t>(Stance::Falling_01), static_cast<uint8_t>(Movements::None),
-    89, 96, 64, static_cast<uint8_t>(Stance::Falling_01), static_cast<uint8_t>(Movements::None),
-    89, 95, 64, static_cast<uint8_t>(Stance::Falling_01), static_cast<uint8_t>(Movements::None),
+    89, 100, 40, static_cast<uint8_t>(Stance::Falling_01), static_cast<uint8_t>(Movements::None),
+    89, 99, 40, static_cast<uint8_t>(Stance::Falling_01), static_cast<uint8_t>(Movements::None),
+    89, 98, 40, static_cast<uint8_t>(Stance::Falling_01), static_cast<uint8_t>(Movements::None),
+    89, 97, 40, static_cast<uint8_t>(Stance::Falling_01), static_cast<uint8_t>(Movements::None),
+    89, 96, 40, static_cast<uint8_t>(Stance::Falling_01), static_cast<uint8_t>(Movements::None),
+    89, 95, 40, static_cast<uint8_t>(Stance::Falling_01), static_cast<uint8_t>(Movements::None),
 
     #define PLAYER_VINE_0_CLIMBING    PLAYER_VINE_0_MAX + 6
     // 89, 97, 64, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
@@ -166,169 +166,169 @@ namespace Coordinates {
     // 89, 95, 63, static_cast<uint8_t>(Stance::Climbing_Vine_02), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
 
     // 100
-    89, 94, 62, static_cast<uint8_t>(Stance::Climbing_Vine_02), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
-    89, 93, 61, static_cast<uint8_t>(Stance::Climbing_Vine_02), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
-    89, 92, 60, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
-    89, 91, 59, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
+    89, 94, 39, static_cast<uint8_t>(Stance::Climbing_Vine_02), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
+    89, 93, 38, static_cast<uint8_t>(Stance::Climbing_Vine_02), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
+    89, 92, 37, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
+    89, 91, 36, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
 
-    89, 90, 58, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
-    89, 89, 57, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
-    89, 88, 56, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
-    89, 87, 55, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
+    89, 90, 35, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
+    89, 89, 34, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
+    89, 88, 33, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
+    89, 87, 32, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
 
-    89, 86, 54, static_cast<uint8_t>(Stance::Climbing_Vine_02), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
-    89, 85, 53, static_cast<uint8_t>(Stance::Climbing_Vine_02), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
-    89, 84, 52, static_cast<uint8_t>(Stance::Climbing_Vine_02), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
-    89, 83, 51, static_cast<uint8_t>(Stance::Climbing_Vine_02), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
+    89, 86, 31, static_cast<uint8_t>(Stance::Climbing_Vine_02), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
+    89, 85, 30, static_cast<uint8_t>(Stance::Climbing_Vine_02), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
+    89, 84, 29, static_cast<uint8_t>(Stance::Climbing_Vine_02), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
+    89, 83, 28, static_cast<uint8_t>(Stance::Climbing_Vine_02), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
 
-    89, 82, 51, static_cast<uint8_t>(Stance::Climbing_Vine_02), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
+    89, 82, 27, static_cast<uint8_t>(Stance::Climbing_Vine_02), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
     //    88, 82, 50, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
-    89, 81, 49, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    89, 81, 26, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
 
 
     //    #define PLAYER_SPARK_START 111
     #define PLAYER_SPARK_START 111
-    87, 80, 48, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    86, 80, 47, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    87, 80, 25, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    86, 80, 24, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
 
-    85, 80, 46, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    84, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    83, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    82, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    85, 80, 23, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    84, 80, 22, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    83, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    82, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
 
     // 120
-    81, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    80, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    79, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    78, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    81, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    80, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    79, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    78, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
 
-    77, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    76, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    75, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    74, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    77, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    76, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    75, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    74, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
 
-    73, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    72, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    71, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    70, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    73, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    72, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    71, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    70, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
 
-    69, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    68, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    67, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    66, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    69, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    68, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    67, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    66, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
 
-    65, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    64, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    63, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    62, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    65, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    64, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    63, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    62, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
 
     // 140
-    61, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    60, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    59, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    58, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    61, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    60, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    59, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    58, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
 
-    57, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    56, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    55, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    54, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    57, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    56, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    55, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    54, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
 
-    53, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    52, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    51, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    50, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    53, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    52, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    51, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    50, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
 
-    49, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    48, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    47, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    46, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    49, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    48, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    47, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    46, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
 
-    45, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    44, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    43, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    42, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    45, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    44, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    43, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    42, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
 
     // 160
-    41, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    40, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    39, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    38, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    41, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    40, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    39, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    38, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
 
-    37, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    36, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    35, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    34, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    37, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    36, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    35, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    34, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
 
-    33, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    32, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    31, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    30, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    33, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    32, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    31, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    30, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
 
-    29, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    28, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    27, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    26, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    29, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    28, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    27, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    26, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
 
-    25, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    24, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    23, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    22, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    25, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    24, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    23, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    22, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
 
     // 180
-    21, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
-    20, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    21, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
+    20, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
 
     #define PLAYER_VINE_1_MIN  182
-    19, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::JumpUp),
-    18, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::JumpUp),
-    17, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::JumpUp),
+    19, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::JumpUp),
+    18, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::JumpUp),
+    17, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::JumpUp),
     // 185
-    16, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::JumpUp),
+    16, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::JumpUp),
     #define PLAYER_SPARK_END    PLAYER_VINE_1_MIN + 4
     #define PLAYER_VINE_1       PLAYER_VINE_1_MIN + 4
-    15, 80, 45, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::JumpUp),
+    15, 80, 21, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Reverse) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::JumpUp),
     #define PLAYER_VINE_1_MAX   PLAYER_VINE_1 + 1
-    15, 80, 45, static_cast<uint8_t>(Stance::Falling_02), static_cast<uint8_t>(Movements::Reverse),
-    15, 79, 45, static_cast<uint8_t>(Stance::Falling_02), static_cast<uint8_t>(Movements::Reverse),
-    15, 78, 45, static_cast<uint8_t>(Stance::Falling_02), static_cast<uint8_t>(Movements::Reverse),
-    15, 77, 45, static_cast<uint8_t>(Stance::Falling_02), static_cast<uint8_t>(Movements::Reverse),
-    15, 76, 45, static_cast<uint8_t>(Stance::Falling_02), static_cast<uint8_t>(Movements::Reverse),
-    15, 75, 45, static_cast<uint8_t>(Stance::Falling_02), static_cast<uint8_t>(Movements::Reverse),
-    15, 74, 45, static_cast<uint8_t>(Stance::Falling_02), static_cast<uint8_t>(Movements::Reverse),
-    15, 73, 45, static_cast<uint8_t>(Stance::Falling_02), static_cast<uint8_t>(Movements::Reverse),
+    15, 80, 21, static_cast<uint8_t>(Stance::Falling_02), static_cast<uint8_t>(Movements::Reverse),
+    15, 79, 21, static_cast<uint8_t>(Stance::Falling_02), static_cast<uint8_t>(Movements::Reverse),
+    15, 78, 21, static_cast<uint8_t>(Stance::Falling_02), static_cast<uint8_t>(Movements::Reverse),
+    15, 77, 21, static_cast<uint8_t>(Stance::Falling_02), static_cast<uint8_t>(Movements::Reverse),
+    15, 76, 21, static_cast<uint8_t>(Stance::Falling_02), static_cast<uint8_t>(Movements::Reverse),
+    15, 75, 21, static_cast<uint8_t>(Stance::Falling_02), static_cast<uint8_t>(Movements::Reverse),
+    15, 74, 21, static_cast<uint8_t>(Stance::Falling_02), static_cast<uint8_t>(Movements::Reverse),
+    15, 73, 21, static_cast<uint8_t>(Stance::Falling_02), static_cast<uint8_t>(Movements::Reverse),
     #define PLAYER_VINE_1_CLIMBING  PLAYER_VINE_1_MAX + 8
 
-    15, 72, 45, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
-    15, 71, 45, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
+    15, 72, 21, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
+    15, 71, 21, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
 
-    15, 70, 45, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
-    15, 69, 45, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
-    15, 68, 43, static_cast<uint8_t>(Stance::Climbing_Vine_02), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
+    15, 70, 21, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
+    15, 69, 21, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
+    15, 68, 20, static_cast<uint8_t>(Stance::Climbing_Vine_02), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
 
     // 200
-    15, 67, 41, static_cast<uint8_t>(Stance::Climbing_Vine_02), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
-    15, 66, 39, static_cast<uint8_t>(Stance::Climbing_Vine_02), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
-    15, 65, 37, static_cast<uint8_t>(Stance::Climbing_Vine_02), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
-    15, 64, 35, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
+    15, 67, 19, static_cast<uint8_t>(Stance::Climbing_Vine_02), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
+    15, 66, 18, static_cast<uint8_t>(Stance::Climbing_Vine_02), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
+    15, 65, 17, static_cast<uint8_t>(Stance::Climbing_Vine_02), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
+    15, 64, 16, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
 
-    15, 63, 33, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
-    15, 62, 31, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
-    15, 61, 29, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
-    15, 60, 27, static_cast<uint8_t>(Stance::Climbing_Vine_02), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
+    15, 63, 15, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
+    15, 62, 14, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
+    15, 61, 13, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
+    15, 60, 12, static_cast<uint8_t>(Stance::Climbing_Vine_02), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
 
-    15, 59, 25, static_cast<uint8_t>(Stance::Climbing_Vine_02), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
-    15, 58, 23, static_cast<uint8_t>(Stance::Climbing_Vine_02), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
-    15, 57, 21, static_cast<uint8_t>(Stance::Climbing_Vine_02), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
-    15, 56, 19, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
+    15, 59, 11, static_cast<uint8_t>(Stance::Climbing_Vine_02), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
+    15, 58, 10, static_cast<uint8_t>(Stance::Climbing_Vine_02), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
+    15, 57, 9, static_cast<uint8_t>(Stance::Climbing_Vine_02), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
+    15, 56, 8, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
 
-    15, 55, 16, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
-    15, 54, 13, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
-    15, 53, 10, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
-    15, 52, 7, static_cast<uint8_t>(Stance::Climbing_Vine_02), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
+    15, 55, 7, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
+    15, 54, 6, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
+    15, 53, 5, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
+    15, 52, 4, static_cast<uint8_t>(Stance::Climbing_Vine_02), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up),
 
-    15, 51, 4, static_cast<uint8_t>(Stance::Climbing_Vine_02), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right),
+    15, 51, 3, static_cast<uint8_t>(Stance::Climbing_Vine_02), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right),
     15, 50, 2, static_cast<uint8_t>(Stance::Climbing_Vine_02), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right),
-    15, 51, 0, static_cast<uint8_t>(Stance::Climbing_Vine_02), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right),
+    15, 51, 1, static_cast<uint8_t>(Stance::Climbing_Vine_02), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right),
     15, 49, 0, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Up) | static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right),
 
     // 220
@@ -816,13 +816,7 @@ namespace Coordinates {
     };
 
 
-    inline void readPlayerData(Coordinates::PlayerData &playerData, uint16_t index) {
-
-        // int8_t x = static_cast<int8_t>(pgm_read_byte(&Coordinates::Player[(index * PLAYER_NUMBER_OF_ELEMENTS)]));
-        // int8_t y = pgm_read_byte(&Coordinates::Player[(index * PLAYER_NUMBER_OF_ELEMENTS) + 1]);
-        // uint8_t yOffset = pgm_read_byte(&Coordinates::Player[(index * PLAYER_NUMBER_OF_ELEMENTS) + 2]);
-        // Stance stance = static_cast<Stance>(pgm_read_byte(&Coordinates::Player[(index * PLAYER_NUMBER_OF_ELEMENTS) + 3]));
-        // uint8_t movements = pgm_read_byte(&Coordinates::Player[(index * PLAYER_NUMBER_OF_ELEMENTS) + 4]);
+    inline void readPlayerData(ViewSize viewSize, Coordinates::PlayerData &playerData, uint16_t index) {
 
         int8_t x = static_cast<int8_t>(Coordinates::Player[(index * PLAYER_NUMBER_OF_ELEMENTS)]);
         int8_t y = Coordinates::Player[(index * PLAYER_NUMBER_OF_ELEMENTS) + 1];
@@ -830,11 +824,24 @@ namespace Coordinates {
         Stance stance = static_cast<Stance>(Coordinates::Player[(index * PLAYER_NUMBER_OF_ELEMENTS) + 3]);
         uint8_t movements = Coordinates::Player[(index * PLAYER_NUMBER_OF_ELEMENTS) + 4];
 
-        playerData.x = x;
-        playerData.y = y;
-        playerData.yOffset = yOffset;
-        playerData.stance = stance;
-        playerData.movements = movements;
+        if (viewSize == ViewSize::Normal) {
+
+            playerData.x = x;
+            playerData.y = y;
+            playerData.yOffset = yOffset;
+            playerData.stance = stance;
+            playerData.movements = movements;
+
+        }
+        else {
+
+            playerData.x = x * 2;
+            playerData.y = y * 2;
+            playerData.yOffset = yOffset * 2;
+            playerData.stance = stance;
+            playerData.movements = movements;
+
+        }
 
     } 
 
