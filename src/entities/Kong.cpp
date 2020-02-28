@@ -4,16 +4,34 @@
 
 Kong::Kong() { }
 
-int8_t Kong::getXPosition() {
+uint8_t Kong::getXPosition(ViewSize viewSize) {
 
-    if (!this->enabled) {
+    if (viewSize == ViewSize::Normal) {
 
-        return 52;
+        if (!this->enabled) {
+
+            return 52 + VIEW_NORMAL_X_OFFSET;
+
+        }
+        else {
+    
+            return pgm_read_byte(&Coordinates::Kong_Exit[(this->position * 3)]) + VIEW_NORMAL_X_OFFSET;
+
+        }
 
     }
     else {
- 
-        return pgm_read_byte(&Coordinates::Kong_Exit[(this->position * 3)]);
+
+        if (!this->enabled) {
+
+            return 52;
+
+        }
+        else {
+    
+            return pgm_read_byte(&Coordinates::Kong_Exit[(this->position * 3)]);
+
+        }
 
     }
 
@@ -35,17 +53,36 @@ KongImage Kong::getImage() {
 }
 
 
-int8_t Kong::getYPosition(uint8_t yOffset) {
+uint8_t Kong::getYPosition(ViewSize viewSize, uint8_t yOffset) {
 
-    if (!this->enabled) {
+    if (viewSize == ViewSize::Normal) {
+            
+        if (!this->enabled) {
 
-        return 1 - yOffset;
+            return 1 + VIEW_NORMAL_Y_UPPER_OFFSET;
+
+        }
+        else {
+    
+            int8_t y = pgm_read_byte(&Coordinates::Kong_Exit[(this->position * 3) + 1]);
+            return y + VIEW_NORMAL_Y_UPPER_OFFSET;
+
+        }
 
     }
     else {
- 
-        int8_t y = pgm_read_byte(&Coordinates::Kong_Exit[(this->position * 3) + 1]);
-        return y - yOffset;
+            
+        if (!this->enabled) {
+
+            return 1 - yOffset;
+
+        }
+        else {
+    
+            int8_t y = pgm_read_byte(&Coordinates::Kong_Exit[(this->position * 3) + 1]);
+            return y - yOffset;
+
+        }
 
     }
 

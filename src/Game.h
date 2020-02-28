@@ -3,7 +3,8 @@
 #include "Pokitto.h"
 #include "utils/GameCookie.h"
 
-#include "images/Images.h"
+#include "images/Images_Normal.h"
+#include "images/Images_Large.h"
 #include "utils/Enums.h"
 #include "entities/Entities.h"
 #include "utils/Utils.h"

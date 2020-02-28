@@ -44,6 +44,6 @@ void Game::splashScreen_Render() {
         
     }
     
-    PD::drawBitmap(38, 48, Images::PPOT[splashScreenVars.counter]);
+    PD::drawBitmap(38, 48, Images_Normal::PPOT[splashScreenVars.counter]);
 
 }

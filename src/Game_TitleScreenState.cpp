@@ -42,6 +42,13 @@ void Game::titleScreen_Update() {
 
     }
 
+    if (PC::buttons.pressed(BTN_C)) { 
+
+        this->gameStats.viewSize = ViewSize::Large;
+        this->gameState = GameStateType::PlayGame_Activate; 
+
+    }
+
 }
 
 
@@ -50,6 +57,6 @@ void Game::titleScreen_Update() {
 //
 void Game::titleScreen_Render() {
 
-    PD::drawBitmap(0, 0, Images::TitleScreen, false, false);
+    PD::drawBitmap(0, 0, Images_Normal::TitleScreen, false, false);
 
 }

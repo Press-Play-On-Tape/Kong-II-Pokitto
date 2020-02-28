@@ -10,73 +10,156 @@ uint8_t Key::getPosition() {
 
 }
 
-int8_t Key::getXPosition() {
+uint8_t Key::getXPosition(ViewSize viewSize) {
 
-    if (this->position == 0) {
+    if (viewSize == ViewSize::Normal) {
+            
+        if (this->position == 0) {
 
-        switch (this->keyLocation) {
+            switch (this->keyLocation) {
 
-            case KeyLocation::LowerPosition:
-                return 11;
+                case KeyLocation::LowerPosition:
+                    return 11 + VIEW_NORMAL_X_OFFSET;
 
-            case KeyLocation::UpperPosition:
-                return 12;
+                case KeyLocation::UpperPosition:
+                    return 12 + VIEW_NORMAL_X_OFFSET;
 
-            case KeyLocation::Position_00:
-                return 34;
+                case KeyLocation::Position_00:
+                    return 34 + VIEW_NORMAL_X_OFFSET;
 
-            case KeyLocation::Position_01:
-                return 53;
+                case KeyLocation::Position_01:
+                    return 53 + VIEW_NORMAL_X_OFFSET;
 
-            case KeyLocation::Position_02:
-                return 72;
+                case KeyLocation::Position_02:
+                    return 72 + VIEW_NORMAL_X_OFFSET;
 
-            case KeyLocation::Position_03:
-                return 91;
+                case KeyLocation::Position_03:
+                    return 91 + VIEW_NORMAL_X_OFFSET;
 
-            default:
-                return 0;
+                default:
+                    return 0;
+
+            }
+
+        }
+        else {
+
+            return pgm_read_byte(&this->path[(this->position * 3)]) + VIEW_NORMAL_X_OFFSET;
 
         }
 
     }
     else {
+                   
+        if (this->position == 0) {
 
-        return pgm_read_byte(&this->path[(this->position * 3)]);
+            switch (this->keyLocation) {
+
+                case KeyLocation::LowerPosition:
+                    return 11;
+
+                case KeyLocation::UpperPosition:
+                    return 12;
+
+                case KeyLocation::Position_00:
+                    return 34;
+
+                case KeyLocation::Position_01:
+                    return 53;
+
+                case KeyLocation::Position_02:
+                    return 72;
+
+                case KeyLocation::Position_03:
+                    return 91;
+
+                default:
+                    return 0;
+
+            }
+
+        }
+        else {
+
+            return pgm_read_byte(&this->path[(this->position * 3)]);
+
+        }
 
     }
 
 }
 
-int8_t Key::getYPosition(uint8_t yOffset) {
+uint8_t Key::getYPosition(ViewSize viewSize, uint8_t yOffset) {
 
-    if (this->position == 0) {
+    if (viewSize == ViewSize::Normal) {
 
-        switch (this->keyLocation) {
+        if (this->position == 0) {
 
-            case KeyLocation::LowerPosition:
-                return 90 - yOffset;
+            switch (this->keyLocation) {
 
-            case KeyLocation::UpperPosition:
-                return 35 - yOffset;
+                case KeyLocation::LowerPosition:
+                    return 90 + VIEW_NORMAL_Y_LOWER_OFFSET;
 
-            case KeyLocation::Position_00:
-            case KeyLocation::Position_01:
-            case KeyLocation::Position_02:
-            case KeyLocation::Position_03:
-                return 12 - yOffset;
+                case KeyLocation::UpperPosition:
+                    return 35 + VIEW_NORMAL_Y_UPPER_OFFSET;
 
-            default:
-                return 0;
+                case KeyLocation::Position_00:
+                case KeyLocation::Position_01:
+                case KeyLocation::Position_02:
+                case KeyLocation::Position_03:
+                    return 12 + VIEW_NORMAL_Y_UPPER_OFFSET;
+
+                default:
+                    return 0;
+
+            }
+
+        }
+        else {
+
+            uint8_t y = pgm_read_byte(&this->path[(this->position * 3) + 1]);
+
+            if (y < 64) {
+                return y + VIEW_NORMAL_Y_UPPER_OFFSET;
+            }
+            else {
+                return y + VIEW_NORMAL_Y_LOWER_OFFSET;
+            }
 
         }
 
     }
     else {
 
-        uint8_t y = pgm_read_byte(&this->path[(this->position * 3) + 1]);
-        return y - yOffset;
+        if (this->position == 0) {
 
+            switch (this->keyLocation) {
+
+                case KeyLocation::LowerPosition:
+                    return 90 - yOffset;
+
+                case KeyLocation::UpperPosition:
+                    return 35 - yOffset;
+
+                case KeyLocation::Position_00:
+                case KeyLocation::Position_01:
+                case KeyLocation::Position_02:
+                case KeyLocation::Position_03:
+                    return 12 - yOffset;
+
+                default:
+                    return 0;
+
+            }
+
+        }
+        else {
+
+            uint8_t y = pgm_read_byte(&this->path[(this->position * 3) + 1]);
+            return y - yOffset;
+
+        }
+        
     }
 
 }

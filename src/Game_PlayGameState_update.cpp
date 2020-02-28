@@ -105,7 +105,12 @@ void Game::playGame_Update() {
 
                             if (playGameVars.kong.getChain(r)) {
                                 
-                                //playGameVars.key.setPath(pgm_read_word_near(&Coordinates::Positions[r]));
+                                if (this->gameStats.viewSize == ViewSize::Normal) {
+                                    playGameVars.key.setPath(Coordinates::Positions[r]);
+                                }
+                                else {
+                                    playGameVars.key.setPath(Coordinates::Positions[r + 4]);
+                                }
                         
                                 #ifdef PLAY_SOUNDS 
                                     sound.tones(Sounds::Key);
@@ -331,7 +336,7 @@ void Game::playGame_Update() {
             }
 
 //            if (playGameVars.playing && Utils::isFrameCount(3)) {
-            if (playGameVars.playing && Utils::isFrameCount(2)) {
+            if (playGameVars.playing && Utils::getFrameCount(3) <= 1) {
 
                 playGameVars.lowerSparks.updatePositions();
 

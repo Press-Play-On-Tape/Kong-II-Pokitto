@@ -11,8 +11,8 @@ class Kong {
         Kong();
 
         KongImage getImage();
-        int8_t getXPosition();
-        int8_t getYPosition(uint8_t yOffset);
+        uint8_t getXPosition(ViewSize viewSize);
+        uint8_t getYPosition(ViewSize viewSize, uint8_t yOffset);
         bool getChain(uint8_t index);
         bool getFlashChain(uint8_t index);
         bool getExit();

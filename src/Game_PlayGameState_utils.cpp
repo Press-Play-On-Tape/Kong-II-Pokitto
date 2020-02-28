@@ -9,15 +9,17 @@ using PS = Pokitto::Sound;
 void Game::playGame_DrawScenery(uint8_t yOffset) {
 
     if (this->gameStats.viewSize == ViewSize::Normal) { 
-        PD::drawBitmap(0, 0, Images::Scenery);
+
+        PD::drawBitmap(0, 0, Images_Normal::Scenery);
+
     }
     else {
 
-    // for (uint8_t i = 0; i < 16; i++) {
+        for (uint8_t i = 0; i < 16; i++) {
 
-    //     Sprites::drawSelfMasked(0, (i * 8) - yOffset, Images::Background, i);
+            PD::drawBitmap(0, (i * 16) - yOffset, Images_Large::Background[i]);
 
-    // }
+        }
 
     }
 
@@ -44,28 +46,51 @@ void Game::playGame_ResetLevel(uint8_t introDelay) {
 }
 
 void Game::playGame_RenderScore(uint8_t yOffset) {
+
+    if (this->gameStats.viewSize == ViewSize::Normal) { 
+
+        if (gameStats.numberOfLivesLeft >= 3) {
+            PD::drawBitmap(73, 144, Images_Normal::Jnr_Walking_L_F2);
+        }
+
+        if (gameStats.numberOfLivesLeft >= 2) {
+            PD::drawBitmap(92, 144, Images_Normal::Jnr_Walking_L_F2);
+        }
+
+        PD::drawBitmap(127, 145, Images_Normal::Game_Icon[this->gameStats.mode == GameMode::Easy, 0, 1]);
+
+        uint8_t digits[4] = {};
+        Utils::extractDigits(digits, gameStats.score);
+
+        for (uint8_t j = 4; j > 0; --j) {
+
+            PD::drawBitmap(167 - (j*7), 146, Images_Normal::Numbers[digits[j - 1]]);
+
+        }
+        
+    }
+    else {
+
+        if (gameStats.numberOfLivesLeft >= 3) {
+            PD::drawBitmap(27, 118 - yOffset, Images_Normal::Jnr_Walking_L_F2);
+        }
+
+        if (gameStats.numberOfLivesLeft >= 2) {
+            PD::drawBitmap(44, 118 - yOffset, Images_Normal::Jnr_Walking_L_F2);
+        }
+
+        PD::drawBitmap(81, 118, Images_Normal::Game_Icon[this->gameStats.mode == GameMode::Easy, 0, 1]);
+
+        uint8_t digits[4] = {};
+        Utils::extractDigits(digits, gameStats.score);
+
+        for (uint8_t j = 4; j > 0; --j) {
+
+            PD::drawBitmap(122 - (j*7), 120 - yOffset, Images_Normal::Numbers[digits[j - 1]]);
+
+        }
     
-    // if (gameStats.numberOfLivesLeft >= 3) {
-    //     Sprites::drawErase(27, 118 - yOffset, Images::Junior_Walking_L_1_Mask, 0);
-    //     Sprites::drawSelfMasked(27, 118 - yOffset, Images::Junior_Walking_L_1, 0);
-    // }
-
-    // if (gameStats.numberOfLivesLeft >= 2) {
-    //     Sprites::drawErase(44, 118 - yOffset, Images::Junior_Walking_L_1_Mask, 0);
-    //     Sprites::drawSelfMasked(44, 118 - yOffset, Images::Junior_Walking_L_1, 0);
-    // }
-
-    // uint8_t digits[4] = {};
-    // extractDigits(digits, gameStats.score);
-
-    // Sprites::drawErase(81, 118 - yOffset, Images::Game_Icon_Mask, 0);
-    // Sprites::drawSelfMasked(81, 118 - yOffset, Images::Game_Icon, 0);
-
-    // for (uint8_t j = 4; j > 0; --j) {
-
-    //     Sprites::drawErase(122 - (j*7), 120 - yOffset, Images::Numbers, digits[j - 1]);
-
-    // }
+    }
 
 }
 
@@ -84,42 +109,62 @@ void Game::playGame_SetPaused(bool value) {
 
 void Game::playGame_HandleCommonButtons() {
 
-    // auto justPressed = arduboy.justPressedButtons();
+    if (gameStats.gameOver) {
 
-    // if (gameStats.gameOver) {
+        if (PC::buttons.pressed(BTN_A)) {
+            gameState = GameStateType::HighScore_Activate; 
+        }
 
-    //     if (PC::buttons.pressed(BTN_A)) {
-    //         gameState = GameStateType::HighScore_Activate; 
-    //     }
+    }
+    else {
 
-    // }
-    // else {
+        if (PC::buttons.pressed(BTN_B)) {
+            playGameVars.paused = !playGameVars.paused; 
+        }
 
-    //     if (PC::buttons.pressed(BTN_B)) {
-    //         playGameVars.paused = !playGameVars.paused; 
-    //     }
-
-    // }
+    }
 
 }
 
 void Game::playGame_RenderGameOverOrPause() {
 
+    if (this->gameStats.viewSize == ViewSize::Normal) {
 
-  // Game Over?
+        // Game Over?
 
-//   if (gameStats.gameOver) {
+        if (gameStats.gameOver) {
 
-//     Sprites::drawExternalMask(28, 13, Images::GameOver, Images::GameOver_Mask, 0, 0); 
+            PD::drawBitmap(74, 68, Images_Normal::GameOver); 
 
-//   }
+        }
 
-//   // Pause?
+        // Pause?
 
-//   if (playGameVars.paused) {
+        if (playGameVars.paused) {
 
-//     Sprites::drawExternalMask(39, 16, Images::Pause, Images::Pause_Mask, 0, 0); 
+            PD::drawBitmap(84, 68, Images_Normal::Pause); 
 
-//   }
+        }
+
+    }
+    else {
+
+        // Game Over?
+
+        if (gameStats.gameOver) {
+
+            PD::drawBitmap(28, 13, Images_Normal::GameOver); 
+
+        }
+
+        // Pause?
+
+        if (playGameVars.paused) {
+
+            PD::drawBitmap(39, 16, Images_Normal::Pause); 
+
+        }
+
+    }
 
 }

@@ -101,8 +101,7 @@ uint8_t Player::getYPosition(ViewSize viewSize) {
 
         int8_t y = this->playerData.y - pgm_read_byte(&jumpPositions[this->jumpPosition]);
 
-        if (y < 64) {
-
+        if (y < 63) {
             y = y + VIEW_NORMAL_Y_UPPER_OFFSET;
         }
         else {

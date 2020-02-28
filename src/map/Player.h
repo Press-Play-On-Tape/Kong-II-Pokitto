@@ -25,8 +25,8 @@ namespace Coordinates {
     const uint8_t PROGMEM Player[] = {
 
     // 0
-    11, 116, 64, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Up),
-    11, 115, 64, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Up) | static_cast<uint8_t>(Movements::Down),
+    11, 116, 86, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Up),
+    11, 115, 86, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Up) | static_cast<uint8_t>(Movements::Down),
     11, 114, 64, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Up) | static_cast<uint8_t>(Movements::Down),
     11, 113, 64, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Up) | static_cast<uint8_t>(Movements::Down),
 
@@ -818,11 +818,17 @@ namespace Coordinates {
 
     inline void readPlayerData(Coordinates::PlayerData &playerData, uint16_t index) {
 
-        int8_t x = static_cast<int8_t>(pgm_read_byte(&Coordinates::Player[(index * PLAYER_NUMBER_OF_ELEMENTS)]));
-        int8_t y = pgm_read_byte(&Coordinates::Player[(index * PLAYER_NUMBER_OF_ELEMENTS) + 1]);
-        uint8_t yOffset = pgm_read_byte(&Coordinates::Player[(index * PLAYER_NUMBER_OF_ELEMENTS) + 2]);
-        Stance stance = static_cast<Stance>(pgm_read_byte(&Coordinates::Player[(index * PLAYER_NUMBER_OF_ELEMENTS) + 3]));
-        uint8_t movements = pgm_read_byte(&Coordinates::Player[(index * PLAYER_NUMBER_OF_ELEMENTS) + 4]);
+        // int8_t x = static_cast<int8_t>(pgm_read_byte(&Coordinates::Player[(index * PLAYER_NUMBER_OF_ELEMENTS)]));
+        // int8_t y = pgm_read_byte(&Coordinates::Player[(index * PLAYER_NUMBER_OF_ELEMENTS) + 1]);
+        // uint8_t yOffset = pgm_read_byte(&Coordinates::Player[(index * PLAYER_NUMBER_OF_ELEMENTS) + 2]);
+        // Stance stance = static_cast<Stance>(pgm_read_byte(&Coordinates::Player[(index * PLAYER_NUMBER_OF_ELEMENTS) + 3]));
+        // uint8_t movements = pgm_read_byte(&Coordinates::Player[(index * PLAYER_NUMBER_OF_ELEMENTS) + 4]);
+
+        int8_t x = static_cast<int8_t>(Coordinates::Player[(index * PLAYER_NUMBER_OF_ELEMENTS)]);
+        int8_t y = Coordinates::Player[(index * PLAYER_NUMBER_OF_ELEMENTS) + 1];
+        uint8_t yOffset = Coordinates::Player[(index * PLAYER_NUMBER_OF_ELEMENTS) + 2];
+        Stance stance = static_cast<Stance>(Coordinates::Player[(index * PLAYER_NUMBER_OF_ELEMENTS) + 3]);
+        uint8_t movements = Coordinates::Player[(index * PLAYER_NUMBER_OF_ELEMENTS) + 4];
 
         playerData.x = x;
         playerData.y = y;

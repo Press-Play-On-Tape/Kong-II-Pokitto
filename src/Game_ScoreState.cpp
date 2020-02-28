@@ -101,7 +101,7 @@ void Game::highScore_RenderHighScore(uint16_t score) {
 
     //     uint8_t digits[4] = {};
     //     extractDigits(digits, score);
-    //     Sprites::drawErase(79 - (j*7), 41, Images::Numbers, digits[j - 1]);
+    //     Sprites::drawErase(79 - (j*7), 41, Images_Normal::Numbers, digits[j - 1]);
 
     // }
 
@@ -113,26 +113,26 @@ void Game::highScore_RenderHighScore(uint16_t score) {
 //
 void Game::highScore_Render() {
 
-    // Sprites::drawOverwrite(0, 0, Images::HighScore_Left, 0);
-    // Sprites::drawOverwrite(113, 0, Images::HighScore_Right, 0);
-    // Sprites::drawOverwrite(15, 56, Images::HighScore_Bottom, 0);
-    // Sprites::drawOverwrite(49, 38, Images::HighScore_Jnr, 0);
-    // Sprites::drawOverwrite(19, 30, Images::HighScore_Chains, 0);
-    // Sprites::drawOverwrite(103, 30, Images::HighScore_Chains, 0);
-    // Sprites::drawOverwrite(10, 10, Images::HighScore_Panel_Left, 0);
-    // Sprites::drawOverwrite(51, 0, Images::HighScore_Panel_Mid, 0);
-    // Sprites::drawOverwrite(76, 10, Images::HighScore_Panel_Right, 0);
-    // Sprites::drawOverwrite(9, 22, Images::HighScore_Chain_Left, 0);
-    // Sprites::drawOverwrite(111, 22, Images::HighScore_Chain_Right, 0);
+    // Sprites::drawOverwrite(0, 0, Images_Normal::HighScore_Left, 0);
+    // Sprites::drawOverwrite(113, 0, Images_Normal::HighScore_Right, 0);
+    // Sprites::drawOverwrite(15, 56, Images_Normal::HighScore_Bottom, 0);
+    // Sprites::drawOverwrite(49, 38, Images_Normal::HighScore_Jnr, 0);
+    // Sprites::drawOverwrite(19, 30, Images_Normal::HighScore_Chains, 0);
+    // Sprites::drawOverwrite(103, 30, Images_Normal::HighScore_Chains, 0);
+    // Sprites::drawOverwrite(10, 10, Images_Normal::HighScore_Panel_Left, 0);
+    // Sprites::drawOverwrite(51, 0, Images_Normal::HighScore_Panel_Mid, 0);
+    // Sprites::drawOverwrite(76, 10, Images_Normal::HighScore_Panel_Right, 0);
+    // Sprites::drawOverwrite(9, 22, Images_Normal::HighScore_Chain_Left, 0);
+    // Sprites::drawOverwrite(111, 22, Images_Normal::HighScore_Chain_Right, 0);
 
     // switch(highScoreVars.selectedMode) {
 
     //     case GameMode::Easy:
-    //         Sprites::drawOverwrite(16, 50, Images::HighScore_Easy, 0);
+    //         Sprites::drawOverwrite(16, 50, Images_Normal::HighScore_Easy, 0);
     //         break;
 
     //     case GameMode::Hard:
-    //         Sprites::drawOverwrite(95, 50, Images::HighScore_Hard, 0);
+    //         Sprites::drawOverwrite(95, 50, Images_Normal::HighScore_Hard, 0);
     //         break;
 
     // }

@@ -1,16 +1,36 @@
 #pragma once
 
-namespace Images {
+namespace Images_Normal {
 
     #include "birds/Birds.h"
     #include "clappers/Clappers.h"
     #include "keys/Keys.h"
     #include "kong/Kong.h"
-    #include "player/Player.h"
-    #include "scenery/Scenerys.h"
+    #include "player/normal/Player.h"
+    #include "scenery/normal/Scenerys.h"
     #include "sparks/Sparks.h"
     #include "ppot/PPOT.h"
     #include "title/TitleScreen.h"
+    #include "others/Others.h"
+    #include "numbers/Numbers.h"
+
+    const uint8_t * const PROGMEM Numbers[] = { 
+    Number_0,
+    Number_1,
+    Number_2,
+    Number_3,
+    Number_4,
+    Number_5,
+    Number_6,
+    Number_7,
+    Number_8,
+    Number_9,
+    };
+
+    const uint8_t * const PROGMEM Game_Icon[] = { 
+    GameA,
+    GameB,
+    };
 
     const uint8_t * const PROGMEM Birds[] = { 
     Bird_F0,

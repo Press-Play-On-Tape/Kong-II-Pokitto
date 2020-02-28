@@ -3556,6 +3556,738 @@
 		},
 		"/src/images/scenery/Scenery_Edge_R_Large.h": {
 			"sdcard": false
+		},
+		"/src/images/scenery/Scenery_Middle.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/Scenery_Middle.h": {
+			"sdcard": false
+		},
+		"/src/images/Jnr_Climbing_Vine_F0.png": {
+			"sdcard": false
+		},
+		"/src/images/Jnr_Climbing_Vine_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/Jnr_Climbing_Vine_F0_Half.png": {
+			"sdcard": false
+		},
+		"/src/images/Jnr_Climbing_Vine_F1_Half.png": {
+			"sdcard": false
+		},
+		"/src/images/Jnr_Climbing_Vine_F0_Half copy.png": {
+			"sdcard": false
+		},
+		"/src/images/Jnr_Climbing_Vine_F1_Half copy.png": {
+			"sdcard": false
+		},
+		"/src/images/Jnr_Climbing_Vine_F0_TopHalf.png": {
+			"sdcard": false
+		},
+		"/src/images/Jnr_Climbing_Vine_F0_BottomHalf.png": {
+			"sdcard": false
+		},
+		"/src/images/Jnr_Climbing_Vine_F1_BottomHalf.png": {
+			"sdcard": false
+		},
+		"/src/images/Jnr_Climbing_Vine_F1_TopHalf.png": {
+			"sdcard": false
+		},
+		"/src/images/player/Jnr_Climbing_Vine_F0_BottomHalf.png": {
+			"sdcard": false
+		},
+		"/src/images/player/Jnr_Climbing_Vine_F1_BottomHalf.png": {
+			"sdcard": false
+		},
+		"/src/images/player/Jnr_Climbing_Vine_F1_TopHalf.png": {
+			"sdcard": false
+		},
+		"/src/images/player/Jnr_Climbing_Vine_F0_TopHalf.png": {
+			"sdcard": false
+		},
+		"/src/images/player/Jnr_Climbing_Vine_F1_BottomHalf.h": {
+			"sdcard": false
+		},
+		"/src/images/player/Jnr_Climbing_Vine_F0_BottomHalf.h": {
+			"sdcard": false
+		},
+		"/src/images/player/Jnr_Climbing_Vine_F1_TopHalf.h": {
+			"sdcard": false
+		},
+		"/src/images/player/Jnr_Climbing_Vine_F0_TopHalf.h": {
+			"sdcard": false
+		},
+		"/TitleScreen_NoScoreNoSelector.png": {
+			"sdcard": false
+		},
+		"/TitleScreen_NoScoreNoSelector copy.png": {
+			"sdcard": false
+		},
+		"/TitleScreen_NoScoreNoSelector.h": {
+			"sdcard": false
+		},
+		"/TitleScreen_NoScoreNoSelector copy.h": {
+			"sdcard": false
+		},
+		"/src/images/Others/GameOver.png": {
+			"sdcard": false
+		},
+		"/src/images/Others/GameOver.h": {
+			"sdcard": false
+		},
+		"/src/images/others": {
+			"sdcard": false
+		},
+		"/src/images/others/GameOver.h": {
+			"sdcard": false
+		},
+		"/src/images/others/GameOver.png": {
+			"sdcard": false
+		},
+		"/src/images/others/Pause.h": {
+			"sdcard": false
+		},
+		"/src/images/others/Pause.png": {
+			"sdcard": false
+		},
+		"/src/images/others/DKII_GameA.png": {
+			"sdcard": false
+		},
+		"/src/images/others/DKII_GameB.png": {
+			"sdcard": false
+		},
+		"/src/images/others/GameB.png": {
+			"sdcard": false
+		},
+		"/src/images/others/GameA.png": {
+			"sdcard": false
+		},
+		"/src/images/others/Others.h": {
+			"sdcard": false
+		},
+		"/src/images/others/GameB.h": {
+			"sdcard": false
+		},
+		"/src/images/others/GameA.h": {
+			"sdcard": false
+		},
+		"/src/images/numbers": {
+			"sdcard": false
+		},
+		"/src/images/numbers/Numbers.png": {
+			"sdcard": false
+		},
+		"/src/images/numbers/Numbers copy.png": {
+			"sdcard": false
+		},
+		"/src/images/numbers/Numbers copy 2.png": {
+			"sdcard": false
+		},
+		"/src/images/numbers/Numbers copy 3.png": {
+			"sdcard": false
+		},
+		"/src/images/numbers/Numbers copy 4.png": {
+			"sdcard": false
+		},
+		"/src/images/numbers/Numbers copy 5.png": {
+			"sdcard": false
+		},
+		"/src/images/numbers/Number_0.png": {
+			"sdcard": false
+		},
+		"/src/images/numbers/Number_0 copy.png": {
+			"sdcard": false
+		},
+		"/src/images/numbers/Number_0 copy 2.png": {
+			"sdcard": false
+		},
+		"/src/images/numbers/Number_0 copy 3.png": {
+			"sdcard": false
+		},
+		"/src/images/numbers/Number_0 copy 4.png": {
+			"sdcard": false
+		},
+		"/src/images/numbers/Number_0 copy 5.png": {
+			"sdcard": false
+		},
+		"/src/images/numbers/Number_0 copy 6.png": {
+			"sdcard": false
+		},
+		"/src/images/numbers/Number_0 copy 7.png": {
+			"sdcard": false
+		},
+		"/src/images/numbers/Number_0 copy 8.png": {
+			"sdcard": false
+		},
+		"/src/images/numbers/Number_1.png": {
+			"sdcard": false
+		},
+		"/src/images/numbers/Number_2.png": {
+			"sdcard": false
+		},
+		"/src/images/numbers/Number_3.png": {
+			"sdcard": false
+		},
+		"/src/images/numbers/Number_4.png": {
+			"sdcard": false
+		},
+		"/src/images/numbers/Number_5.png": {
+			"sdcard": false
+		},
+		"/src/images/numbers/Number_6.png": {
+			"sdcard": false
+		},
+		"/src/images/numbers/Number_7.png": {
+			"sdcard": false
+		},
+		"/src/images/numbers/Number_8.png": {
+			"sdcard": false
+		},
+		"/src/images/numbers/Number_9.png": {
+			"sdcard": false
+		},
+		"/src/images/numbers/Numbers.h": {
+			"sdcard": false
+		},
+		"/src/images/numbers/Number_1.h": {
+			"sdcard": false
+		},
+		"/src/images/numbers/Number_2.h": {
+			"sdcard": false
+		},
+		"/src/images/numbers/Number_3.h": {
+			"sdcard": false
+		},
+		"/src/images/numbers/Number_4.h": {
+			"sdcard": false
+		},
+		"/src/images/numbers/Number_5.h": {
+			"sdcard": false
+		},
+		"/src/images/numbers/Number_6.h": {
+			"sdcard": false
+		},
+		"/src/images/numbers/Number_8.h": {
+			"sdcard": false
+		},
+		"/src/images/numbers/Number_7.h": {
+			"sdcard": false
+		},
+		"/src/images/numbers/Number_0.h": {
+			"sdcard": false
+		},
+		"/src/images/numbers/Number_9.h": {
+			"sdcard": false
+		},
+		"/TitleScreen.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/aaa.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/aaa copy.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/aaa copy 2.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/aaa copy 3.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/aaa copy 4.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/aaa copy 5.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/aaa copy 6.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/aaa copy 7.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/aaa copy 8.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/aaa copy 9.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/aaa copy 10.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/aaa copy 11.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/aaa copy 12.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/aaa copy 13.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/aaa copy 14.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/aaa copy 15.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/aaa copy 16.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/Scenery_02.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/Scenery_00.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/Scenery_01.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/Scenery_03.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/Scenery_04.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/Scenery_05.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/Scenery_07.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/Scenery_06.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/Scenery_08.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/Scenery_09.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/Scenery_10.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/Scenery_11.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/Scenery_12.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/Scenery_13.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/Scenery_14.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/Scenery_14 copy.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/Scenery_15.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/aaa copy 17.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/aaa copy 18.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/aaa copy 19.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/Scenery_16.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/Scenery_17.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/Scenery_110x128.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/untitled folder": {
+			"sdcard": false
+		},
+		"/src/images/scenery/normal": {
+			"sdcard": false
+		},
+		"/src/images/scenery/laerge": {
+			"sdcard": false
+		},
+		"/src/images/scenery/large": {
+			"sdcard": false
+		},
+		"/src/images/scenery/large/Scenery_15.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/large/Scenery_14.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/large/Scenery_13.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/large/Scenery_12.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/large/Scenery_11.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/large/Scenery_10.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/large/Scenery_09.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/large/Scenery_08.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/normal/Scenery.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/normal/Scenery_Middle.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/normal/Scenery.h": {
+			"sdcard": false
+		},
+		"/src/images/scenery/normal/Scenery_Edge_R.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/normal/Scenery_Edge_R.h": {
+			"sdcard": false
+		},
+		"/src/images/scenery/normal/Scenery_Edge_R_Large.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/normal/Scenery_Edge_L.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/normal/Scenery_Edge_L.h": {
+			"sdcard": false
+		},
+		"/src/images/scenery/normal/Scenery_Middle.h": {
+			"sdcard": false
+		},
+		"/src/images/scenery/normal/Scenery_Edge_R_Large.h": {
+			"sdcard": false
+		},
+		"/src/images/scenery/large/Scenery_110x128.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/large/Scenery_14.h": {
+			"sdcard": false
+		},
+		"/src/images/scenery/large/Scenery_13.h": {
+			"sdcard": false
+		},
+		"/src/images/scenery/large/Scenery_11.h": {
+			"sdcard": false
+		},
+		"/src/images/scenery/large/Scenery_10.h": {
+			"sdcard": false
+		},
+		"/src/images/scenery/large/Scenery_12.h": {
+			"sdcard": false
+		},
+		"/src/images/scenery/large/Scenery_110x128.h": {
+			"sdcard": false
+		},
+		"/src/images/scenery/large/Scenery_08.h": {
+			"sdcard": false
+		},
+		"/src/images/scenery/large/Scenery_09.h": {
+			"sdcard": false
+		},
+		"/src/images/scenery/large/Scenery_00.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/large/Scenery_01.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/large/Scenery_02.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/large/Scenery_03.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/large/Scenery_04.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/large/Scenery_05.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/large/Scenery_06.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/large/Scenery_07.png": {
+			"sdcard": false
+		},
+		"/src/images/scenery/large/Scenery_15.h": {
+			"sdcard": false
+		},
+		"/src/images/scenery/large/Scenery_00.h": {
+			"sdcard": false
+		},
+		"/src/images/scenery/large/Scenery_01.h": {
+			"sdcard": false
+		},
+		"/src/images/scenery/large/Scenery_02.h": {
+			"sdcard": false
+		},
+		"/src/images/scenery/large/Scenery_03.h": {
+			"sdcard": false
+		},
+		"/src/images/scenery/large/Scenery_05.h": {
+			"sdcard": false
+		},
+		"/src/images/scenery/large/Scenery_06.h": {
+			"sdcard": false
+		},
+		"/src/images/scenery/large/Scenery_04.h": {
+			"sdcard": false
+		},
+		"/src/images/scenery/large/Scenery_07.h": {
+			"sdcard": false
+		},
+		"/src/images/player/untitled folder": {
+			"sdcard": false
+		},
+		"/src/images/player/normal": {
+			"sdcard": false
+		},
+		"/src/images/player/large": {
+			"sdcard": false
+		},
+		"/src/images/player/normal/Jnr_Climbing_Vine_F0_BottomHalf.h": {
+			"sdcard": false
+		},
+		"/src/images/player/normal/Jnr_Climbing_Vine_F0_BottomHalf.png": {
+			"sdcard": false
+		},
+		"/src/images/player/normal/Jnr_Climbing_Vine_F0_TopHalf.h": {
+			"sdcard": false
+		},
+		"/src/images/player/normal/Jnr_Climbing_Vine_F0_TopHalf.png": {
+			"sdcard": false
+		},
+		"/src/images/player/normal/Jnr_Climbing_Vine_F0.h": {
+			"sdcard": false
+		},
+		"/src/images/player/normal/Jnr_Climbing_Vine_F0.png": {
+			"sdcard": false
+		},
+		"/src/images/player/normal/Jnr_Climbing_Vine_F1_BottomHalf.h": {
+			"sdcard": false
+		},
+		"/src/images/player/normal/Jnr_Idle_R_F0.png": {
+			"sdcard": false
+		},
+		"/src/images/player/normal/Jnr_OnRope_F0.h": {
+			"sdcard": false
+		},
+		"/src/images/player/normal/Jnr_OnRope_F0.png": {
+			"sdcard": false
+		},
+		"/src/images/player/normal/Jnr_OnRope_F1.h": {
+			"sdcard": false
+		},
+		"/src/images/player/normal/Jnr_OnRope_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/player/normal/Jnr_Walking_L_F2.h": {
+			"sdcard": false
+		},
+		"/src/images/player/normal/Jnr_Walking_L_F2.png": {
+			"sdcard": false
+		},
+		"/src/images/player/normal/Jnr_Walking_R_F1.h": {
+			"sdcard": false
+		},
+		"/src/images/player/normal/Jnr_Walking_R_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/player/large/Jnr_Climbing_Vine_F0_BottomHalf.h": {
+			"sdcard": false
+		},
+		"/src/images/player/large/Jnr_Climbing_Vine_F0_BottomHalf.png": {
+			"sdcard": false
+		},
+		"/src/images/player/large/Jnr_Climbing_Vine_F0_TopHalf.h": {
+			"sdcard": false
+		},
+		"/src/images/player/large/Jnr_Climbing_Vine_F0_TopHalf.png": {
+			"sdcard": false
+		},
+		"/src/images/player/large/Jnr_Climbing_Vine_F0.h": {
+			"sdcard": false
+		},
+		"/src/images/player/large/Jnr_Climbing_Vine_F0.png": {
+			"sdcard": false
+		},
+		"/src/images/player/large/Jnr_Climbing_Vine_F1_TopHalf.png": {
+			"sdcard": false
+		},
+		"/src/images/player/large/Jnr_Climbing_Vine_F1.h": {
+			"sdcard": false
+		},
+		"/src/images/player/normal/Jnr_Climbing_Vine_F1.h": {
+			"sdcard": false
+		},
+		"/src/images/player/large/Jnr_Climbing_Vine_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/player/large/Jnr_Idle_L_F0.h": {
+			"sdcard": false
+		},
+		"/src/images/player/normal/Jnr_Climbing_Vine_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/player/normal/Jnr_Idle_L_F0.h": {
+			"sdcard": false
+		},
+		"/src/images/player/large/Jnr_Idle_R_F0.h": {
+			"sdcard": false
+		},
+		"/src/images/player/large/Jnr_Idle_R_F0.png": {
+			"sdcard": false
+		},
+		"/src/images/player/large/Jnr_OnRope_F0.h": {
+			"sdcard": false
+		},
+		"/src/images/player/large/Jnr_OnRope_F1.h": {
+			"sdcard": false
+		},
+		"/src/images/player/large/Jnr_OnRope_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/player/large/Jnr_OnRope_F2.h": {
+			"sdcard": false
+		},
+		"/src/images/player/large/Jnr_OnRope_F2.png": {
+			"sdcard": false
+		},
+		"/src/images/player/large/Jnr_OnRope_F3.h": {
+			"sdcard": false
+		},
+		"/src/images/player/normal/Jnr_OnRope_F2.png": {
+			"sdcard": false
+		},
+		"/src/images/player/normal/Jnr_OnRope_F3.h": {
+			"sdcard": false
+		},
+		"/src/images/player/large/Jnr_OnRope_F3.png": {
+			"sdcard": false
+		},
+		"/src/images/player/large/Jnr_Walking_L_F1.h": {
+			"sdcard": false
+		},
+		"/src/images/player/normal/Jnr_OnRope_F3.png": {
+			"sdcard": false
+		},
+		"/src/images/player/normal/Jnr_Walking_L_F1.h": {
+			"sdcard": false
+		},
+		"/src/images/player/large/Jnr_Walking_L_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/player/large/Jnr_Walking_L_F2.h": {
+			"sdcard": false
+		},
+		"/src/images/player/normal/Jnr_Walking_L_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/player/large/Jnr_Walking_R_F1.png": {
+			"sdcard": false
+		},
+		"/src/images/player/large/Jnr_Walking_R_F2.h": {
+			"sdcard": false
+		},
+		"/src/images/player/normal/Jnr_Walking_R_F2.h": {
+			"sdcard": false
+		},
+		"/src/images/player/large/Jnr_Climbing_Vine_F1_BottomHalf.h": {
+			"sdcard": false
+		},
+		"/src/images/player/large/Jnr_Climbing_Vine_F1_BottomHalf.png": {
+			"sdcard": false
+		},
+		"/src/images/player/large/Jnr_Climbing_Vine_F1_TopHalf.h": {
+			"sdcard": false
+		},
+		"/src/images/player/large/Jnr_Idle_L_F0.png": {
+			"sdcard": false
+		},
+		"/src/images/player/large/Jnr_Walking_L_F2.png": {
+			"sdcard": false
+		},
+		"/src/images/player/large/Jnr_Walking_R_F1.h": {
+			"sdcard": false
+		},
+		"/src/images/player/large/Jnr_Walking_R_F2.png": {
+			"sdcard": false
+		},
+		"/src/images/player/Player_Large.h": {
+			"sdcard": false
+		},
+		"/src/images/player/Player_Large copy.h": {
+			"sdcard": false
+		},
+		"/src/images/player/Player_Normal.h": {
+			"sdcard": false
+		},
+		"/src/images/Images_Normal.h": {
+			"sdcard": false
+		},
+		"/src/images/Images_Normal copy.h": {
+			"sdcard": false
+		},
+		"/src/images/Images_Large.h": {
+			"sdcard": false
+		},
+		"/src/images/player/large/Player_Large.h": {
+			"sdcard": false
+		},
+		"/src/images/player/normal/Player_Normal.h": {
+			"sdcard": false
+		},
+		"/src/images/player/large/Player.h": {
+			"sdcard": false
+		},
+		"/src/images/player/normal/Player.h": {
+			"sdcard": false
+		},
+		"/src/images/scenery/Scenerys copy.h": {
+			"sdcard": false
+		},
+		"/src/images/scenery/large/Scenerys.h": {
+			"sdcard": false
+		},
+		"/src/images/scenery/normal/Scenerys copy.h": {
+			"sdcard": false
+		},
+		"/src/images/scenery/normal/Scenerys.h": {
+			"sdcard": false
+		},
+		"/src/images/player/large/Jnr_OnRope_F0.png": {
+			"sdcard": false
+		},
+		"/src/images/player/normal/Jnr_Climbing_Vine_F1_BottomHalf.png": {
+			"sdcard": false
+		},
+		"/src/images/player/normal/Jnr_Climbing_Vine_F1_TopHalf.h": {
+			"sdcard": false
+		},
+		"/src/images/player/normal/Jnr_Climbing_Vine_F1_TopHalf.png": {
+			"sdcard": false
+		},
+		"/src/images/player/normal/Jnr_Idle_L_F0.png": {
+			"sdcard": false
+		},
+		"/src/images/player/normal/Jnr_Idle_R_F0.h": {
+			"sdcard": false
+		},
+		"/src/images/player/normal/Jnr_OnRope_F2.h": {
+			"sdcard": false
+		},
+		"/src/images/player/normal/Jnr_Walking_R_F2.png": {
+			"sdcard": false
 		}
 	}
 }

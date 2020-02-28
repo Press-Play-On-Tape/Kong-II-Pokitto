@@ -13,6 +13,7 @@ using PS = Pokitto::Sound;
 void Game::playGame_Render() {
 
     const uint8_t yOffset = playGameVars.player.getYOffset();
+printf("%i\n", yOffset);
 
 
     // Draw Scenery ..
@@ -30,26 +31,99 @@ void Game::playGame_Render() {
             uint8_t x = playGameVars.player.getXPosition(this->gameStats.viewSize, false);
             uint8_t y = playGameVars.player.getYPosition(this->gameStats.viewSize);
 
-            PD::drawBitmap(x, y, Images::Junior[stance]);
+            if (this->gameStats.viewSize == ViewSize::Normal) {
+
+                switch (y) {
+
+                    case 70 ... 76:
+
+                        switch (static_cast<Stance>(stance)) {
+
+                            case Stance::Climbing_Vine_01:
+                                PD::drawBitmap(x, y, Images_Normal::Jnr_Climbing_Vine_F0);
+                                PD::drawBitmap(x, y + 15, Images_Normal::Jnr_Climbing_Vine_F0_BottomHalf);
+                                break;
+
+                            case Stance::Climbing_Vine_02:
+                                PD::drawBitmap(x, y, Images_Normal::Jnr_Climbing_Vine_F1);
+                                PD::drawBitmap(x, y + 15, Images_Normal::Jnr_Climbing_Vine_F1_BottomHalf);
+                                break;
+
+                        }
+
+                        break;
+
+                    case 77 ... 81:
+
+                        switch (static_cast<Stance>(stance)) {
+
+                            case Stance::Climbing_Vine_01:
+                                PD::drawBitmap(x, y, Images_Normal::Jnr_Climbing_Vine_F0_TopHalf);
+                                PD::drawBitmap(x, y + 8, Images_Normal::Jnr_Climbing_Vine_F0);
+                                break;
+
+                            case Stance::Climbing_Vine_02:
+                                PD::drawBitmap(x, y, Images_Normal::Jnr_Climbing_Vine_F1_TopHalf);
+                                PD::drawBitmap(x, y + 8, Images_Normal::Jnr_Climbing_Vine_F1);
+                                break;
+
+                        }
+
+                        break;
+
+                    default:
+                        PD::drawBitmap(x, y, Images_Normal::Junior[stance]);
+                        break;
+
+                }
+
+            }
+            else {
+    
+                PD::drawBitmap(x, y, Images_Large::Junior[stance]);
+
+            }
 
         }
         else {
 
             if ((playGameVars.introDelay / 20) % 2 == 0) {
 
-                uint8_t x = playGameVars.player.getXPosition(this->gameStats.viewSize, false);
-                uint8_t y = playGameVars.player.getYPosition(this->gameStats.viewSize);
+                if (this->gameStats.viewSize == ViewSize::Normal) {
 
-                if (playGameVars.player.isDead()) {
+                    uint8_t x = playGameVars.player.getXPosition(this->gameStats.viewSize, false);
+                    uint8_t y = playGameVars.player.getYPosition(this->gameStats.viewSize);
 
-                    uint8_t stance = playGameVars.player.getImage();
-                    PD::drawBitmap(x, y, Images::Junior[stance]);
+                    if (playGameVars.player.isDead()) {
+
+                        uint8_t stance = playGameVars.player.getImage();
+                        PD::drawBitmap(x, y, Images_Normal::Junior[stance]);
+
+                    }
+                    else {
+
+                        PD::drawBitmap(x, y, Images_Normal::Jnr_Idle_R_F0);
+
+                    }
 
                 }
                 else {
 
-                    PD::drawBitmap(x, y, Images::Jnr_Idle_R_F0);
+                    uint8_t x = playGameVars.player.getXPosition(this->gameStats.viewSize, false);
+                    uint8_t y = playGameVars.player.getYPosition(this->gameStats.viewSize);
 
+                    if (playGameVars.player.isDead()) {
+
+                        uint8_t stance = playGameVars.player.getImage();
+                        PD::drawBitmap(x, y, Images_Large::Junior[stance]);
+
+                    }
+                    else {
+
+                        PD::drawBitmap(x, y, Images_Large::Jnr_Idle_R_F0);
+
+                    }
+                    
                 }
 
             }
@@ -60,13 +134,13 @@ void Game::playGame_Render() {
 
 
     // Draw Kong
-/*
+
     if (playGameVars.kong.getEnabled()) {
 
         playGame_RenderKong(yOffset);
 
     }
-*/
+
 
     // Draw sparks / birds / clappers ..
 
@@ -80,7 +154,7 @@ void Game::playGame_Render() {
             uint8_t y = lowerClapper.getYPosition(this->gameStats.viewSize, yOffset);
             uint8_t index = lowerClapper.getImage(this->gameStats.viewSize);
 
-            PD::drawBitmap(x, y, Images::Clappers[index]);
+            PD::drawBitmap(x, y, Images_Normal::Clappers[index]);
 
         }
 
@@ -92,7 +166,7 @@ void Game::playGame_Render() {
             uint8_t y = upperClapper.getYPosition(this->gameStats.viewSize, yOffset);
             uint8_t index = upperClapper.getImage(this->gameStats.viewSize);
 
-            PD::drawBitmap(x, y, Images::Clappers[index]);
+            PD::drawBitmap(x, y, Images_Normal::Clappers[index]);
 
         }
 
@@ -105,7 +179,7 @@ void Game::playGame_Render() {
             uint8_t index = lowerSpark.getImage();
 
             if (static_cast<SparkImage>(index) != SparkImage::None) {
-                PD::drawBitmap(x, y, Images::Spark[index]);
+                PD::drawBitmap(x, y, Images_Normal::Spark[index]);
             }
 
         }
@@ -119,7 +193,7 @@ void Game::playGame_Render() {
             uint8_t index = upperSpark.getImage();
 
             if (static_cast<SparkImage>(index) != SparkImage::None) {
-                PD::drawBitmap(x, y, Images::Spark[index]);
+                PD::drawBitmap(x, y, Images_Normal::Spark[index]);
             }
 
         }
@@ -134,7 +208,7 @@ void Game::playGame_Render() {
 
             if (static_cast<BirdImage>(index) != BirdImage::None) {
 
-                PD::drawBitmap(x, y, Images::Birds[index]);
+                PD::drawBitmap(x, y, Images_Normal::Birds[index]);
 
             }
 
@@ -142,25 +216,9 @@ void Game::playGame_Render() {
 
     }
 
-    if (this->gameStats.viewSize == ViewSize::Normal) {
-
-        PD::drawBitmap(VIEW_NORMAL_X_OFFSET - 8, 107 + VIEW_NORMAL_Y_LOWER_OFFSET, Images::Scenery_Edge_L);
-        PD::drawBitmap(VIEW_NORMAL_X_OFFSET + 128, 107 + VIEW_NORMAL_Y_LOWER_OFFSET, Images::Scenery_Edge_R);
-
-        PD::drawBitmap(VIEW_NORMAL_X_OFFSET - 8, 54 + VIEW_NORMAL_Y_UPPER_OFFSET, Images::Scenery_Edge_L);
-        PD::drawBitmap(VIEW_NORMAL_X_OFFSET + 128, 54 + VIEW_NORMAL_Y_UPPER_OFFSET, Images::Scenery_Edge_R);
-
-        PD::drawBitmap(VIEW_NORMAL_X_OFFSET + 128, 42 + VIEW_NORMAL_Y_UPPER_OFFSET, Images::Scenery_Edge_R_Large);
-
-    // playGameVars.lowerClappers.reset(107);
-
-    // playGameVars.upperClappers.setDelayMax(playGameVars.clappersUpperDelay, true);
-    // playGameVars.upperClappers.reset(54);
 
 
-    }
 
-/*
     playGame_RenderKey(yOffset);
     playGame_RenderGameOverOrPause();
 
@@ -168,7 +226,19 @@ void Game::playGame_Render() {
     // Render score ..
 
     playGame_RenderScore(yOffset);
-*/
+
+
+    if (this->gameStats.viewSize == ViewSize::Normal) {
+
+        PD::drawBitmap(VIEW_NORMAL_X_OFFSET - 8, 107 + VIEW_NORMAL_Y_LOWER_OFFSET, Images_Normal::Scenery_Edge_L);
+        PD::drawBitmap(VIEW_NORMAL_X_OFFSET + 128, 107 + VIEW_NORMAL_Y_LOWER_OFFSET, Images_Normal::Scenery_Edge_R);
+        PD::drawBitmap(VIEW_NORMAL_X_OFFSET - 8, 54 + VIEW_NORMAL_Y_UPPER_OFFSET, Images_Normal::Scenery_Edge_L);
+        PD::drawBitmap(VIEW_NORMAL_X_OFFSET + 128, 54 + VIEW_NORMAL_Y_UPPER_OFFSET, Images_Normal::Scenery_Edge_R);
+        PD::drawBitmap(VIEW_NORMAL_X_OFFSET + 128, 42 + VIEW_NORMAL_Y_UPPER_OFFSET, Images_Normal::Scenery_Edge_R_Large);
+        PD::drawBitmap(55, 83, Images_Normal::Scenery_Middle);
+
+    }
+
 }
 
 
@@ -177,26 +247,44 @@ void Game::playGame_Render() {
 //
 void Game::playGame_RenderKong(uint8_t yOffset) {
 
-    // int8_t x = playGameVars.kong.getXPosition(this->gameStats.viewSize);
-    // int8_t y = playGameVars.kong.getYPosition(this->gameStats.viewSize, yOffset);
-    // KongImage image = playGameVars.kong.getImage();
+    uint8_t x = playGameVars.kong.getXPosition(this->gameStats.viewSize);
+    uint8_t y = playGameVars.kong.getYPosition(this->gameStats.viewSize, yOffset);
+    KongImage image = playGameVars.kong.getImage();
 
-    // Sprites::drawErase(x, y, pgm_read_word_near(&Images::Kong_Mask[static_cast<uint8_t>(image)]), 0);
-    // Sprites::drawSelfMasked(x, y, pgm_read_word_near(&Images::Kong[static_cast<uint8_t>(image)]), 0);
+    PD::drawBitmap(x, y, Images_Normal::Kong[static_cast<uint8_t>(image)]);
     
-    // const uint8_t xPos[] = { 30, 47, 76, 83 };
-    // const uint8_t yPos[] = { 6, 11, 11, 6 };
-    
-    // for (uint8_t i = 0; i < 4 ; i++) {
+    if (this->gameStats.viewSize == ViewSize::Normal) {
 
-    //     if (playGameVars.kong.getDisplayChain(i)) {
+        const uint8_t xPos[] = { 30 + VIEW_NORMAL_X_OFFSET, 47 + VIEW_NORMAL_X_OFFSET, 76 + VIEW_NORMAL_X_OFFSET, 83 + VIEW_NORMAL_X_OFFSET };
+        const uint8_t yPos[] = { 6 + VIEW_NORMAL_Y_UPPER_OFFSET, 11 + VIEW_NORMAL_Y_UPPER_OFFSET, 11 + VIEW_NORMAL_Y_UPPER_OFFSET, 6 + VIEW_NORMAL_Y_UPPER_OFFSET };
+        
+        for (uint8_t i = 0; i < 4 ; i++) {
 
-    //         Sprites::drawErase(xPos[i], yPos[i] - yOffset, pgm_read_word_near(&Images::Lock_Chains_Mask[i]), 0);
-    //         Sprites::drawSelfMasked(xPos[i], yPos[i] - yOffset, pgm_read_word_near(&Images::Lock_Chains[i]), 0);
+            if (playGameVars.kong.getDisplayChain(i)) {
 
-    //     }
+                PD::drawBitmap(xPos[i], yPos[i], Images_Normal::Lock_Chains[i]);
 
-    // }
+            }
+
+        }
+
+    }
+    else {
+
+        const uint8_t xPos[] = { 30, 47, 76, 83 };
+        const uint8_t yPos[] = { 6, 11, 11, 6 };
+        
+        for (uint8_t i = 0; i < 4 ; i++) {
+
+            if (playGameVars.kong.getDisplayChain(i)) {
+
+                PD::drawBitmap(xPos[i], yPos[i] - yOffset, Images_Normal::Lock_Chains[i]);
+
+            }
+
+        }
+
+    }
 
 }
 
@@ -208,28 +296,26 @@ void Game::playGame_RenderKey(uint8_t yOffset) {
 
     // Render key ..
 
-    // if (playGameVars.key.getKeyLocation() != KeyLocation::None) {
+    if (playGameVars.key.getKeyLocation() != KeyLocation::None) {
 
-    //     int8_t x = playGameVars.key.getXPosition();
-    //     int8_t y = playGameVars.key.getYPosition(yOffset);
-    //     uint8_t index = playGameVars.key.getImage();
+        uint8_t x = playGameVars.key.getXPosition(this->gameStats.viewSize);
+        uint8_t y = playGameVars.key.getYPosition(this->gameStats.viewSize, yOffset);
+        uint8_t index = playGameVars.key.getImage();
 
-    //     if (index == NO_IMAGE) {
+        if (index == NO_IMAGE) {
 
-    //         index = arduboy.getFrameCount() % 59 / 15;
-    //         Sprites::drawErase(x, y, Images::Key_Spin_Mask, index);
-    //         Sprites::drawSelfMasked(x, y, Images::Key_Spin, index);
+            index = Utils::getFrameCount(59) / 15;
+            PD::drawBitmap(x, y, Images_Normal::Key_Spin[index]);
 
-    //     }
-    //     else {
+        }
+        else {
 
-    //         if (playGameVars.key.getDisplay()) {
-    //             Sprites::drawErase(x, y, Images::Key_Rotate_Mask, index);
-    //             Sprites::drawSelfMasked(x, y, Images::Key_Rotate, index);
-    //         }
+            if (playGameVars.key.getDisplay()) {
+                PD::drawBitmap(x, y, Images_Normal::Key_Rotate[index]);
+            }
 
-    //     }
+        }
 
-    // }
+    }
 
 }
