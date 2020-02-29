@@ -127,9 +127,18 @@ void Game::playGame_Update() {
 
                     this->playGameVars.player.startJump();
 
-                    #ifdef INCLUDE_SOUND 
-                        Utils::playSoundEffect(SoundEffects::Jump);
-                    #endif                   
+
+                    if ((this->playGameVars.key.getKeyLocation() == KeyLocation::LowerPosition && this->playGameVars.player.getPosition() >= PLAYER_POS_LOWERKEY_START && this->playGameVars.player.getPosition() <= PLAYER_POS_LOWERKEY_END) ||
+                        (this->playGameVars.key.getKeyLocation() == KeyLocation::UpperPosition && this->playGameVars.player.getPosition() >= PLAYER_POS_UPPERKEY_START && this->playGameVars.player.getPosition() <= PLAYER_POS_UPPERKEY_END)) {
+
+                    }
+                    else {
+
+                        #ifdef INCLUDE_SOUND 
+                            Utils::playSoundEffect(SoundEffects::Jump);
+                        #endif                   
+
+                    }
 
                 }
 
