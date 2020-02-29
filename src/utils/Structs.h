@@ -3,15 +3,6 @@
 #include "Pokitto.h"
 #include "Enums.h"
 
-struct HighScoreStateVars {
-    
-    bool newHighScore = false;
-    uint8_t clearScores = 0;
-    uint8_t counter = 0;
-    GameMode selectedMode = GameMode::Easy;
-
-};
-
 struct SplashScreenStateVars {
 
     uint8_t counter = 0;
@@ -20,9 +11,7 @@ struct SplashScreenStateVars {
 
 struct TitleScreenStateVars {
 
-    uint8_t restart = 0;
-    uint8_t counter = 0;
-    Rotation position = Rotation::None;
+    uint8_t position = 0;
 
 };
 

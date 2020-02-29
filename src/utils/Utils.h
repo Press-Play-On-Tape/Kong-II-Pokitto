@@ -2,9 +2,11 @@
 
 #include "Pokitto.h"
 #include "Enums.h"
+#include "../sounds/Sounds.h"
 
 using PC = Pokitto::Core;
 using PD = Pokitto::Display;
+using PS = Pokitto::Sound;
 
 
 struct Rect {
@@ -15,7 +17,7 @@ struct Rect {
 };
 
 namespace Utils {
-        
+
     static inline bool collide(Rect rect1, Rect rect2) {
         return !(rect2.x                >= rect1.x + rect1.width  ||
                  rect2.x + rect2.width  <= rect1.x                ||
@@ -123,6 +125,67 @@ namespace Utils {
         value /= 10;
       }
     
+    }
+
+    static inline bool sfxOver() {
+
+        return ( PS::sfxDataPtr >= PS::sfxEndPtr );
+
+    }
+
+    static void stopSfx() {
+
+        PS::sfxDataPtr = PS::sfxEndPtr;
+
+    }
+
+    static void playSoundEffect(SoundEffects soundEffect) {
+
+        switch (soundEffect) {
+            
+            case SoundEffects::JumpObstacle:
+                PS::playSFX(Sounds::sfx_02_Jump_Over_Obstacle, Sounds::sfx_02_Jump_Over_Obstacle_length);
+                break;
+            
+            case SoundEffects::Jump:
+                PS::playSFX(Sounds::sfx_07_Jump, Sounds::sfx_07_Jump_length);
+                break;
+            
+            case SoundEffects::Pause:
+                PS::playSFX(Sounds::sfx_03_Pause, Sounds::sfx_03_Pause_length);
+                break;
+            
+            case SoundEffects::ThrowKey:
+                PS::playSFX(Sounds::sfx_04_ThrowKey, Sounds::sfx_04_ThrowKey_length);
+                break;
+            
+            case SoundEffects::KongPound:
+                PS::playSFX(Sounds::sfx_05_KongPound, Sounds::sfx_05_KongPound_length);
+                break;
+            
+            case SoundEffects::Collide:
+                PS::playSFX(Sounds::sfx_06_Collide, Sounds::sfx_06_Collide_length);
+                break;
+        
+        }
+
+    }    
+
+        // ----------------------------------------------------------------------------
+    //  Start a stream from the SD card .. 
+    //
+    static void playMusicStream(SDStream stream) {
+
+        #ifdef INCLUDE_SOUND_FROM_SD
+        switch (stream) {
+
+            case SDStream::Introduction:
+                PS::playMusicStream("music/kong2_1.raw", 0);
+                break;
+
+        }
+        #endif
+
     }
     
 }

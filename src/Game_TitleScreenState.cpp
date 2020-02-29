@@ -12,20 +12,14 @@ using PS = Pokitto::Sound;
 //
 void Game::titleScreen_Activate() {
 
-    gameStats.resetGame();
+    this->gameStats.resetGame();
     
     //sound.volumeMode(VOLUME_ALWAYS_NORMAL);
 
-    playGameVars.frameRate = FRAME_RATE_MIN;
-    PC::setFrameRate(playGameVars.frameRate);
+    this->playGameVars.frameRate = FRAME_RATE_MIN;
+    PC::setFrameRate(this->playGameVars.frameRate);
 
-    titleScreenVars.restart = 0;
-    titleScreenVars.counter = 0;
-    titleScreenVars.position = Rotation::None;
-
-    #ifdef PLAY_SOUNDS 
-    sound.tones(Sounds::TitleMusic);
-    #endif
+    titleScreenVars.position = 0;
 
 }
 
@@ -36,16 +30,47 @@ void Game::titleScreen_Activate() {
 
 void Game::titleScreen_Update() {
 
-    if (PC::buttons.pressed(BTN_A)) { 
+    if (PC::buttons.pressed(BTN_UP) && titleScreenVars.position > 0) { 
 
-        this->gameState = GameStateType::PlayGame_Activate; 
+        titleScreenVars.position--;
 
     }
 
-    if (PC::buttons.pressed(BTN_C)) { 
+    if (PC::buttons.pressed(BTN_DOWN) && titleScreenVars.position < 2) { 
 
-        this->gameStats.viewSize = ViewSize::Large;
-        this->gameState = GameStateType::PlayGame_Activate; 
+        titleScreenVars.position++;
+
+    }
+
+    if (PC::buttons.pressed(BTN_A) || PC::buttons.pressed(BTN_B) || PC::buttons.pressed(BTN_C)) { 
+
+        switch (titleScreenVars.position) {
+            
+            case 0:
+                this->cookie->mode = GameMode::Easy;
+                this->cookie->saveCookie();
+                this->gameState = GameStateType::PlayGame_Activate; 
+                break;
+            
+            case 1:
+                this->cookie->mode = GameMode::Hard;
+                this->cookie->saveCookie();
+                this->gameState = GameStateType::PlayGame_Activate; 
+                break;
+         
+            case 2:
+                this->cookie->viewSize = (this->cookie->viewSize == ViewSize::Normal ? ViewSize::Large : ViewSize::Normal);
+                this->cookie->saveCookie();
+                break;     
+            
+        }
+
+    }
+
+    if ((PC::buttons.pressed(BTN_LEFT) || PC::buttons.pressed(BTN_RIGHT)) && titleScreenVars.position == 2) { 
+
+        this->cookie->viewSize = (this->cookie->viewSize == ViewSize::Normal ? ViewSize::Large : ViewSize::Normal);
+        this->cookie->saveCookie();
 
     }
 
@@ -57,6 +82,39 @@ void Game::titleScreen_Update() {
 //
 void Game::titleScreen_Render() {
 
+    const uint8_t yPos[] = { 21, 34, 47};
+
     PD::drawBitmap(0, 0, Images_Normal::TitleScreen, false, false);
+    PD::drawBitmap(106, yPos[titleScreenVars.position], Images_Normal::Selector, false, false);
+
+    if (this->cookie->viewSize == ViewSize::Normal) {
+        PD::drawBitmap(170, 43, Images_Normal::Full);
+    }
+    else {
+        PD::drawBitmap(170, 43, Images_Normal::Zoom);
+    }
+
+
+    // Easy score ..
+
+    uint8_t digits[4] = {};
+    Utils::extractDigits(digits, this->cookie->easyScore);
+
+    for (uint8_t j = 4; j > 0; --j) {
+
+        PD::drawBitmap(77 - (j*5), 31, Images_Normal::HSNumbers[digits[j - 1]]);
+
+    }
+
+
+    // Hard score ..
+
+    Utils::extractDigits(digits, this->cookie->hardScore);
+
+    for (uint8_t j = 4; j > 0; --j) {
+
+        PD::drawBitmap(77 - (j*5), 45, Images_Normal::HSNumbers[digits[j - 1]]);
+
+    }
 
 }

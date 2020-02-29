@@ -12,68 +12,67 @@ using PS = Pokitto::Sound;
 //
 void Game::playGame_Update() { 
 
-    if (!playGame_GetPaused() && !playGameVars.player.isDead()) {
+    if (!playGame_GetPaused() && !this->playGameVars.player.isDead()) {
 
 
         // Handle player movements ..
 
-//        if (playGameVars.playing && Utils::isFrameCount(2)) {
-        if (playGameVars.playing) {
+        if (this->playGameVars.playing) {
 
-            playGameVars.player.getXPosition(this->gameStats.viewSize, true);
+            this->playGameVars.player.getXPosition(this->cookie->viewSize, true);
 
-            if (!playGameVars.player.isJumping() && !playGameVars.player.isFalling() && !playGameVars.exitSequence) {
+            if (!this->playGameVars.player.isJumping() && !this->playGameVars.player.isFalling() && !this->playGameVars.exitSequence) {
 
 
                 // If the player is running from right to left, the controls are reversed ..
 
-                if (playGameVars.player.canMove(Movements::Reverse)) {
+                if (this->playGameVars.player.canMove(Movements::Reverse)) {
 
-                    if ((PC::buttons.pressed(BTN_LEFT) || PC::buttons.repeat(BTN_LEFT, 1)) && playGameVars.player.canMove(Movements::Left)) {
-                        playGameVars.player.incPlayerPosition(this->gameStats.viewSize);
+                    if ((PC::buttons.pressed(BTN_LEFT) || PC::buttons.repeat(BTN_LEFT, 1)) && this->playGameVars.player.canMove(Movements::Left)) {
+                        this->playGameVars.player.incPlayerPosition(this->cookie->viewSize);
                     }
 
-                    if ((PC::buttons.pressed(BTN_RIGHT) || PC::buttons.repeat(BTN_RIGHT, 1)) && playGameVars.player.canMove(Movements::Right)) {
-                        playGameVars.player.decPlayerPosition(this->gameStats.viewSize, false);
+                    if ((PC::buttons.pressed(BTN_RIGHT) || PC::buttons.repeat(BTN_RIGHT, 1)) && this->playGameVars.player.canMove(Movements::Right)) {
+                        this->playGameVars.player.decPlayerPosition(this->cookie->viewSize, false);
                     }
 
                 }
                 else {
 
-                    if ((PC::buttons.pressed(BTN_RIGHT) || PC::buttons.repeat(BTN_RIGHT, 1)) && playGameVars.player.canMove(Movements::Right)) {
-                        playGameVars.player.incPlayerPosition(this->gameStats.viewSize);
+                    if ((PC::buttons.pressed(BTN_RIGHT) || PC::buttons.repeat(BTN_RIGHT, 1)) && this->playGameVars.player.canMove(Movements::Right)) {
+                        this->playGameVars.player.incPlayerPosition(this->cookie->viewSize);
                     }
 
-                    if ((PC::buttons.pressed(BTN_LEFT) || PC::buttons.repeat(BTN_LEFT, 1)) && playGameVars.player.canMove(Movements::Left)) {
-                        playGameVars.player.decPlayerPosition(this->gameStats.viewSize, false);
+                    if ((PC::buttons.pressed(BTN_LEFT) || PC::buttons.repeat(BTN_LEFT, 1)) && this->playGameVars.player.canMove(Movements::Left)) {
+                        this->playGameVars.player.decPlayerPosition(this->cookie->viewSize, false);
                     }
 
                 }
 
-                if ((PC::buttons.pressed(BTN_DOWN) || PC::buttons.repeat(BTN_DOWN, 1)) && playGameVars.player.canMove(Movements::Down)) {
-                    playGameVars.player.decPlayerPosition(this->gameStats.viewSize, false);
+                if ((PC::buttons.pressed(BTN_DOWN) || PC::buttons.repeat(BTN_DOWN, 1)) && this->playGameVars.player.canMove(Movements::Down)) {
+                    this->playGameVars.player.decPlayerPosition(this->cookie->viewSize, false);
                 }
 
-                if ((PC::buttons.pressed(BTN_UP) || PC::buttons.repeat(BTN_UP, 1)) && playGameVars.player.canMove(Movements::Up)) {
+                if ((PC::buttons.pressed(BTN_UP) || PC::buttons.repeat(BTN_UP, 1)) && this->playGameVars.player.canMove(Movements::Up)) {
                     
-                    playGameVars.player.incPlayerPosition(this->gameStats.viewSize);
+                    this->playGameVars.player.incPlayerPosition(this->cookie->viewSize);
 
-                    if (playGameVars.player.getPosition() == PLAYER_CHAIN_0_END - 1 && playGameVars.key.getKeyLocation() == KeyLocation::Position_00 && !playGameVars.kong.getFlashChain(0)) {
+                    if (this->playGameVars.player.getPosition() == PLAYER_CHAIN_0_END - 1 && this->playGameVars.key.getKeyLocation() == KeyLocation::Position_00 && !this->playGameVars.kong.getFlashChain(0)) {
 
                         playGame_CheckLastKey(0);
                         
                     }
-                    else if (playGameVars.player.getPosition() == PLAYER_CHAIN_1_END - 1 && playGameVars.key.getKeyLocation() == KeyLocation::Position_01 && !playGameVars.kong.getFlashChain(1)) {
+                    else if (this->playGameVars.player.getPosition() == PLAYER_CHAIN_1_END - 1 && this->playGameVars.key.getKeyLocation() == KeyLocation::Position_01 && !this->playGameVars.kong.getFlashChain(1)) {
 
                         playGame_CheckLastKey(1);
                         
                     }
-                    else if (playGameVars.player.getPosition() == PLAYER_CHAIN_2_END - 1 && playGameVars.key.getKeyLocation() == KeyLocation::Position_02 && !playGameVars.kong.getFlashChain(2)) {
+                    else if (this->playGameVars.player.getPosition() == PLAYER_CHAIN_2_END - 1 && this->playGameVars.key.getKeyLocation() == KeyLocation::Position_02 && !this->playGameVars.kong.getFlashChain(2)) {
 
                         playGame_CheckLastKey(2);
                         
                     }
-                    else if (playGameVars.player.getPosition() == PLAYER_CHAIN_3_END - 1 && playGameVars.key.getKeyLocation() == KeyLocation::Position_03 && !playGameVars.kong.getFlashChain(3)) {
+                    else if (this->playGameVars.player.getPosition() == PLAYER_CHAIN_3_END - 1 && this->playGameVars.key.getKeyLocation() == KeyLocation::Position_03 && !this->playGameVars.kong.getFlashChain(3)) {
 
                         playGame_CheckLastKey(3);
                         
@@ -81,39 +80,41 @@ void Game::playGame_Update() {
 
                 }
 
-                if (playGameVars.preventJumpDelay == 0 && PC::buttons.pressed(BTN_A) && (playGameVars.player.canMove(Movements::Jump) || playGameVars.player.canMove(Movements::JumpUp))) {
+                if (this->playGameVars.preventJumpDelay == 0 && PC::buttons.pressed(BTN_A) && (this->playGameVars.player.canMove(Movements::Jump) || this->playGameVars.player.canMove(Movements::JumpUp))) {
 
-                    if (playGameVars.key.getKeyLocation() == KeyLocation::LowerPosition && playGameVars.player.getPosition() >= PLAYER_POS_LOWERKEY_START && playGameVars.player.getPosition() <= PLAYER_POS_LOWERKEY_END) {
+                    if (this->playGameVars.key.getKeyLocation() == KeyLocation::LowerPosition && this->playGameVars.player.getPosition() >= PLAYER_POS_LOWERKEY_START && this->playGameVars.player.getPosition() <= PLAYER_POS_LOWERKEY_END) {
 
-                        playGameVars.key.setPath(Coordinates::LowerKey);
+                        this->playGameVars.key.setPath(Coordinates::LowerKey);
 
-                        #ifdef PLAY_SOUNDS 
-                            sound.tones(Sounds::Key);
+                        #ifdef INCLUDE_SOUND 
+                            Utils::stopSfx();
+                            Utils::playSoundEffect(SoundEffects::ThrowKey);
                         #endif
 
                     }
 
-                    if (playGameVars.key.getKeyLocation() == KeyLocation::UpperPosition && playGameVars.player.getPosition() >= PLAYER_POS_UPPERKEY_START && playGameVars.player.getPosition() <= PLAYER_POS_UPPERKEY_END) {
+                    if (this->playGameVars.key.getKeyLocation() == KeyLocation::UpperPosition && this->playGameVars.player.getPosition() >= PLAYER_POS_UPPERKEY_START && this->playGameVars.player.getPosition() <= PLAYER_POS_UPPERKEY_END) {
 
                         while (true) {
 
                             uint8_t r = random(0, 4);
 
-                            if (!playGameVars.kong.getChain(r)) {
+                            if (!this->playGameVars.kong.getChain(r)) {
                                 continue;
                             }
 
-                            if (playGameVars.kong.getChain(r)) {
+                            if (this->playGameVars.kong.getChain(r)) {
                                 
-                                if (this->gameStats.viewSize == ViewSize::Normal) {
-                                    playGameVars.key.setPath(Coordinates::Positions[r]);
+                                if (this->cookie->viewSize == ViewSize::Normal) {
+                                    this->playGameVars.key.setPath(Coordinates::Positions[r]);
                                 }
                                 else {
-                                    playGameVars.key.setPath(Coordinates::Positions[r + 4]);
+                                    this->playGameVars.key.setPath(Coordinates::Positions[r + 4]);
                                 }
                         
-                                #ifdef PLAY_SOUNDS 
-                                    sound.tones(Sounds::Key);
+                                #ifdef INCLUDE_SOUND 
+                                    Utils::stopSfx();
+                                    Utils::playSoundEffect(SoundEffects::ThrowKey);
                                 #endif
 
                                 break;
@@ -124,10 +125,10 @@ void Game::playGame_Update() {
 
                     }
 
-                    playGameVars.player.startJump();
+                    this->playGameVars.player.startJump();
 
-                    #ifdef PLAY_SOUNDS 
-                        sound.tones(Sounds::Jump);
+                    #ifdef INCLUDE_SOUND 
+                        Utils::playSoundEffect(SoundEffects::Jump);
                     #endif                   
 
                 }
@@ -138,25 +139,25 @@ void Game::playGame_Update() {
 
             else {
 
-                if (playGameVars.player.isJumping()) {
+                if (this->playGameVars.player.isJumping()) {
 
-                    playGameVars.player.updateJump();
+                    this->playGameVars.player.updateJump();
 
 
                     // Have we jumped a clapper or a spark?
 
-                    if (playGameVars.player.atTopOfJump()) {
+                    if (this->playGameVars.player.atTopOfJump()) {
 
-                        uint16_t position = playGameVars.player.getPosition();
+                        uint16_t position = this->playGameVars.player.getPosition();
                         bool points = false;
 
                         if (position >= PLAYER_CLAPPER_LOWER_START && position < PLAYER_CLAPPER_LOWER_END) {
 
                             for (uint8_t i = 0; i < CLAPPERS_LOWER_COUNT; i++) {
 
-                                auto &clapper = playGameVars.lowerClappers.getClapper(i);
+                                auto &clapper = this->playGameVars.lowerClappers.getClapper(i);
 
-                                if (clapper.isEnabled() && abs(playGameVars.player.getXPosition(this->gameStats.viewSize, false) - clapper.getXPosition(this->gameStats.viewSize)) < JUMP_POINT_SPAN) {
+                                if (clapper.isEnabled() && abs(this->playGameVars.player.getXPosition(this->cookie->viewSize, false) - clapper.getXPosition(this->cookie->viewSize)) < JUMP_POINT_SPAN) {
 
                                     points = true;
                                     break;
@@ -171,9 +172,9 @@ void Game::playGame_Update() {
 
                             for (uint8_t i = 0; i < SPARKS_LOWER_COUNT; i++) {
 
-                                auto &spark = playGameVars.lowerSparks.getSpark(i);
+                                auto &spark = this->playGameVars.lowerSparks.getSpark(i);
 
-                                if (spark.isEnabled() && abs(playGameVars.player.getXPosition(this->gameStats.viewSize, false) - spark.getXPosition(this->gameStats.viewSize)) < JUMP_POINT_SPAN) {
+                                if (spark.isEnabled() && abs(this->playGameVars.player.getXPosition(this->cookie->viewSize, false) - spark.getXPosition(this->cookie->viewSize)) < JUMP_POINT_SPAN) {
 
                                     points = true;
                                     break;
@@ -188,9 +189,9 @@ void Game::playGame_Update() {
 
                             for (uint8_t i = 0; i < CLAPPERS_UPPER_COUNT; i++) {
 
-                                auto &clapper = playGameVars.upperClappers.getClapper(i);
+                                auto &clapper = this->playGameVars.upperClappers.getClapper(i);
 
-                                if (clapper.isEnabled() && abs(playGameVars.player.getXPosition(this->gameStats.viewSize, false) - clapper.getXPosition(this->gameStats.viewSize)) < JUMP_POINT_SPAN) {
+                                if (clapper.isEnabled() && abs(this->playGameVars.player.getXPosition(this->cookie->viewSize, false) - clapper.getXPosition(this->cookie->viewSize)) < JUMP_POINT_SPAN) {
 
                                     points = true;
                                     break;
@@ -203,48 +204,48 @@ void Game::playGame_Update() {
 
                         if (points) {
 
-                            #ifdef PLAY_SOUNDS 
-                                sound.tones(Sounds::JumpOver);
+                            #ifdef INCLUDE_SOUND 
+                                Utils::playSoundEffect(SoundEffects::JumpObstacle);
                             #endif
 
-                            gameStats.score++;
+                            this->gameStats.score++;
 
                         }
 
                     }
 
-                    if (playGameVars.player.isJumping() && playGameVars.player.canGrabChain()) {
+                    if (this->playGameVars.player.isJumping() && this->playGameVars.player.canGrabChain()) {
 
-                        switch (playGameVars.player.getPosition()) {
+                        switch (this->playGameVars.player.getPosition()) {
 
                             case PLAYER_VINE_0_MIN ... PLAYER_VINE_0:
-                                playGameVars.player.setJumpPosition(0);
-                                playGameVars.player.setPosition(this->gameStats.viewSize, PLAYER_VINE_0_CLIMBING);
+                                this->playGameVars.player.setJumpPosition(0);
+                                this->playGameVars.player.setPosition(this->cookie->viewSize, PLAYER_VINE_0_CLIMBING);
                                 break;
 
                             case PLAYER_VINE_1_MIN ... PLAYER_VINE_1:
-                                playGameVars.player.setJumpPosition(0);
-                                playGameVars.player.setPosition(this->gameStats.viewSize, PLAYER_VINE_1_CLIMBING);
+                                this->playGameVars.player.setJumpPosition(0);
+                                this->playGameVars.player.setPosition(this->cookie->viewSize, PLAYER_VINE_1_CLIMBING);
                                 break;
 
                             case PLAYER_CHAIN_0_GROUND_MIN ... PLAYER_CHAIN_0_GROUND_MAX - 1:
-                                playGameVars.player.setJumpPosition(0);
-                                playGameVars.player.setPosition(this->gameStats.viewSize, PLAYER_CHAIN_0_CLIMBING);
+                                this->playGameVars.player.setJumpPosition(0);
+                                this->playGameVars.player.setPosition(this->cookie->viewSize, PLAYER_CHAIN_0_CLIMBING);
                                 break;
 
                             case PLAYER_CHAIN_1_GROUND_MIN ... PLAYER_CHAIN_1_GROUND_MAX - 1:
-                                playGameVars.player.setJumpPosition(0);
-                                playGameVars.player.setPosition(this->gameStats.viewSize, PLAYER_CHAIN_1_CLIMBING);
+                                this->playGameVars.player.setJumpPosition(0);
+                                this->playGameVars.player.setPosition(this->cookie->viewSize, PLAYER_CHAIN_1_CLIMBING);
                                 break;
 
                             case PLAYER_CHAIN_2_GROUND_MIN ... PLAYER_CHAIN_2_GROUND_MAX - 1:
-                                playGameVars.player.setJumpPosition(0);
-                                playGameVars.player.setPosition(this->gameStats.viewSize, PLAYER_CHAIN_2_CLIMBING);
+                                this->playGameVars.player.setJumpPosition(0);
+                                this->playGameVars.player.setPosition(this->cookie->viewSize, PLAYER_CHAIN_2_CLIMBING);
                                 break;
 
                             case PLAYER_CHAIN_3_GROUND_MIN ... PLAYER_CHAIN_3_GROUND_MAX - 1:
-                                playGameVars.player.setJumpPosition(0);
-                                playGameVars.player.setPosition(this->gameStats.viewSize, PLAYER_CHAIN_3_CLIMBING);
+                                this->playGameVars.player.setJumpPosition(0);
+                                this->playGameVars.player.setPosition(this->cookie->viewSize, PLAYER_CHAIN_3_CLIMBING);
                                 break;
                                 
 
@@ -254,28 +255,27 @@ void Game::playGame_Update() {
 
                 }
 
-                if (!playGameVars.exitSequence && playGameVars.player.isFalling()) {
-                    playGameVars.player.decPlayerPosition(this->gameStats.viewSize, false);
+                if (!this->playGameVars.exitSequence && this->playGameVars.player.isFalling()) {
+                    this->playGameVars.player.decPlayerPosition(this->cookie->viewSize, false);
                 }
 
             }
 
         }
 
-        uint8_t yOffset = playGameVars.player.getYOffset();
+        uint8_t yOffset = this->playGameVars.player.getYOffset();
 
 
         // If we are in the middle of the exit sequence, move the player and kong automatically ..
 
-        if (playGameVars.exitSequence) {
+        if (this->playGameVars.exitSequence) {
 
-//            if (playGameVars.playing && Utils::isFrameCount(2)) {
-            if (playGameVars.playing) {
+            if (this->playGameVars.playing) {
 
-                playGameVars.key.updatePosition();
-                playGameVars.kong.updateChains();
+                this->playGameVars.key.updatePosition();
+                this->playGameVars.kong.updateChains();
 
-                uint16_t position = playGameVars.player.getPosition();
+                uint16_t position = this->playGameVars.player.getPosition();
 
                 switch (position) {
 
@@ -283,27 +283,24 @@ void Game::playGame_Update() {
                     case PLAYER_CHAIN_1_BACKTOGROUND + 1 ... PLAYER_CHAIN_1_END:
                     case PLAYER_CHAIN_2_BACKTOGROUND + 1 ... PLAYER_CHAIN_2_END:
                     case PLAYER_CHAIN_3_BACKTOGROUND + 1 ... PLAYER_CHAIN_3_END:
-//                        if (Utils::isFrameCount(3)) {
                         if (Utils::isFrameCount(2)) {
-                            playGameVars.player.decPlayerPosition(this->gameStats.viewSize, true);
+                            this->playGameVars.player.decPlayerPosition(this->cookie->viewSize, true);
                         }
                         break;
 
                     case PLAYER_CHAIN_MOVE_TO_EXIT_0 ... PLAYER_CHAIN_MOVE_TO_EXIT_END:
-//                        if (Utils::isFrameCount(2)) {
-                            playGameVars.player.incPlayerPosition(this->gameStats.viewSize);
-//                        }
+                        this->playGameVars.player.incPlayerPosition(this->cookie->viewSize);
                         break;
 
                 }
 
-                bool exitComplete = playGameVars.kong.updatePosition(this->gameStats.viewSize);
+                bool exitComplete = this->playGameVars.kong.updatePosition(this->cookie->viewSize);
 
                 if (exitComplete) {
 
-                    playGameVars.kong.reset();
-                    playGameVars.player.setPosition(this->gameStats.viewSize, 0);
-                    playGameVars.exitSequence = false;
+                    this->playGameVars.kong.reset();
+                    this->playGameVars.player.setPosition(this->cookie->viewSize, 0);
+                    this->playGameVars.exitSequence = false;
 
                     playGame_ScrollToBottom(false);
 
@@ -317,35 +314,32 @@ void Game::playGame_Update() {
 
             // Update entity positions ..
 
-//            if (playGameVars.playing && Utils::isFrameCount(2)) {
-            if (playGameVars.playing) {
+            if (this->playGameVars.playing) {
 
-                bool updateChains = playGameVars.kong.updateChains();
+                bool updateChains = this->playGameVars.kong.updateChains();
 
-                playGameVars.lowerClappers.updatePositions(this->gameStats.viewSize);
-                playGameVars.upperClappers.updatePositions(this->gameStats.viewSize);
-                playGameVars.key.updatePosition();
-                playGameVars.birds.updatePositions();
+                this->playGameVars.lowerClappers.updatePositions(this->cookie->viewSize);
+                this->playGameVars.upperClappers.updatePositions(this->cookie->viewSize);
+                this->playGameVars.key.updatePosition();
+                this->playGameVars.birds.updatePositions();
 
                 if (updateChains) {
 
-                    playGameVars.player.setExit(true);
+                    this->playGameVars.player.setExit(true);
                     
                 }
 
             }
 
-//            if (playGameVars.playing && Utils::isFrameCount(3)) {
-            if (playGameVars.playing && Utils::getFrameCount(3) <= 1) {
+            if (this->playGameVars.playing && Utils::getFrameCount(3) <= 1) {
 
-                playGameVars.lowerSparks.updatePositions();
+                this->playGameVars.lowerSparks.updatePositions();
 
             }
 
-//            if (playGameVars.playing && Utils::isFrameCount(4)) {
-            if (playGameVars.playing && Utils::isFrameCount(2)) {
+            if (this->playGameVars.playing && Utils::isFrameCount(2)) {
 
-                playGameVars.upperSparks.updatePositions();
+                this->playGameVars.upperSparks.updatePositions();
 
             }
 
@@ -356,15 +350,15 @@ void Game::playGame_Update() {
 
         #ifndef IGNORE_COLLISIONS
                 
-            Rect playerRect = playGameVars.player.getRect(this->gameStats.viewSize);
+            Rect playerRect = this->playGameVars.player.getRect(this->cookie->viewSize);
 
             for (uint8_t i = 0; i < NUMBER_OF_ENTITIES; i++) {
 
-                auto &lowerClapper = playGameVars.lowerClappers.getClapper(i);
+                auto &lowerClapper = this->playGameVars.lowerClappers.getClapper(i);
 
                 if (lowerClapper.isEnabled()) {
 
-                    Rect clapperRect = lowerClapper.getRect(this->gameStats.viewSize, yOffset, gameStats.mode);
+                    Rect clapperRect = lowerClapper.getRect(this->cookie->viewSize, yOffset, cookie->mode);
 
                     if (Utils::collide(playerRect, clapperRect)) {
 
@@ -374,11 +368,11 @@ void Game::playGame_Update() {
 
                 }
 
-                auto &upperClapper = playGameVars.upperClappers.getClapper(i);
+                auto &upperClapper = this->playGameVars.upperClappers.getClapper(i);
 
                 if (upperClapper.isEnabled()) {
 
-                    Rect clapperRect = upperClapper.getRect(this->gameStats.viewSize, yOffset, gameStats.mode);
+                    Rect clapperRect = upperClapper.getRect(this->cookie->viewSize, yOffset, cookie->mode);
 
                     if (Utils::collide(playerRect, clapperRect)) {
 
@@ -389,13 +383,13 @@ void Game::playGame_Update() {
                 }
 
 
-                if (playGameVars.player.getPosition() > PLAYER_SPARK_LOWER_IGNORE) {
+                if (this->playGameVars.player.getPosition() > PLAYER_SPARK_LOWER_IGNORE) {
 
-                    auto &lowerSpark = playGameVars.lowerSparks.getSpark(i);
+                    auto &lowerSpark = this->playGameVars.lowerSparks.getSpark(i);
 
                     if (lowerSpark.isEnabled()) {
 
-                        Rect sparkRect = lowerSpark.getRect(this->gameStats.viewSize, yOffset, gameStats.mode);
+                        Rect sparkRect = lowerSpark.getRect(this->cookie->viewSize, yOffset, cookie->mode);
 
                         if (Utils::collide(playerRect, sparkRect)) {
 
@@ -407,11 +401,11 @@ void Game::playGame_Update() {
 
                 }
 
-                auto &upperSpark = playGameVars.upperSparks.getSpark(i);
+                auto &upperSpark = this->playGameVars.upperSparks.getSpark(i);
 
                 if (upperSpark.isEnabled()) {
 
-                    Rect sparkRect = upperSpark.getRect(this->gameStats.viewSize, yOffset, gameStats.mode);
+                    Rect sparkRect = upperSpark.getRect(this->cookie->viewSize, yOffset, cookie->mode);
 
                     if (Utils::collide(playerRect, sparkRect)) {
 
@@ -421,11 +415,11 @@ void Game::playGame_Update() {
 
                 }
 
-                auto &bird = playGameVars.birds.getBird(i);
+                auto &bird = this->playGameVars.birds.getBird(i);
 
                 if (bird.isEnabled()) {
 
-                    Rect birdRect = bird.getRect(this->gameStats.viewSize, yOffset, gameStats.mode);
+                    Rect birdRect = bird.getRect(this->cookie->viewSize, yOffset, cookie->mode);
 
                     if (Utils::collide(playerRect, birdRect)) {
 
@@ -444,13 +438,31 @@ void Game::playGame_Update() {
 
     // End of Game?
 
-    if (playGameVars.playing && gameStats.numberOfLivesLeft == 0) {
+    if (this->playGameVars.playing && this->gameStats.numberOfLivesLeft == 0) {
 
-        gameStats.gameOver = true;
-        playGameVars.playing = false;
+        this->gameStats.gameOver = true;
+        this->playGameVars.playing = false;
 
-        #ifdef PLAY_SOUNDS 
-            sound.tones(Sounds::GameOver);
+        switch (this->cookie->mode) {
+
+            case GameMode::Easy:
+                if (this->gameStats.score > this->cookie->easyScore) {
+                    this->cookie->easyScore = this->gameStats.score;
+                    this->cookie->saveCookie();
+                }
+                break;
+
+            case GameMode::Hard:
+                if (this->gameStats.score > this->cookie->hardScore) {
+                    this->cookie->hardScore = this->gameStats.score;
+                    this->cookie->saveCookie();
+                }
+                break;
+
+        }
+
+        #ifdef INCLUDE_SOUND 
+            //sound.tones(Sounds::GameOver);
         #endif
 
     }
@@ -458,57 +470,57 @@ void Game::playGame_Update() {
 
     // Handle the transition to a new life ..
 
-    switch (playGameVars.introDelay) {
+    switch (this->playGameVars.introDelay) {
 
         case INTRO_DELAY_FROM_TITLE_SCROLL:
 
             playGame_ScrollToBottom(true);
 
-            if (playGameVars.clappersLowerDelay > CLAPPERS_LOWER_MIN) {
+            if (this->playGameVars.clappersLowerDelay > CLAPPERS_LOWER_MIN) {
 
-                playGameVars.clappersLowerDelay = playGameVars.clappersLowerDelay - CLAPPERS_LOWER_INC;
-                playGameVars.lowerClappers.setDelayMax(playGameVars.clappersLowerDelay, true);
-
-            }
-
-            if (playGameVars.clappersUpperDelay > CLAPPERS_UPPER_MIN) {
-
-                playGameVars.clappersUpperDelay = playGameVars.clappersUpperDelay - CLAPPERS_UPPER_INC;
-                playGameVars.upperClappers.setDelayMax(playGameVars.clappersUpperDelay, true);
+                this->playGameVars.clappersLowerDelay = this->playGameVars.clappersLowerDelay - CLAPPERS_LOWER_INC;
+                this->playGameVars.lowerClappers.setDelayMax(this->playGameVars.clappersLowerDelay, true);
 
             }
 
-            if (playGameVars.sparksLowerDelay > SPARKS_LOWER_MIN) {
+            if (this->playGameVars.clappersUpperDelay > CLAPPERS_UPPER_MIN) {
 
-                playGameVars.sparksLowerDelay = playGameVars.sparksLowerDelay - SPARKS_LOWER_INC;
-                playGameVars.lowerSparks.setDelayMax(playGameVars.sparksLowerDelay, true);
-
-            }
-
-            if (playGameVars.sparksUpperDelay > SPARKS_UPPER_MIN) {
-
-                playGameVars.sparksUpperDelay = playGameVars.sparksUpperDelay - SPARKS_UPPER_INC;
-                playGameVars.upperSparks.setDelayMax(playGameVars.sparksUpperDelay, true);
+                this->playGameVars.clappersUpperDelay = this->playGameVars.clappersUpperDelay - CLAPPERS_UPPER_INC;
+                this->playGameVars.upperClappers.setDelayMax(this->playGameVars.clappersUpperDelay, true);
 
             }
 
-            if (playGameVars.birdsDelay > BIRDS_MIN) {
+            if (this->playGameVars.sparksLowerDelay > SPARKS_LOWER_MIN) {
 
-                playGameVars.birdsDelay = playGameVars.birdsDelay - BIRDS_INC;
-                playGameVars.birds.setDelayMax(playGameVars.birdsDelay, true);
+                this->playGameVars.sparksLowerDelay = this->playGameVars.sparksLowerDelay - SPARKS_LOWER_INC;
+                this->playGameVars.lowerSparks.setDelayMax(this->playGameVars.sparksLowerDelay, true);
 
             }
 
-            playGameVars.frameRate = playGameVars.frameRate + 2;
-            PC::setFrameRate(playGameVars.frameRate);
+            if (this->playGameVars.sparksUpperDelay > SPARKS_UPPER_MIN) {
+
+                this->playGameVars.sparksUpperDelay = this->playGameVars.sparksUpperDelay - SPARKS_UPPER_INC;
+                this->playGameVars.upperSparks.setDelayMax(this->playGameVars.sparksUpperDelay, true);
+
+            }
+
+            if (this->playGameVars.birdsDelay > BIRDS_MIN) {
+
+                this->playGameVars.birdsDelay = this->playGameVars.birdsDelay - BIRDS_INC;
+                this->playGameVars.birds.setDelayMax(this->playGameVars.birdsDelay, true);
+
+            }
+
+            this->playGameVars.frameRate = this->playGameVars.frameRate + 2;
+            PC::setFrameRate(this->playGameVars.frameRate);
             
             break;
 
         case 1:
-            if (gameStats.numberOfLivesLeft > 0) {
-                playGameVars.player.reset(this->gameStats.viewSize);
-                playGameVars.playing = true;
-                gameStats.numberOfLivesLeft--;
+            if (this->gameStats.numberOfLivesLeft > 0) {
+                this->playGameVars.player.reset(this->cookie->viewSize);
+                this->playGameVars.playing = true;
+                this->gameStats.numberOfLivesLeft--;
             }
             break;
 
@@ -517,24 +529,24 @@ void Game::playGame_Update() {
 
     }
 
-    if (playGameVars.introDelay > 0) playGameVars.introDelay--;
+    if (this->playGameVars.introDelay > 0) this->playGameVars.introDelay--;
 
 
     // Handle other buttons ..
 
-    if (playGameVars.preventJumpDelay > 0) playGameVars.preventJumpDelay--;
+    if (this->playGameVars.preventJumpDelay > 0) this->playGameVars.preventJumpDelay--;
 
-    if (!playGameVars.playing && !gameStats.gameOver) {
+    if (!this->playGameVars.playing && !this->gameStats.gameOver) {
 
-        if (playGameVars.introDelay < 100 && (PC::buttons.pressed(BTN_A) || PC::buttons.pressed(BTN_B))) {
+        if (this->playGameVars.introDelay < 100 && (PC::buttons.pressed(BTN_A) || PC::buttons.pressed(BTN_B))) {
 
-            playGameVars.playing = true;
-            playGameVars.introDelay = 0;
-            playGameVars.player.reset(this->gameStats.viewSize);
-            gameStats.numberOfLivesLeft--;
+            this->playGameVars.playing = true;
+            this->playGameVars.introDelay = 0;
+            this->playGameVars.player.reset(this->cookie->viewSize);
+            this->gameStats.numberOfLivesLeft--;
 
             if (PC::buttons.pressed(BTN_A)) {
-                playGameVars.preventJumpDelay = 20;
+                this->playGameVars.preventJumpDelay = 20;
             }
 
         }
@@ -551,34 +563,34 @@ void Game::playGame_Update() {
 
 void Game::playGame_CheckLastKey(uint8_t chain) {
 
-    playGameVars.kong.setFlashChain(chain, true);
-    playGameVars.key.setFlash(true);
+    this->playGameVars.kong.setFlashChain(chain, true);
+    this->playGameVars.key.setFlash(true);
 
-    gameStats.score = gameStats.score + random(8, 16);
+    this->gameStats.score = this->gameStats.score + random(8, 16);
 
-    if (gameStats.mode == GameMode::Easy) {
+    if (cookie->mode == GameMode::Easy) {
 
-        playGameVars.upperClappers.reset(this->gameStats.viewSize, 54);
-        playGameVars.birds.reset();                            
+        this->playGameVars.upperClappers.reset(this->cookie->viewSize, 54);
+        this->playGameVars.birds.reset();                            
         
     }
 
-    #ifdef PLAY_SOUNDS 
-        sound.tones(Sounds::Unlock);
+    #ifdef INCLUDE_SOUND 
+        //sound.tones(Sounds::Unlock);
     #endif
 
     for (uint8_t i = 0; i < 4 ; i++) {
 
-        if (playGameVars.kong.getDisplayChain(i)) return;
+        if (this->playGameVars.kong.getDisplayChain(i)) return;
 
     }
 
-    playGameVars.lowerClappers.reset(this->gameStats.viewSize, 107);
-    playGameVars.upperClappers.reset(this->gameStats.viewSize, 54);
-    playGameVars.lowerSparks.reset(Coordinates::LowerSpark);
-    playGameVars.upperSparks.reset(Coordinates::UpperSpark);
-    playGameVars.birds.reset();
-    playGameVars.exitSequence = true;
+    this->playGameVars.lowerClappers.reset(this->cookie->viewSize, 107);
+    this->playGameVars.upperClappers.reset(this->cookie->viewSize, 54);
+    this->playGameVars.lowerSparks.reset(Coordinates::LowerSpark);
+    this->playGameVars.upperSparks.reset(Coordinates::UpperSpark);
+    this->playGameVars.birds.reset();
+    this->playGameVars.exitSequence = true;
 
 }
 

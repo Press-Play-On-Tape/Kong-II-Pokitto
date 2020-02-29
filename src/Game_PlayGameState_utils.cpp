@@ -8,7 +8,7 @@ using PS = Pokitto::Sound;
 
 void Game::playGame_DrawScenery(uint8_t yOffset) {
 
-    if (this->gameStats.viewSize == ViewSize::Normal) { 
+    if (this->cookie->viewSize == ViewSize::Normal) { 
 
         PD::drawBitmap(0, 0, Images_Normal::Scenery);
 
@@ -27,40 +27,46 @@ void Game::playGame_DrawScenery(uint8_t yOffset) {
 
 void Game::playGame_KillPlayer() {
     
-    #ifdef PLAY_SOUNDS 
-        sound.tones(Sounds::Death);
+    #ifdef INCLUDE_SOUND 
+        Utils::playSoundEffect(SoundEffects::Collide);
     #endif
     
-    playGameVars.player.setDead(true);
-    playGameVars.playing = false;
-    playGameVars.introDelay = INTRO_DELAY_FROM_TITLE;
-    playGameVars.key.setKeyLocation(KeyLocation::LowerPosition);
+    this->playGameVars.player.setDead(true);
+    this->playGameVars.playing = false;
+    this->playGameVars.introDelay = INTRO_DELAY_FROM_TITLE;
+    this->playGameVars.key.setKeyLocation(KeyLocation::LowerPosition);
 
 }
 
 void Game::playGame_ResetLevel(uint8_t introDelay) {
 
-    playGameVars.introDelay = introDelay;
-    playGameVars.playing = false;
+    this->playGameVars.introDelay = introDelay;
+    this->playGameVars.playing = false;
 
 }
 
 void Game::playGame_RenderScore(uint8_t yOffset) {
 
-    if (this->gameStats.viewSize == ViewSize::Normal) { 
+    if (this->cookie->viewSize == ViewSize::Normal) { 
 
-        if (gameStats.numberOfLivesLeft >= 3) {
+        if (this->gameStats.numberOfLivesLeft >= 3) {
             PD::drawBitmap(73, 144, Images_Normal::Jnr_Walking_L_F2);
         }
 
-        if (gameStats.numberOfLivesLeft >= 2) {
+        if (this->gameStats.numberOfLivesLeft >= 2) {
             PD::drawBitmap(92, 144, Images_Normal::Jnr_Walking_L_F2);
         }
 
-        PD::drawBitmap(127, 145, Images_Normal::Game_Icon[this->gameStats.mode == GameMode::Easy, 0, 1]);
+        if (this->cookie->mode == GameMode::Easy) {
+            PD::drawBitmap(127, 145, Images_Normal::GameA);
+        }
+        else {
+            PD::drawBitmap(127, 145, Images_Normal::GameB);
+
+        }
 
         uint8_t digits[4] = {};
-        Utils::extractDigits(digits, gameStats.score);
+        Utils::extractDigits(digits, this->gameStats.score);
 
         for (uint8_t j = 4; j > 0; --j) {
 
@@ -71,18 +77,24 @@ void Game::playGame_RenderScore(uint8_t yOffset) {
     }
     else {
 
-        if (gameStats.numberOfLivesLeft >= 3) {
+        if (this->gameStats.numberOfLivesLeft >= 3) {
             PD::drawBitmap(47, 235 - yOffset, Images_Large::Jnr_Walking_L_F2);
         }
 
-        if (gameStats.numberOfLivesLeft >= 2) {
+        if (this->gameStats.numberOfLivesLeft >= 2) {
             PD::drawBitmap(85, 235 - yOffset, Images_Large::Jnr_Walking_L_F2);
         }
 
-        PD::drawBitmap(135, 235 - yOffset, Images_Large::Game_Icon[this->gameStats.mode == GameMode::Easy, 0, 1]);
+        if (this->cookie->mode == GameMode::Easy) {
+            PD::drawBitmap(135, 235, Images_Large::GameA);
+        }
+        else {
+            PD::drawBitmap(135, 235, Images_Large::GameB);
+
+        }
 
         uint8_t digits[4] = {};
-        Utils::extractDigits(digits, gameStats.score);
+        Utils::extractDigits(digits, this->gameStats.score);
 
         for (uint8_t j = 4; j > 0; --j) {
 
@@ -97,19 +109,19 @@ void Game::playGame_RenderScore(uint8_t yOffset) {
 
 bool Game::playGame_GetPaused() {
 
-  return playGameVars.paused;
+  return this->playGameVars.paused;
 
 }
 
 void Game::playGame_SetPaused(bool value) {
   
-  playGameVars.paused = value;
+  this->playGameVars.paused = value;
 
 }
 
 void Game::playGame_HandleCommonButtons() {
 
-    if (gameStats.gameOver) {
+    if (this->gameStats.gameOver) {
 
         if (PC::buttons.pressed(BTN_A)) {
             gameState = GameStateType::TitleScreen_Activate; 
@@ -119,7 +131,7 @@ void Game::playGame_HandleCommonButtons() {
     else {
 
         if (PC::buttons.pressed(BTN_B)) {
-            playGameVars.paused = !playGameVars.paused; 
+            this->playGameVars.paused = !this->playGameVars.paused; 
         }
 
     }
@@ -128,11 +140,11 @@ void Game::playGame_HandleCommonButtons() {
 
 void Game::playGame_RenderGameOverOrPause() {
 
-    if (this->gameStats.viewSize == ViewSize::Normal) {
+    if (this->cookie->viewSize == ViewSize::Normal) {
 
         // Game Over?
 
-        if (gameStats.gameOver) {
+        if (this->gameStats.gameOver) {
 
             PD::drawBitmap(74, 68, Images_Normal::GameOver); 
 
@@ -140,7 +152,7 @@ void Game::playGame_RenderGameOverOrPause() {
 
         // Pause?
 
-        if (playGameVars.paused) {
+        if (this->playGameVars.paused) {
 
             PD::drawBitmap(84, 68, Images_Normal::Pause); 
 
@@ -151,7 +163,7 @@ void Game::playGame_RenderGameOverOrPause() {
 
         // Game Over?
 
-        if (gameStats.gameOver) {
+        if (this->gameStats.gameOver) {
 
             PD::drawBitmap(38, 54, Images_Large::GameOver); 
 
@@ -159,7 +171,7 @@ void Game::playGame_RenderGameOverOrPause() {
 
         // Pause?
 
-        if (playGameVars.paused) {
+        if (this->playGameVars.paused) {
 
             PD::drawBitmap(58, 60, Images_Large::Pause); 
 

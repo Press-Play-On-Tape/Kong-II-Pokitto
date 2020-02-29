@@ -31,17 +31,17 @@ int main() {
     PD::setInvisibleColor(14);
     PC::setFrameRate(70);
 
-    // #if POK_HIGH_RAM == HIGH_RAM_MUSIC
-    // memset(buffers[0], 128, BUFFER_SIZE);
-    // memset(buffers[1], 128, BUFFER_SIZE);
-    // memset(buffers[2], 128, BUFFER_SIZE);
-    // memset(buffers[3], 128, BUFFER_SIZE);
-    // #else
-    // memset(&(buffers[0]), 128, BUFFER_SIZE);
-    // memset(&(buffers[1]), 128, BUFFER_SIZE);
-    // memset(&(buffers[2]), 128, BUFFER_SIZE);
-    // memset(&(buffers[3]), 128, BUFFER_SIZE);
-    // #endif
+    #if POK_HIGH_RAM == HIGH_RAM_MUSIC
+    memset(buffers[0], 128, BUFFER_SIZE);
+    memset(buffers[1], 128, BUFFER_SIZE);
+    memset(buffers[2], 128, BUFFER_SIZE);
+    memset(buffers[3], 128, BUFFER_SIZE);
+    #else
+    memset(&(buffers[0]), 128, BUFFER_SIZE);
+    memset(&(buffers[1]), 128, BUFFER_SIZE);
+    memset(&(buffers[2]), 128, BUFFER_SIZE);
+    memset(&(buffers[3]), 128, BUFFER_SIZE);
+    #endif
 
 
     // Kick off the random number generator ..

@@ -9,6 +9,7 @@
 #include "entities/Entities.h"
 #include "utils/Utils.h"
 #include "utils/Structs.h"
+#include "sounds/Sounds.h"
 
 class Game {
     
@@ -47,9 +48,9 @@ class Game {
         SplashScreenStateVars splashScreenVars;
         TitleScreenStateVars titleScreenVars;
         PlayGameStateVars playGameVars;
-        HighScoreStateVars highScoreVars;
 
         GameStats gameStats;
         GameStateType gameState = GameStateType::SplashScreen_Activate; 
+        GameCookie *cookie;
 
 };

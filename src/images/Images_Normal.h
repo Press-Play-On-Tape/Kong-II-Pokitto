@@ -10,9 +10,22 @@ namespace Images_Normal {
     #include "scenery/normal/Scenerys.h"
     #include "sparks/normal/Sparks.h"
     #include "ppot/PPOT.h"
-    #include "title/TitleScreen.h"
+    #include "title/Title.h"
     #include "others/normal/Others.h"
     #include "numbers/normal/Numbers.h"
+
+    const uint8_t * const PROGMEM HSNumbers[] = { 
+    HSNumber_0,
+    HSNumber_1,
+    HSNumber_2,
+    HSNumber_3,
+    HSNumber_4,
+    HSNumber_5,
+    HSNumber_6,
+    HSNumber_7,
+    HSNumber_8,
+    HSNumber_9,
+    };
 
     const uint8_t * const PROGMEM Numbers[] = { 
     Number_0,

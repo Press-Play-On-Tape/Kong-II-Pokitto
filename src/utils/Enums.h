@@ -5,7 +5,6 @@
 
 // Comment out IGNORE_COLLISIONS to include colllision detection ..
 #define _IGNORE_COLLISIONS
-#define _PLAY_SOUNDS
 
 #define VIEW_NORMAL_X_OFFSET 46
 #define VIEW_NORMAL_Y_UPPER_OFFSET 19
@@ -58,6 +57,20 @@
 #define JUMP_POINT_SPAN 12
 #define COOKIE_INITIALISED 12
 
+enum class SDStream : uint32_t {
+    None,
+    Introduction,
+};
+
+enum class SoundEffects : uint8_t {
+//    Introduction,
+    JumpObstacle,
+    Jump,
+    Pause,
+    ThrowKey,
+    KongPound,
+    Collide,
+};
 
 enum class GameStateType : uint8_t {
 	SplashScreen_Activate,
@@ -187,9 +200,6 @@ struct GameStats {
 
         uint16_t score = 0;
         uint8_t numberOfLivesLeft = 4; 
-        ViewSize viewSize = ViewSize::Normal;
-
-        GameMode mode = GameMode::Easy;
 
         bool gameOver = false;
 
@@ -198,7 +208,6 @@ struct GameStats {
             this->numberOfLivesLeft = 4; 
             this->score = 0; 
             this->gameOver = false;
-            this->viewSize = ViewSize::Normal;
 
         }
 

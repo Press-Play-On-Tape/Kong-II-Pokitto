@@ -5032,6 +5032,339 @@
 		},
 		"/src/images/ppot/Ppot_Full.png": {
 			"sdcard": false
+		},
+		"/Assets/Sounds/Donkey Kong Jr. SFX (9).wav": {
+			"sdcard": false
+		},
+		"/Assets/Sounds/Donkey Kong Jr. SFX (8).wav": {
+			"sdcard": false
+		},
+		"/Assets/Sounds/Donkey Kong Jr. SFX (7).wav": {
+			"sdcard": false
+		},
+		"/Assets/Sounds/Donkey Kong Jr. SFX (6).wav": {
+			"sdcard": false
+		},
+		"/Assets/Sounds/Donkey Kong Jr. SFX (5).wav": {
+			"sdcard": false
+		},
+		"/Assets/Sounds/8d82b5_Donkey_Kong_Junior_Opening_Sound_Effect.mp3": {
+			"sdcard": false
+		},
+		"/Assets/Sounds/01_Opening_Sound_Effect.raw": {
+			"sdcard": false
+		},
+		"/Assets/Sounds/01_Opening_Sound_Effect.mp3": {
+			"sdcard": false
+		},
+		"/src/images/title/Full.png": {
+			"sdcard": false
+		},
+		"/src/images/title/Zoomn.png": {
+			"sdcard": false
+		},
+		"/src/images/title/Zoom.png": {
+			"sdcard": false
+		},
+		"/src/images/title/Title.h": {
+			"sdcard": false
+		},
+		"/src/images/title/TitleScreen copy.png": {
+			"sdcard": false
+		},
+		"/src/images/title/Selector.png": {
+			"sdcard": false
+		},
+		"/src/images/title/Full.h": {
+			"sdcard": false
+		},
+		"/src/images/title/Zoom.h": {
+			"sdcard": false
+		},
+		"/src/images/title/Selector.h": {
+			"sdcard": false
+		},
+		"/Assets/Sounds/Donkey Kong Jr. SFX (1).wav": {
+			"sdcard": false
+		},
+		"/Assets/Sounds/Donkey Kong Jr. SFX (10).wav": {
+			"sdcard": false
+		},
+		"/Assets/Sounds/Donkey Kong Jr. SFX (11).wav": {
+			"sdcard": false
+		},
+		"/Assets/Sounds/Donkey Kong Jr. SFX (12).wav": {
+			"sdcard": false
+		},
+		"/Assets/Sounds/Donkey Kong Jr. SFX (13).wav": {
+			"sdcard": false
+		},
+		"/Assets/Sounds/Donkey Kong Jr. SFX (14).wav": {
+			"sdcard": false
+		},
+		"/Assets/Sounds/Donkey Kong Jr. SFX (15).wav": {
+			"sdcard": false
+		},
+		"/Assets/Sounds/Donkey Kong Jr. SFX (2).wav": {
+			"sdcard": false
+		},
+		"/Assets/Sounds/Donkey Kong Jr. SFX (3).wav": {
+			"sdcard": false
+		},
+		"/Assets/Sounds/Donkey Kong Jr. SFX (4).wav": {
+			"sdcard": false
+		},
+		"/src/images/title/Numbers.png": {
+			"sdcard": false
+		},
+		"/src/images/title/HSNumbers.png": {
+			"sdcard": false
+		},
+		"/src/images/title/HSNumbers copy.png": {
+			"sdcard": false
+		},
+		"/src/images/title/HSNumbers_0.png": {
+			"sdcard": false
+		},
+		"/src/images/title/HSNumbers_0 copy.png": {
+			"sdcard": false
+		},
+		"/src/images/title/HSNumbers_0 copy 2.png": {
+			"sdcard": false
+		},
+		"/src/images/title/HSNumbers_0 copy 3.png": {
+			"sdcard": false
+		},
+		"/src/images/title/HSNumbers_0 copy 4.png": {
+			"sdcard": false
+		},
+		"/src/images/title/HSNumbers_0 copy 5.png": {
+			"sdcard": false
+		},
+		"/src/images/title/HSNumbers_0 copy 6.png": {
+			"sdcard": false
+		},
+		"/src/images/title/HSNumbers_0 copy 7.png": {
+			"sdcard": false
+		},
+		"/src/images/title/HSNumbers_0 copy 8.png": {
+			"sdcard": false
+		},
+		"/src/images/title/HSNumbers_0 copy 9.png": {
+			"sdcard": false
+		},
+		"/src/images/title/HSNumbers_1.png": {
+			"sdcard": false
+		},
+		"/src/images/title/HSNumbers_2.png": {
+			"sdcard": false
+		},
+		"/src/images/title/HSNumbers_9.png": {
+			"sdcard": false
+		},
+		"/src/images/title/HSNumbers_8.png": {
+			"sdcard": false
+		},
+		"/src/images/title/HSNumbers_3.png": {
+			"sdcard": false
+		},
+		"/src/images/title/HSNumbers_4.png": {
+			"sdcard": false
+		},
+		"/src/images/title/HSNumbers_5.png": {
+			"sdcard": false
+		},
+		"/src/images/title/HSNumbers_6.png": {
+			"sdcard": false
+		},
+		"/src/images/title/HSNumbers_7.png": {
+			"sdcard": false
+		},
+		"/src/images/title/HSNumber_0.png": {
+			"sdcard": false
+		},
+		"/src/images/title/HSNumber_1.png": {
+			"sdcard": false
+		},
+		"/src/images/title/HSNumber_2.png": {
+			"sdcard": false
+		},
+		"/src/images/title/HSNumber_4.png": {
+			"sdcard": false
+		},
+		"/src/images/title/HSNumber_3.png": {
+			"sdcard": false
+		},
+		"/src/images/title/HSNumber_5.png": {
+			"sdcard": false
+		},
+		"/src/images/title/HSNumber_6.png": {
+			"sdcard": false
+		},
+		"/src/images/title/HSNumber_7.png": {
+			"sdcard": false
+		},
+		"/src/images/title/HSNumber_8.png": {
+			"sdcard": false
+		},
+		"/src/images/title/HSNumber_9.png": {
+			"sdcard": false
+		},
+		"/src/images/title/HSNumber_0.h": {
+			"sdcard": false
+		},
+		"/src/images/title/HSNumber_1.h": {
+			"sdcard": false
+		},
+		"/src/images/title/HSNumber_3.h": {
+			"sdcard": false
+		},
+		"/src/images/title/HSNumber_5.h": {
+			"sdcard": false
+		},
+		"/src/images/title/HSNumber_4.h": {
+			"sdcard": false
+		},
+		"/src/images/title/HSNumber_6.h": {
+			"sdcard": false
+		},
+		"/src/images/title/HSNumber_7.h": {
+			"sdcard": false
+		},
+		"/src/images/title/HSNumber_2.h": {
+			"sdcard": false
+		},
+		"/src/images/title/HSNumber_8.h": {
+			"sdcard": false
+		},
+		"/src/images/title/HSNumber_9.h": {
+			"sdcard": false
+		},
+		"/Assets/Sounds/8d82b5_DK_Jumpman_Jump_Over_An_Obstacle_Sound_Effect.mp3": {
+			"sdcard": false
+		},
+		"/Assets/Sounds/02_Jump_Over_Obstacle.mp3": {
+			"sdcard": false
+		},
+		"/Assets/Sounds/death.wav": {
+			"sdcard": false
+		},
+		"/Assets/Sounds/Donkey Kong Jr. SFX (10) copy.wav": {
+			"sdcard": false
+		},
+		"/Assets/Sounds/03_Pause.wav": {
+			"sdcard": false
+		},
+		"/Assets/Sounds/Donkey Kong Jr. SFX (12) copy.wav": {
+			"sdcard": false
+		},
+		"/Assets/Sounds/04_ThrowKey.wav": {
+			"sdcard": false
+		},
+		"/Assets/Sounds/Donkey Kong Jr. SFX (3) copy.wav": {
+			"sdcard": false
+		},
+		"/Assets/Sounds/05_KongPound.wav": {
+			"sdcard": false
+		},
+		"/Assets/Sounds/Donkey Kong Jr. SFX (4) copy.wav": {
+			"sdcard": false
+		},
+		"/Assets/Sounds/06_Collide.wav": {
+			"sdcard": false
+		},
+		"/Assets/Sounds/Donkey Kong Jr. SFX (5) copy.wav": {
+			"sdcard": false
+		},
+		"/Assets/Sounds/07_Jump.wav": {
+			"sdcard": false
+		},
+		"/Assets/Sounds/NoOverwritePromptffiCdg": {
+			"sdcard": false
+		},
+		"/Assets/Sounds/02_Jump_Over_Obstacle.raw": {
+			"sdcard": false
+		},
+		"/Assets/Sounds/03_Pause.raw": {
+			"sdcard": false
+		},
+		"/Assets/Sounds/04_ThrowKey.raw": {
+			"sdcard": false
+		},
+		"/Assets/Sounds/05_KongPound.raw": {
+			"sdcard": false
+		},
+		"/Assets/Sounds/06_Collide.raw": {
+			"sdcard": false
+		},
+		"/Assets/Sounds/07_Jump.raw": {
+			"sdcard": false
+		},
+		"/Assets/Sounds/rawtobin.js": {
+			"sdcard": false
+		},
+		"/Assets/Sounds/02_Jump_Over_Obstacle.h": {
+			"sdcard": false
+		},
+		"/Assets/Sounds/01_Opening_Sound_Effect.h": {
+			"sdcard": false
+		},
+		"/Assets/Sounds/03_Pause.h": {
+			"sdcard": false
+		},
+		"/Assets/Sounds/04_ThrowKey.h": {
+			"sdcard": false
+		},
+		"/Assets/Sounds/05_KongPound.h": {
+			"sdcard": false
+		},
+		"/Assets/Sounds/06_Collide.h": {
+			"sdcard": false
+		},
+		"/Assets/Sounds/07_Jump.h": {
+			"sdcard": false
+		},
+		"/src/sounds/01_Opening_Sound_Effect.h": {
+			"sdcard": false
+		},
+		"/src/sounds/02_Jump_Over_Obstacle.h": {
+			"sdcard": false
+		},
+		"/src/sounds/03_Pause.h": {
+			"sdcard": false
+		},
+		"/src/sounds/04_ThrowKey.h": {
+			"sdcard": false
+		},
+		"/src/sounds/05_KongPound.h": {
+			"sdcard": false
+		},
+		"/src/sounds/06_Collide.h": {
+			"sdcard": false
+		},
+		"/src/sounds/07_Jump.h": {
+			"sdcard": false
+		},
+		"/src/sounds/Sounds": {
+			"sdcard": false
+		},
+		"/Assets/Sounds/01_Opening_Sound_Effect_Short.raw": {
+			"sdcard": false
+		},
+		"/Assets/Sounds/01_Opening_Sound_Effect_Short.h": {
+			"sdcard": false
+		},
+		"/music": {
+			"sdcard": false
+		},
+		"/music/01_Opening_Sound_Effect.raw": {
+			"sdcard": false
+		},
+		"/music/kong2.1.raw": {
+			"sdcard": false
+		},
+		"/music/kong2_1.raw": {
+			"sdcard": true
 		}
 	}
 }
