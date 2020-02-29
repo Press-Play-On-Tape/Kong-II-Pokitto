@@ -5365,6 +5365,36 @@
 		},
 		"/music/kong2_1.raw": {
 			"sdcard": true
+		},
+		"/Assets/Sounds/KONGII_StageStart(1).mid": {
+			"sdcard": false
+		},
+		"/Assets/Sounds/01_Opening_Sound_Effect_Shorter.raw": {
+			"sdcard": false
+		},
+		"/Assets/Sounds/08_GameOver.raw": {
+			"sdcard": false
+		},
+		"/Assets/Sounds/08_GameOver.h": {
+			"sdcard": false
+		},
+		"/src/sounds/08_GameOver.h": {
+			"sdcard": false
+		},
+		"/music/08_GameOver.raw": {
+			"sdcard": false
+		},
+		"/music/Kong2_2.raw": {
+			"sdcard": false
+		},
+		"/music/kong2_2.raw": {
+			"sdcard": false
+		},
+		"/music/kong2_20.raw": {
+			"sdcard": false
+		},
+		"/music/kong2_10.raw": {
+			"sdcard": false
 		}
 	}
 }

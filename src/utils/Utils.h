@@ -166,7 +166,7 @@ namespace Utils {
             case SoundEffects::Collide:
                 PS::playSFX(Sounds::sfx_06_Collide, Sounds::sfx_06_Collide_length);
                 break;
-        
+                    
         }
 
     }    
@@ -181,6 +181,10 @@ namespace Utils {
 
             case SDStream::Introduction:
                 PS::playMusicStream("music/kong2_1.raw", 0);
+                break;
+
+            case SDStream::GameOver:
+                PS::playMusicStream("music/kong2_2.raw", 0);
                 break;
 
         }

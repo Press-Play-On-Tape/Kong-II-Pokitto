@@ -87,7 +87,6 @@ void Game::playGame_Update() {
                         this->playGameVars.key.setPath(Coordinates::LowerKey);
 
                         #ifdef INCLUDE_SOUND 
-                            Utils::stopSfx();
                             Utils::playSoundEffect(SoundEffects::ThrowKey);
                         #endif
 
@@ -113,7 +112,6 @@ void Game::playGame_Update() {
                                 }
                         
                                 #ifdef INCLUDE_SOUND 
-                                    Utils::stopSfx();
                                     Utils::playSoundEffect(SoundEffects::ThrowKey);
                                 #endif
 
@@ -310,6 +308,7 @@ void Game::playGame_Update() {
                     this->playGameVars.kong.reset();
                     this->playGameVars.player.setPosition(this->cookie->viewSize, 0);
                     this->playGameVars.exitSequence = false;
+                    this->gameStats.score = this->gameStats.score + 20;
 
                     playGame_ScrollToBottom(false);
 
@@ -471,7 +470,7 @@ void Game::playGame_Update() {
         }
 
         #ifdef INCLUDE_SOUND 
-            //sound.tones(Sounds::GameOver);
+            Utils::playMusicStream(SDStream::GameOver);
         #endif
 
     }

@@ -60,10 +60,11 @@
 enum class SDStream : uint32_t {
     None,
     Introduction,
+    GameOver
 };
 
 enum class SoundEffects : uint8_t {
-//    Introduction,
+    Introduction,
     JumpObstacle,
     Jump,
     Pause,
