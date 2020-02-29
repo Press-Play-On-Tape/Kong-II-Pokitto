@@ -2,7 +2,7 @@
 
 #define PROJ_BUTTONS_POLLING_ONLY
 
-#define PROJ_MODE15                 1
+#define PROJ_SCREENMODE             15
 #define PROJ_HIGH_RAM               HIGH_RAM_MUSIC
 #define PROJ_ENABLE_SFX             1
 #define PROJ_AUD_FREQ               8000
