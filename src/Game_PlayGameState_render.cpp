@@ -329,7 +329,7 @@ void Game::playGame_RenderKey(uint8_t yOffset) {
     if (this->playGameVars.key.getKeyLocation() != KeyLocation::None) {
 
         uint8_t x = this->playGameVars.key.getXPosition(this->cookie->viewSize);
-        uint8_t y = this->playGameVars.key.getYPosition(this->cookie->viewSize, yOffset);
+        int16_t y = this->playGameVars.key.getYPosition(this->cookie->viewSize, yOffset);
         uint8_t index = this->playGameVars.key.getImage();
 
         if (this->cookie->viewSize == ViewSize::Normal) {

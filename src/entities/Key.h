@@ -15,7 +15,7 @@ class Key {
 
         uint8_t getPosition();
         uint8_t getXPosition(ViewSize viewSize);
-        uint8_t getYPosition(ViewSize viewSize, uint8_t yOffset);
+        int16_t getYPosition(ViewSize viewSize, uint8_t yOffset);
         uint8_t getImage();
         KeyLocation getKeyLocation();
         bool isEnabled();

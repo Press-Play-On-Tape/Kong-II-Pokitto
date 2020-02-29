@@ -166,6 +166,10 @@ namespace Utils {
             case SoundEffects::Collide:
                 PS::playSFX(Sounds::sfx_06_Collide, Sounds::sfx_06_Collide_length);
                 break;
+            
+            case SoundEffects::Silence:
+                PS::playSFX(Sounds::sfx_09_Silence, Sounds::sfx_09_Silence_length);
+                break;
                     
         }
 

@@ -89,7 +89,7 @@ uint8_t Key::getXPosition(ViewSize viewSize) {
 
 }
 
-uint8_t Key::getYPosition(ViewSize viewSize, uint8_t yOffset) {
+int16_t Key::getYPosition(ViewSize viewSize, uint8_t yOffset) {
 
     if (viewSize == ViewSize::Normal) {
 

@@ -12,7 +12,11 @@ using PS = Pokitto::Sound;
 //
 void Game::splashScreen_Activate() {
 
-  splashScreenVars.counter = 0;
+    splashScreenVars.counter = 0;
+
+    // #ifdef INCLUDE_SOUND 
+    // Utils::playSoundEffect(SoundEffects::Silence);
+    // #endif
 
 }
 

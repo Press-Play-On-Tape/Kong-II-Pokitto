@@ -65,7 +65,7 @@ int8_t Kong::getYPosition(ViewSize viewSize, uint8_t yOffset) {
         else {
     
             int8_t y = Coordinates::Kong_Exit[(this->position * 3) + 1];
-            return y + VIEW_NORMAL_Y_UPPER_OFFSET;
+            return y + VIEW_NORMAL_Y_UPPER_OFFSET + (this->position == 0 ? 1 : 0);
 
         }
 
@@ -80,7 +80,7 @@ int8_t Kong::getYPosition(ViewSize viewSize, uint8_t yOffset) {
         else {
     
             int8_t y = Coordinates::Kong_Exit[(this->position * 3) + 1] * 2;
-            return y - yOffset;
+            return y - yOffset + (this->position == 0 ? 2 : 0);
 
         }
 
@@ -240,6 +240,7 @@ void Kong::reset() {
     this->enabled = true;
     this->exit = false;
 
-    this->setChains(true);
+    this->setChains(false);
+    this->setChain(1, true);
 
 }

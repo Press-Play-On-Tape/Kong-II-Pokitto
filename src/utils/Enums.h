@@ -71,6 +71,7 @@ enum class SoundEffects : uint8_t {
     ThrowKey,
     KongPound,
     Collide,
+    Silence
 };
 
 enum class GameStateType : uint8_t {

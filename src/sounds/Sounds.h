@@ -10,5 +10,6 @@ namespace Sounds {
 #include "05_KongPound.h"
 #include "06_Collide.h"
 #include "07_Jump.h"
+#include "09_Silence.h"
 
 }
