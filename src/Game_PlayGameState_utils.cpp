@@ -86,10 +86,10 @@ void Game::playGame_RenderScore(uint8_t yOffset) {
         }
 
         if (this->cookie->mode == GameMode::Easy) {
-            PD::drawBitmap(135, 235, Images_Large::GameA);
+            PD::drawBitmap(135, 235 - yOffset, Images_Large::GameA);
         }
         else {
-            PD::drawBitmap(135, 235, Images_Large::GameB);
+            PD::drawBitmap(135, 235 - yOffset, Images_Large::GameB);
 
         }
 
