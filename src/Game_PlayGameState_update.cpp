@@ -470,7 +470,7 @@ void Game::playGame_Update() {
         }
 
         #ifdef INCLUDE_SOUND 
-            Utils::playMusicStream(SDStream::GameOver);
+            Utils::playMusicStream(SoundEffects::GameOver);
         #endif
 
     }
@@ -583,15 +583,22 @@ void Game::playGame_CheckLastKey(uint8_t chain) {
         
     }
 
-    #ifdef INCLUDE_SOUND 
-        //sound.tones(Sounds::Unlock);
-    #endif
-
     for (uint8_t i = 0; i < 4 ; i++) {
 
-        if (this->playGameVars.kong.getDisplayChain(i)) return;
+        if (this->playGameVars.kong.getDisplayChain(i)) {
+
+            #ifdef INCLUDE_SOUND 
+            Utils::playSoundEffect(SoundEffects::Unlock);
+            #endif
+            return;
+
+        }
 
     }
+
+    #ifdef INCLUDE_SOUND 
+    Utils::playMusicStream(SoundEffects::FreeKong);
+    #endif
 
     this->playGameVars.lowerClappers.reset(this->cookie->viewSize, 107);
     this->playGameVars.upperClappers.reset(this->cookie->viewSize, 54);

@@ -48,7 +48,7 @@ void Game::playGame_Activate() {
     this->playGameVars.paused = false;
 
     #ifdef INCLUDE_SOUND 
-    Utils::playMusicStream(SDStream::Introduction);
+    Utils::playMusicStream(SoundEffects::Introduction);
     #endif
 
 }

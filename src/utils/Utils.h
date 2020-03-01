@@ -167,6 +167,10 @@ namespace Utils {
                 PS::playSFX(Sounds::sfx_06_Collide, Sounds::sfx_06_Collide_length);
                 break;
             
+            case SoundEffects::Unlock:
+                PS::playSFX(Sounds::sfx_10_Unlock, Sounds::sfx_10_Unlock_length);
+                break;
+            
             case SoundEffects::Silence:
                 PS::playSFX(Sounds::sfx_09_Silence, Sounds::sfx_09_Silence_length);
                 break;
@@ -178,17 +182,25 @@ namespace Utils {
         // ----------------------------------------------------------------------------
     //  Start a stream from the SD card .. 
     //
-    static void playMusicStream(SDStream stream) {
+    static void playMusicStream(SoundEffects stream) {
 
         #ifdef INCLUDE_SOUND_FROM_SD
         switch (stream) {
 
-            case SDStream::Introduction:
+            case SoundEffects::Introduction:
                 PS::playMusicStream("music/kong2_1.raw", 0);
                 break;
 
-            case SDStream::GameOver:
+            case SoundEffects::GameOver:
                 PS::playMusicStream("music/kong2_2.raw", 0);
+                break;
+
+            case SoundEffects::FreeKong:
+                PS::playMusicStream("music/kong2_3.raw", 0);
+                break;
+
+            case SoundEffects::Silence:
+                PS::playMusicStream("music/kong2_4.raw", 0);
                 break;
 
         }

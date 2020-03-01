@@ -16,6 +16,7 @@ void Game::splashScreen_Activate() {
 
     // #ifdef INCLUDE_SOUND 
     // Utils::playSoundEffect(SoundEffects::Silence);
+    // Utils::playMusicStream(SoundEffects::Silence);
     // #endif
 
 }

@@ -11,5 +11,6 @@ namespace Sounds {
 #include "06_Collide.h"
 #include "07_Jump.h"
 #include "09_Silence.h"
+#include "10_Unlock.h"
 
 }

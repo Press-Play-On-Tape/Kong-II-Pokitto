@@ -130,7 +130,7 @@ void Game::playGame_HandleCommonButtons() {
     }
     else {
 
-        if (PC::buttons.pressed(BTN_B)) {
+        if (PC::buttons.pressed(BTN_C)) {
             this->playGameVars.paused = !this->playGameVars.paused; 
         }
 

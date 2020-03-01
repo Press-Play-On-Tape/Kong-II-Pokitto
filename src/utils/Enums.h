@@ -3,9 +3,6 @@
 #include "Pokitto.h"
 
 
-// Comment out IGNORE_COLLISIONS to include colllision detection ..
-#define _IGNORE_COLLISIONS
-
 #define VIEW_NORMAL_X_OFFSET 46
 #define VIEW_NORMAL_Y_UPPER_OFFSET 19
 #define VIEW_NORMAL_Y_LOWER_OFFSET 27
@@ -57,11 +54,6 @@
 #define JUMP_POINT_SPAN 12
 #define COOKIE_INITIALISED 12
 
-enum class SDStream : uint32_t {
-    None,
-    Introduction,
-    GameOver
-};
 
 enum class SoundEffects : uint8_t {
     Introduction,
@@ -71,6 +63,9 @@ enum class SoundEffects : uint8_t {
     ThrowKey,
     KongPound,
     Collide,
+    Unlock,
+    GameOver,
+    FreeKong,
     Silence
 };
 

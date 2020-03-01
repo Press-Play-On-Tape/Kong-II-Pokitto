@@ -240,7 +240,17 @@ void Kong::reset() {
     this->enabled = true;
     this->exit = false;
 
+    this->setChains(true);
+
+    #ifdef ONE_KEY_ONLY
+    this->setChains(false);
+    this->setChain(3, true);
+    #endif
+
+    #ifdef TWO_KEYS_ONLY
     this->setChains(false);
     this->setChain(1, true);
+    this->setChain(2, true);
+    #endif
 
 }
