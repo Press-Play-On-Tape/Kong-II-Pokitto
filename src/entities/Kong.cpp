@@ -4,6 +4,12 @@
 
 Kong::Kong() { }
 
+uint16_t Kong::getPosition() {
+
+    return this->position;
+
+}
+
 uint8_t Kong::getXPosition(ViewSize viewSize) {
 
     if (viewSize == ViewSize::Normal) {

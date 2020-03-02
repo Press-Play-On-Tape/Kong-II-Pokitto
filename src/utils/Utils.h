@@ -168,7 +168,7 @@ namespace Utils {
                 break;
             
             case SoundEffects::Unlock:
-                PS::playSFX(Sounds::sfx_10_Unlock, Sounds::sfx_10_Unlock_length);
+                PS::playSFX(Sounds::sfx_12_Unlock, Sounds::sfx_12_Unlock_length);
                 break;
             
             case SoundEffects::Silence:

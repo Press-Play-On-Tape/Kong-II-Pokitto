@@ -5388,12 +5388,126 @@
 			"sdcard": false
 		},
 		"/music/kong2_2.raw": {
-			"sdcard": false
+			"sdcard": true
 		},
 		"/music/kong2_20.raw": {
 			"sdcard": false
 		},
 		"/music/kong2_10.raw": {
+			"sdcard": false
+		},
+		"/Kong-II-Pokitto.bin.1.png": {
+			"sdcard": false
+		},
+		"/Kong-II-Pokitto.bin.2.png": {
+			"sdcard": false
+		},
+		"/Kong-II-Pokitto.bin.3.png": {
+			"sdcard": false
+		},
+		"/Kong-II-Pokitto.bin.4.png": {
+			"sdcard": false
+		},
+		"/Kong-II-Pokitto.bin.5.png": {
+			"sdcard": false
+		},
+		"/Kong-II-Pokitto.bin.6.png": {
+			"sdcard": false
+		},
+		"/Kong-II-Pokitto.bin.1.h": {
+			"sdcard": false
+		},
+		"/Kong-II-Pokitto.bin.3.h": {
+			"sdcard": false
+		},
+		"/Kong-II-Pokitto.bin.2.h": {
+			"sdcard": false
+		},
+		"/Kong-II-Pokitto.bin.4.h": {
+			"sdcard": false
+		},
+		"/Assets/Sounds/08_PPOT.raw": {
+			"sdcard": false
+		},
+		"/Assets/Sounds/09_Silence.raw": {
+			"sdcard": false
+		},
+		"/Assets/Sounds/09_Silence.h": {
+			"sdcard": false
+		},
+		"/09_Silence.h": {
+			"sdcard": false
+		},
+		"/src/09_Silence.h": {
+			"sdcard": false
+		},
+		"/src/sounds/09_Silence.h": {
+			"sdcard": false
+		},
+		"/music/09_Silence.raw": {
+			"sdcard": false
+		},
+		"/music/Kong2_3.raw": {
+			"sdcard": false
+		},
+		"/music/kong2_3.raw": {
+			"sdcard": true
+		},
+		"/Assets/Sounds/01_Opening_Sound_Effect0.raw": {
+			"sdcard": false
+		},
+		"/music/kong2_1_old.raw": {
+			"sdcard": false
+		},
+		"/music/kong2_1_new.raw": {
+			"sdcard": false
+		},
+		"/music/kong2_1_old2.raw": {
+			"sdcard": false
+		},
+		"/Assets/Sounds/10_Lock.raw": {
+			"sdcard": false
+		},
+		"/Assets/Sounds/11_FreeKong.raw": {
+			"sdcard": false
+		},
+		"/Assets/Sounds/10_Lock.h": {
+			"sdcard": false
+		},
+		"/src/sounds/10_Lock.h": {
+			"sdcard": false
+		},
+		"/music/11_FreeKong.raw": {
+			"sdcard": false
+		},
+		"/music/kong2_4.raw": {
+			"sdcard": true
+		},
+		"/src/sounds/10_Unlock.h": {
+			"sdcard": false
+		},
+		"/music/kong2_31.raw": {
+			"sdcard": false
+		},
+		"/music/kong2_1 copy.raw": {
+			"sdcard": false
+		},
+		"/music/kong2_2 copy.raw": {
+			"sdcard": false
+		},
+		"/music/kong2_3_old.raw": {
+			"sdcard": false
+		},
+		"/music/NoOverwritePromptd065oT": {
+			"sdcard": false
+		},
+		"/Assets/Sounds/12_Unlock.h": {
+			"sdcard": false
+		},
+		"/Assets/Sounds/12_Unlock.raw": {
+			"sdcard": false
+		},
+		"/src/sounds/12_Unlock.h": {
 			"sdcard": false
 		}
 	}

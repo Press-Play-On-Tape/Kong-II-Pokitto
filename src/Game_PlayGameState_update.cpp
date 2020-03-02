@@ -277,7 +277,14 @@ void Game::playGame_Update() {
 
         if (this->playGameVars.exitSequence) {
 
+            if (this->playGameVars.kong.getPosition() == 50) {
+                #ifdef INCLUDE_SOUND 
+                Utils::playMusicStream(SoundEffects::FreeKong);
+                #endif
+            }
+
             if (this->playGameVars.playing) {
+
 
                 this->playGameVars.key.updatePosition();
                 this->playGameVars.kong.updateChains();
@@ -571,6 +578,10 @@ void Game::playGame_Update() {
 
 void Game::playGame_CheckLastKey(uint8_t chain) {
 
+    #ifdef INCLUDE_SOUND 
+    Utils::playSoundEffect(SoundEffects::Unlock);
+    #endif
+    
     this->playGameVars.kong.setFlashChain(chain, true);
     this->playGameVars.key.setFlash(true);
 
@@ -587,18 +598,18 @@ void Game::playGame_CheckLastKey(uint8_t chain) {
 
         if (this->playGameVars.kong.getDisplayChain(i)) {
 
-            #ifdef INCLUDE_SOUND 
-            Utils::playSoundEffect(SoundEffects::Unlock);
-            #endif
+            // #ifdef INCLUDE_SOUND 
+            // Utils::playSoundEffect(SoundEffects::Unlock);
+            // #endif
             return;
 
         }
 
     }
 
-    #ifdef INCLUDE_SOUND 
-    Utils::playMusicStream(SoundEffects::FreeKong);
-    #endif
+    // #ifdef INCLUDE_SOUND 
+    // Utils::playMusicStream(SoundEffects::FreeKong);
+    // #endif
 
     this->playGameVars.lowerClappers.reset(this->cookie->viewSize, 107);
     this->playGameVars.upperClappers.reset(this->cookie->viewSize, 54);
