@@ -2,12 +2,8 @@
 #include "PokittoCookie.h"
 
 #include "src/utils/Utils.h"
-//#include "src/entities/Entities.h"
-//#include "src/utils/Structs.h"
-
 #include "src/Game.h"
 #include "src/utils/GameCookie.h"
-//#include "src/sounds/Sounds.h"
 
 using PC = Pokitto::Core;
 using PD = Pokitto::Display;

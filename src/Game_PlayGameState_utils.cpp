@@ -130,8 +130,23 @@ void Game::playGame_HandleCommonButtons() {
     }
     else {
 
-        if (PC::buttons.pressed(BTN_C)) {
-            this->playGameVars.paused = !this->playGameVars.paused; 
+        if (this->playGameVars.paused) {
+
+            if (this->playGameVars.pauseMenu == 0 && (PC::buttons.pressed(BTN_A) || PC::buttons.pressed(BTN_C))) {
+                this->playGameVars.paused = false;
+            }
+
+            if (this->playGameVars.pauseMenu == 1 && PC::buttons.pressed(BTN_A)) {
+                gameState = GameStateType::TitleScreen_Activate; 
+            }
+
+        }
+        else {
+
+            if (PC::buttons.pressed(BTN_C)) {
+                this->playGameVars.paused = true; 
+            }
+
         }
 
     }
@@ -140,42 +155,22 @@ void Game::playGame_HandleCommonButtons() {
 
 void Game::playGame_RenderGameOverOrPause() {
 
-    if (this->cookie->viewSize == ViewSize::Normal) {
+    // Game Over?
 
-        // Game Over?
+    if (this->gameStats.gameOver) {
 
-        if (this->gameStats.gameOver) {
-
-            PD::drawBitmap(74, 68, Images_Normal::GameOver); 
-
-        }
-
-        // Pause?
-
-        if (this->playGameVars.paused) {
-
-            PD::drawBitmap(84, 68, Images_Normal::Pause); 
-
-        }
+        PD::drawBitmap(26, 63, Images_Normal::GameOver); 
 
     }
-    else {
 
-        // Game Over?
+    // Pause?
 
-        if (this->gameStats.gameOver) {
+    if (this->playGameVars.paused) {
 
-            PD::drawBitmap(38, 54, Images_Large::GameOver); 
+        PD::drawBitmap(29, 64, Images_Normal::Pause); 
 
-        }
-
-        // Pause?
-
-        if (this->playGameVars.paused) {
-
-            PD::drawBitmap(58, 60, Images_Large::Pause); 
-
-        }
+        if (this->playGameVars.pauseMenu == 0) { PD::drawBitmap(40, 76, Images_Normal::Selector); }
+        if (this->playGameVars.pauseMenu == 1) { PD::drawBitmap(40, 90, Images_Normal::Selector); }
 
     }
 

@@ -245,7 +245,7 @@ void Game::playGame_Render() {
 
 
     this->playGame_RenderKey(yOffset);
-    this->playGame_RenderGameOverOrPause();
+
 
 
     // Render score ..
@@ -263,6 +263,8 @@ void Game::playGame_Render() {
         PD::drawBitmap(55, 83, Images_Normal::Scenery_Middle);
 
     }
+
+    this->playGame_RenderGameOverOrPause();
 
 }
 

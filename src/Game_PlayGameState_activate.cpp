@@ -37,6 +37,7 @@ void Game::playGame_Activate() {
     this->playGameVars.kong.reset();
 
     this->playGameVars.frameRate = FRAME_RATE_MIN;
+    this->playGameVars.pauseMenu = 0;
     PC::setFrameRate(this->playGameVars.frameRate);
 
     playGame_ResetLevel(INTRO_DELAY_FROM_TITLE_SCROLL);

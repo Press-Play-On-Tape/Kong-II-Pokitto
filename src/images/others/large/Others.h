@@ -2,5 +2,3 @@
 
 #include "GameA.h"
 #include "GameB.h"
-#include "GameOver.h"
-#include "Pause.h"

@@ -449,6 +449,19 @@ void Game::playGame_Update() {
         #endif
 
     }
+    else if (this->playGame_GetPaused()) {
+
+        // Handle pause menu ..
+
+        if ((PC::buttons.pressed(BTN_DOWN) || PC::buttons.repeat(BTN_DOWN, 1)) && this->playGameVars.pauseMenu == 0) {
+            this->playGameVars.pauseMenu++;
+        }
+
+        if ((PC::buttons.pressed(BTN_UP) || PC::buttons.repeat(BTN_UP, 1)) && this->playGameVars.pauseMenu == 1) {
+             this->playGameVars.pauseMenu--;
+        }                   
+
+    }
 
 
     // End of Game?

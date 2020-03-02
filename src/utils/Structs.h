@@ -31,6 +31,7 @@ struct PlayGameStateVars {
     uint8_t sparksLowerDelay = SPARKS_LOWER_MAX_EASY;
     uint8_t sparksUpperDelay = SPARKS_UPPER_MAX_EASY;
     uint16_t birdsDelay = BIRDS_MAX_EASY;
+    uint8_t pauseMenu = 0;
     
     Player player;
     Kong kong;
