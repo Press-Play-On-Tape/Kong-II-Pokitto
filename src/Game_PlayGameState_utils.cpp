@@ -159,7 +159,12 @@ void Game::playGame_RenderGameOverOrPause() {
 
     if (this->gameStats.gameOver) {
 
-        PD::drawBitmap(26, 63, Images_Normal::GameOver); 
+        if (this->cookie->viewSize == ViewSize::Normal) {
+            PD::drawBitmap(26, 63, Images_Normal::GameOver); 
+        }
+        else {
+            PD::drawBitmap(24, 18, Images_Large::GameOver); 
+        }
 
     }
 
