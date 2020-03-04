@@ -5647,6 +5647,27 @@
 		},
 		"/README.md": {
 			"sdcard": false
+		},
+		"/Assets/POP/SC3.h": {
+			"sdcard": false
+		},
+		"/Assets/POP/SC1.h": {
+			"sdcard": false
+		},
+		"/Assets/POP/SC4.h": {
+			"sdcard": false
+		},
+		"/Assets/POP/SC2.h": {
+			"sdcard": false
+		},
+		"/Assets/Sounds/KONGII_GameBanner.h": {
+			"sdcard": false
+		},
+		"/Assets/POP/Kong-II-Pokitto.pop": {
+			"sdcard": false
+		},
+		"/Assets/POP/Kong-II_POPandMusic333.zip": {
+			"sdcard": false
 		}
 	}
 }
