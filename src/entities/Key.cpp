@@ -230,6 +230,8 @@ void Key::setPath(uint8_t const *path) {
 void Key::setKeyLocation(KeyLocation keyLocation) {
 
     this->keyLocation = keyLocation;
+    this->enabled = false;
+    this->position = 0;
 
 }
 

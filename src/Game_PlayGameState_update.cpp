@@ -92,7 +92,7 @@ void Game::playGame_Update() {
 
                     }
 
-                    if (this->playGameVars.key.getKeyLocation() == KeyLocation::UpperPosition && this->playGameVars.player.getPosition() >= PLAYER_POS_UPPERKEY_START && this->playGameVars.player.getPosition() <= PLAYER_POS_UPPERKEY_END) {
+                    if (this->playGameVars.key.getKeyLocation() == KeyLocation::UpperPosition && this->playGameVars.key.getPosition() == 0 && this->playGameVars.player.getPosition() >= PLAYER_POS_UPPERKEY_START && this->playGameVars.player.getPosition() <= PLAYER_POS_UPPERKEY_END) {
 
                         while (true) {
 
@@ -165,7 +165,7 @@ void Game::playGame_Update() {
                                 auto &clapper = this->playGameVars.lowerClappers.getClapper(i);
 
                                 if (clapper.isEnabled() && abs(this->playGameVars.player.getXPosition(this->cookie->viewSize, false) - clapper.getXPosition(this->cookie->viewSize)) < JUMP_POINT_SPAN) {
-
+                                    
                                     points = true;
                                     break;
 
