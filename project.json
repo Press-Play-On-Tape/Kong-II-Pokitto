@@ -5668,6 +5668,27 @@
 		},
 		"/Assets/POP/Kong-II_POPandMusic333.zip": {
 			"sdcard": false
+		},
+		"/Assets/POP/Kong-II_POPandMusic": {
+			"sdcard": false
+		},
+		"/Assets/POP/Kong-II_POPandMusic/Kong-II.pop": {
+			"sdcard": false
+		},
+		"/Assets/POP/Kong-II_POPandMusic/music": {
+			"sdcard": false
+		},
+		"/Assets/POP/Kong-II_POPandMusic/music/kong2_3.raw": {
+			"sdcard": false
+		},
+		"/Assets/POP/Kong-II_POPandMusic/music/kong2_2.raw": {
+			"sdcard": false
+		},
+		"/Assets/POP/Kong-II_POPandMusic/music/kong2_4.raw": {
+			"sdcard": false
+		},
+		"/Assets/POP/Kong-II_POPandMusic/music/kong2_1.raw": {
+			"sdcard": false
 		}
 	}
 }

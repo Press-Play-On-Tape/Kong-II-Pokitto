@@ -43,9 +43,9 @@ namespace Coordinates {
     11, 104, 40, static_cast<uint8_t>(Stance::Climbing_Vine_02), static_cast<uint8_t>(Movements::Up) | static_cast<uint8_t>(Movements::Down),
     11, 103, 40, static_cast<uint8_t>(Stance::Climbing_Vine_02), static_cast<uint8_t>(Movements::Up) | static_cast<uint8_t>(Movements::Down),
     11, 102, 40, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Up) | static_cast<uint8_t>(Movements::Down),
+    #define PLAYER_CLAPPER_LOWER_START 15
     11, 101, 40, static_cast<uint8_t>(Stance::Climbing_Vine_01), static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Down) | static_cast<uint8_t>(Movements::Jump),
 
-    #define PLAYER_CLAPPER_LOWER_START 16
     12, 100, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
     13, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
     14, 101, 40, static_cast<uint8_t>(Stance::Normal), static_cast<uint8_t>(Movements::Left) | static_cast<uint8_t>(Movements::Right) | static_cast<uint8_t>(Movements::Jump),
