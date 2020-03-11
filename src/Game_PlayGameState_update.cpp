@@ -157,7 +157,7 @@ void Game::playGame_Update() {
 
                         uint16_t position = this->playGameVars.player.getPosition();
                         bool points = false;
-printf("%i %i\n", position, PLAYER_CLAPPER_LOWER_START);
+
                         if (position >= PLAYER_CLAPPER_LOWER_START && position < PLAYER_CLAPPER_LOWER_END) {
 
                             for (uint8_t i = 0; i < CLAPPERS_LOWER_COUNT; i++) {
