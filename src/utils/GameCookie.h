@@ -8,11 +8,12 @@ class GameCookie : public Pokitto::Cookie {
     
     public:
     
-    	uint8_t initialised;
-        uint16_t easyScore = 0;
-        uint16_t hardScore = 0;
-		ViewSize viewSize = ViewSize::Normal;
-		GameMode mode = GameMode::Easy;
+			uint8_t initialised;
+			uint16_t easyScore = 0;
+			uint16_t hardScore = 0;
+			uint16_t tuxScore = 0;
+			ViewSize viewSize = ViewSize::Normal;
+			GameMode mode = GameMode::Easy;
 
 
 	public:
@@ -23,6 +24,7 @@ class GameCookie : public Pokitto::Cookie {
 
 			this->easyScore = 0;
 			this->hardScore = 0;
+			this->tuxScore = 0;
 			this->viewSize = ViewSize::Normal;
 			this->mode = GameMode::Easy;
 			this->saveCookie();

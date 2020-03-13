@@ -36,7 +36,7 @@ void Game::titleScreen_Update() {
 
     }
 
-    if (PC::buttons.pressed(BTN_DOWN) && titleScreenVars.position < 2) { 
+    if (PC::buttons.pressed(BTN_DOWN) && titleScreenVars.position < 3) { 
 
         titleScreenVars.position++;
 
@@ -57,8 +57,14 @@ void Game::titleScreen_Update() {
                 this->cookie->saveCookie();
                 this->gameState = GameStateType::PlayGame_Activate; 
                 break;
-         
+            
             case 2:
+                this->cookie->mode = GameMode::Tux;
+                this->cookie->saveCookie();
+                this->gameState = GameStateType::PlayGame_Activate; 
+                break;
+         
+            case 3:
                 this->cookie->viewSize = (this->cookie->viewSize == ViewSize::Normal ? ViewSize::Large : ViewSize::Normal);
                 this->cookie->saveCookie();
                 break;     
@@ -67,7 +73,7 @@ void Game::titleScreen_Update() {
 
     }
 
-    if ((PC::buttons.pressed(BTN_LEFT) || PC::buttons.pressed(BTN_RIGHT)) && titleScreenVars.position == 2) { 
+    if ((PC::buttons.pressed(BTN_LEFT) || PC::buttons.pressed(BTN_RIGHT)) && titleScreenVars.position == 3) { 
 
         this->cookie->viewSize = (this->cookie->viewSize == ViewSize::Normal ? ViewSize::Large : ViewSize::Normal);
         this->cookie->saveCookie();
@@ -117,4 +123,14 @@ void Game::titleScreen_Render() {
 
     }
 
+
+    // Tux score ..
+
+    Utils::extractDigits(digits, this->cookie->tuxScore);
+
+    for (uint8_t j = 4; j > 0; --j) {
+
+        PD::drawBitmap(77 - (j*5), 59, Images_Normal::HSNumbers[digits[j - 1]]);
+
+    }
 }

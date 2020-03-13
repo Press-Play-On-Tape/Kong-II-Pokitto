@@ -487,6 +487,13 @@ void Game::playGame_Update() {
                 }
                 break;
 
+            case GameMode::Tux:
+                if (this->gameStats.score > this->cookie->hardScore) {
+                    this->cookie->tuxScore = this->gameStats.score;
+                    this->cookie->saveCookie();
+                }
+                break;
+
         }
 
         #ifdef INCLUDE_SOUND 

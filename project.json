@@ -98,7 +98,7 @@
 			"-fno-delete-null-pointer-checks"
 		],
 		"ALL": [
-			"-std=c++14"
+			"-std=c++17"
 		]
 	},
 	"CFlags": {
@@ -5691,6 +5691,1746 @@
 			"sdcard": false
 		},
 		"/Assets/POP/Kong-II(1).pop": {
+			"sdcard": false
+		},
+		"\\Kong-II-Pokitto.elf": {
+			"sdcard": false
+		},
+		"\\Assets": {
+			"sdcard": false
+		},
+		"\\Kong-II.bin": {
+			"sdcard": false
+		},
+		"\\main.cpp": {
+			"sdcard": false
+		},
+		"\\music": {
+			"sdcard": false
+		},
+		"\\My_settings.h": {
+			"sdcard": false
+		},
+		"\\project.json": {
+			"sdcard": false
+		},
+		"\\README.md": {
+			"sdcard": false
+		},
+		"\\src": {
+			"sdcard": false
+		},
+		"\\Assets\\POP": {
+			"sdcard": false
+		},
+		"\\Assets\\Sounds": {
+			"sdcard": false
+		},
+		"\\music\\kong2_1.raw": {
+			"sdcard": false
+		},
+		"\\music\\kong2_2.raw": {
+			"sdcard": false
+		},
+		"\\music\\kong2_3.raw": {
+			"sdcard": false
+		},
+		"\\music\\kong2_4.raw": {
+			"sdcard": false
+		},
+		"\\src\\entities": {
+			"sdcard": false
+		},
+		"\\src\\Game.cpp": {
+			"sdcard": false
+		},
+		"\\src\\Game_PlayGameState_render.cpp": {
+			"sdcard": false
+		},
+		"\\src\\Game.h": {
+			"sdcard": false
+		},
+		"\\src\\Game_PlayGameState_update.cpp": {
+			"sdcard": false
+		},
+		"\\src\\Game_PlayGameState_activate.cpp": {
+			"sdcard": false
+		},
+		"\\src\\Game_SplashScreenState.cpp": {
+			"sdcard": false
+		},
+		"\\src\\images": {
+			"sdcard": false
+		},
+		"\\src\\Game_TitleScreenState.cpp": {
+			"sdcard": false
+		},
+		"\\src\\map": {
+			"sdcard": false
+		},
+		"\\src\\sounds": {
+			"sdcard": false
+		},
+		"\\src\\Game_PlayGameState_utils.cpp": {
+			"sdcard": false
+		},
+		"\\src\\utils": {
+			"sdcard": false
+		},
+		"\\Assets\\POP\\Kong-II_POPandMusic.zip": {
+			"sdcard": false
+		},
+		"\\Assets\\POP\\KONGII_24x24.h": {
+			"sdcard": false
+		},
+		"\\Assets\\POP\\Kong-II.pop": {
+			"sdcard": false
+		},
+		"\\Assets\\POP\\KONGII_24x24.png": {
+			"sdcard": false
+		},
+		"\\Assets\\POP\\KONGII_36x36.h": {
+			"sdcard": false
+		},
+		"\\Assets\\POP\\KONGII_36x36.png": {
+			"sdcard": false
+		},
+		"\\Assets\\POP\\KONGII_GameBanner.png": {
+			"sdcard": false
+		},
+		"\\Assets\\POP\\KONGII_POPBanner.h": {
+			"sdcard": false
+		},
+		"\\Assets\\POP\\KONGII_GameBanner.h": {
+			"sdcard": false
+		},
+		"\\Assets\\POP\\music": {
+			"sdcard": false
+		},
+		"\\Assets\\POP\\KONGII_POPBanner.png": {
+			"sdcard": false
+		},
+		"\\Assets\\POP\\Play.gif": {
+			"sdcard": false
+		},
+		"\\Assets\\POP\\Play2.gif": {
+			"sdcard": false
+		},
+		"\\Assets\\POP\\SC2.h": {
+			"sdcard": false
+		},
+		"\\Assets\\POP\\SC1.h": {
+			"sdcard": false
+		},
+		"\\Assets\\POP\\SC1.png": {
+			"sdcard": false
+		},
+		"\\Assets\\POP\\SC2.png": {
+			"sdcard": false
+		},
+		"\\Assets\\POP\\SC3.h": {
+			"sdcard": false
+		},
+		"\\Assets\\POP\\SC3.png": {
+			"sdcard": false
+		},
+		"\\Assets\\POP\\SC4.h": {
+			"sdcard": false
+		},
+		"\\Assets\\POP\\SC4.png": {
+			"sdcard": false
+		},
+		"\\Assets\\POP\\Summary.txt": {
+			"sdcard": false
+		},
+		"\\Assets\\Sounds\\01_Opening_Sound_Effect.mp3": {
+			"sdcard": false
+		},
+		"\\Assets\\Sounds\\01_Opening_Sound_Effect.raw": {
+			"sdcard": false
+		},
+		"\\Assets\\Sounds\\01_Opening_Sound_Effect_Short.raw": {
+			"sdcard": false
+		},
+		"\\Assets\\Sounds\\01_Opening_Sound_Effect_Short.h": {
+			"sdcard": false
+		},
+		"\\Assets\\Sounds\\01_Opening_Sound_Effect_Shorter.raw": {
+			"sdcard": false
+		},
+		"\\Assets\\Sounds\\02_Jump_Over_Obstacle.mp3": {
+			"sdcard": false
+		},
+		"\\Assets\\Sounds\\02_Jump_Over_Obstacle.raw": {
+			"sdcard": false
+		},
+		"\\Assets\\Sounds\\03_Pause.raw": {
+			"sdcard": false
+		},
+		"\\Assets\\Sounds\\03_Pause.wav": {
+			"sdcard": false
+		},
+		"\\Assets\\Sounds\\04_ThrowKey.raw": {
+			"sdcard": false
+		},
+		"\\Assets\\Sounds\\05_KongPound.raw": {
+			"sdcard": false
+		},
+		"\\Assets\\Sounds\\04_ThrowKey.wav": {
+			"sdcard": false
+		},
+		"\\Assets\\Sounds\\05_KongPound.wav": {
+			"sdcard": false
+		},
+		"\\Assets\\Sounds\\06_Collide.raw": {
+			"sdcard": false
+		},
+		"\\Assets\\Sounds\\06_Collide.wav": {
+			"sdcard": false
+		},
+		"\\Assets\\Sounds\\07_Jump.wav": {
+			"sdcard": false
+		},
+		"\\Assets\\Sounds\\07_Jump.raw": {
+			"sdcard": false
+		},
+		"\\Assets\\Sounds\\08_GameOver.raw": {
+			"sdcard": false
+		},
+		"\\Assets\\Sounds\\09_Silence.h": {
+			"sdcard": false
+		},
+		"\\Assets\\Sounds\\09_Silence.raw": {
+			"sdcard": false
+		},
+		"\\Assets\\Sounds\\10_Lock.h": {
+			"sdcard": false
+		},
+		"\\Assets\\Sounds\\10_Lock.raw": {
+			"sdcard": false
+		},
+		"\\Assets\\Sounds\\11_FreeKong.raw": {
+			"sdcard": false
+		},
+		"\\Assets\\Sounds\\12_Unlock.h": {
+			"sdcard": false
+		},
+		"\\Assets\\Sounds\\12_Unlock.raw": {
+			"sdcard": false
+		},
+		"\\Assets\\Sounds\\death.wav": {
+			"sdcard": false
+		},
+		"\\Assets\\Sounds\\Donkey Kong Jr. SFX (10).wav": {
+			"sdcard": false
+		},
+		"\\Assets\\Sounds\\Donkey Kong Jr. SFX (1).wav": {
+			"sdcard": false
+		},
+		"\\Assets\\Sounds\\Donkey Kong Jr. SFX (11).wav": {
+			"sdcard": false
+		},
+		"\\Assets\\Sounds\\Donkey Kong Jr. SFX (12).wav": {
+			"sdcard": false
+		},
+		"\\Assets\\Sounds\\Donkey Kong Jr. SFX (13).wav": {
+			"sdcard": false
+		},
+		"\\Assets\\Sounds\\Donkey Kong Jr. SFX (15).wav": {
+			"sdcard": false
+		},
+		"\\Assets\\Sounds\\Donkey Kong Jr. SFX (14).wav": {
+			"sdcard": false
+		},
+		"\\Assets\\Sounds\\Donkey Kong Jr. SFX (2).wav": {
+			"sdcard": false
+		},
+		"\\Assets\\Sounds\\Donkey Kong Jr. SFX (3).wav": {
+			"sdcard": false
+		},
+		"\\Assets\\Sounds\\Donkey Kong Jr. SFX (5).wav": {
+			"sdcard": false
+		},
+		"\\Assets\\Sounds\\Donkey Kong Jr. SFX (6).wav": {
+			"sdcard": false
+		},
+		"\\Assets\\Sounds\\Donkey Kong Jr. SFX (4).wav": {
+			"sdcard": false
+		},
+		"\\Assets\\Sounds\\Donkey Kong Jr. SFX (7).wav": {
+			"sdcard": false
+		},
+		"\\Assets\\Sounds\\Donkey Kong Jr. SFX (8).wav": {
+			"sdcard": false
+		},
+		"\\Assets\\Sounds\\KONGII_GameBanner.h": {
+			"sdcard": false
+		},
+		"\\Assets\\Sounds\\Donkey Kong Jr. SFX (9).wav": {
+			"sdcard": false
+		},
+		"\\Assets\\Sounds\\KONGII_GameBanner.png": {
+			"sdcard": false
+		},
+		"\\Assets\\Sounds\\KONGII_StageStart(1).mid": {
+			"sdcard": false
+		},
+		"\\Assets\\Sounds\\rawtobin.js": {
+			"sdcard": false
+		},
+		"\\src\\entities\\Bird.cpp": {
+			"sdcard": false
+		},
+		"\\src\\entities\\Bird.h": {
+			"sdcard": false
+		},
+		"\\src\\entities\\Birds.cpp": {
+			"sdcard": false
+		},
+		"\\src\\entities\\Birds.h": {
+			"sdcard": false
+		},
+		"\\src\\entities\\Clapper.h": {
+			"sdcard": false
+		},
+		"\\src\\entities\\Clapper.cpp": {
+			"sdcard": false
+		},
+		"\\src\\entities\\Clappers.cpp": {
+			"sdcard": false
+		},
+		"\\src\\entities\\Clappers.h": {
+			"sdcard": false
+		},
+		"\\src\\entities\\Entities.h": {
+			"sdcard": false
+		},
+		"\\src\\entities\\Key.h": {
+			"sdcard": false
+		},
+		"\\src\\entities\\Key.cpp": {
+			"sdcard": false
+		},
+		"\\src\\entities\\Kong.cpp": {
+			"sdcard": false
+		},
+		"\\src\\entities\\Kong.h": {
+			"sdcard": false
+		},
+		"\\src\\entities\\Player.cpp": {
+			"sdcard": false
+		},
+		"\\src\\entities\\Spark.cpp": {
+			"sdcard": false
+		},
+		"\\src\\entities\\Player.h": {
+			"sdcard": false
+		},
+		"\\src\\entities\\Spark.h": {
+			"sdcard": false
+		},
+		"\\src\\entities\\Sparks.cpp": {
+			"sdcard": false
+		},
+		"\\src\\entities\\Sparks.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\birds": {
+			"sdcard": false
+		},
+		"\\src\\images\\clappers": {
+			"sdcard": false
+		},
+		"\\src\\images\\highScore": {
+			"sdcard": false
+		},
+		"\\src\\images\\Images_Large.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\keys": {
+			"sdcard": false
+		},
+		"\\src\\images\\Images_Normal.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\kong": {
+			"sdcard": false
+		},
+		"\\src\\images\\numbers": {
+			"sdcard": false
+		},
+		"\\src\\images\\others": {
+			"sdcard": false
+		},
+		"\\src\\images\\player": {
+			"sdcard": false
+		},
+		"\\src\\images\\ppot": {
+			"sdcard": false
+		},
+		"\\src\\images\\scenery": {
+			"sdcard": false
+		},
+		"\\src\\images\\Scenery.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\sparks": {
+			"sdcard": false
+		},
+		"\\src\\images\\Scenery.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\title": {
+			"sdcard": false
+		},
+		"\\src\\map\\Bird.h": {
+			"sdcard": false
+		},
+		"\\src\\map\\Coordinates.h": {
+			"sdcard": false
+		},
+		"\\src\\map\\Key.h": {
+			"sdcard": false
+		},
+		"\\src\\map\\Kong.h": {
+			"sdcard": false
+		},
+		"\\src\\map\\Player.h": {
+			"sdcard": false
+		},
+		"\\src\\map\\Spark.h": {
+			"sdcard": false
+		},
+		"\\src\\sounds\\02_Jump_Over_Obstacle.h": {
+			"sdcard": false
+		},
+		"\\src\\sounds\\03_Pause.h": {
+			"sdcard": false
+		},
+		"\\src\\sounds\\04_ThrowKey.h": {
+			"sdcard": false
+		},
+		"\\src\\sounds\\05_KongPound.h": {
+			"sdcard": false
+		},
+		"\\src\\sounds\\06_Collide.h": {
+			"sdcard": false
+		},
+		"\\src\\sounds\\07_Jump.h": {
+			"sdcard": false
+		},
+		"\\src\\sounds\\09_Silence.h": {
+			"sdcard": false
+		},
+		"\\src\\sounds\\10_Unlock.h": {
+			"sdcard": false
+		},
+		"\\src\\sounds\\12_Unlock.h": {
+			"sdcard": false
+		},
+		"\\src\\sounds\\Sounds.h": {
+			"sdcard": false
+		},
+		"\\src\\utils\\Structs.h": {
+			"sdcard": false
+		},
+		"\\src\\utils\\GameCookie.h": {
+			"sdcard": false
+		},
+		"\\src\\utils\\Enums.h": {
+			"sdcard": false
+		},
+		"\\src\\utils\\Utils.h": {
+			"sdcard": false
+		},
+		"\\Assets\\POP\\music\\kong2_1.raw": {
+			"sdcard": false
+		},
+		"\\Assets\\POP\\music\\kong2_2.raw": {
+			"sdcard": false
+		},
+		"\\Assets\\POP\\music\\kong2_3.raw": {
+			"sdcard": false
+		},
+		"\\Assets\\POP\\music\\kong2_4.raw": {
+			"sdcard": false
+		},
+		"\\src\\images\\birds\\large": {
+			"sdcard": false
+		},
+		"\\src\\images\\birds\\normal": {
+			"sdcard": false
+		},
+		"\\src\\images\\clappers\\large": {
+			"sdcard": false
+		},
+		"\\src\\images\\clappers\\normal": {
+			"sdcard": false
+		},
+		"\\src\\images\\highScore\\HighScore_Bottom.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\highScore\\HighScore_Chains.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\highScore\\HighScore_Bottom.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\highScore\\HighScore_Chains.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\highScore\\HighScore_Chain_Left.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\highScore\\HighScore_Chain_Left.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\highScore\\HighScore_Chain_Right.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\highScore\\HighScore_Chain_Right.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\highScore\\HighScore_Easy.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\highScore\\HighScore_Easy.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\highScore\\HighScore_Hard.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\highScore\\HighScore_Hard.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\highScore\\HighScore_Jnr.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\highScore\\HighScore_Jnr.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\highScore\\HighScore_Left.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\highScore\\HighScore_Panel_Left.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\highScore\\HighScore_Left.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\highScore\\HighScore_Panel_Left.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\highScore\\HighScore_Panel_Mid.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\highScore\\HighScore_Panel_Mid.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\highScore\\HighScore_Panel_Right.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\highScore\\HighScore_Panel_Right.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\highScore\\HighScore_Right.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\highScore\\KONGII_HighscoreBG.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\highScore\\HighScore_Right.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\highScore\\KONGII_HighscoreBG.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\highScore\\KongII_HighscorePreview.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\highScore\\KongII_HighscorePreview.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\highScore\\KONGII_Highscore_panel.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\highScore\\KONGII_Highscore_panel.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\highScore\\KONGII_Highscore_panel_Mask.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\highScore\\KONGII_Highscore_panel_Mask.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\highScore\\KONGII_JuniorHoldingScore_Mask.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\highScore\\KONGII_JuniorHoldingScore.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\highScore\\KONGII_JuniorHoldingScore.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\highScore\\KONGII_JuniorHoldingScore_Mask.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\keys\\normal": {
+			"sdcard": false
+		},
+		"\\src\\images\\keys\\large": {
+			"sdcard": false
+		},
+		"\\src\\images\\kong\\large": {
+			"sdcard": false
+		},
+		"\\src\\images\\kong\\normal": {
+			"sdcard": false
+		},
+		"\\src\\images\\numbers\\large": {
+			"sdcard": false
+		},
+		"\\src\\images\\others\\large": {
+			"sdcard": false
+		},
+		"\\src\\images\\numbers\\normal": {
+			"sdcard": false
+		},
+		"\\src\\images\\others\\normal": {
+			"sdcard": false
+		},
+		"\\src\\images\\player\\large": {
+			"sdcard": false
+		},
+		"\\src\\images\\player\\normal": {
+			"sdcard": false
+		},
+		"\\src\\images\\ppot\\Ppot_00.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\ppot\\Ppot_00.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\ppot\\PPOT.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\ppot\\Ppot_01.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\ppot\\Ppot_01.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\ppot\\Ppot_02.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\ppot\\Ppot_02.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\ppot\\Ppot_03.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\ppot\\Ppot_03.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\ppot\\Ppot_Full.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\ppot\\Ppot_Arrow.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\ppot\\Ppot_Full.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\scenery\\large": {
+			"sdcard": false
+		},
+		"\\src\\images\\ppot\\Ppot_Arrow.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\scenery\\normal": {
+			"sdcard": false
+		},
+		"\\src\\images\\sparks\\large": {
+			"sdcard": false
+		},
+		"\\src\\images\\sparks\\normal": {
+			"sdcard": false
+		},
+		"\\src\\images\\title\\Full.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\title\\Full.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\title\\HSNumber_0.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\title\\HSNumber_0.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\title\\HSNumber_1.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\title\\HSNumber_1.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\title\\HSNumber_3.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\title\\HSNumber_2.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\title\\HSNumber_2.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\title\\HSNumber_3.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\title\\HSNumber_4.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\title\\HSNumber_5.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\title\\HSNumber_4.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\title\\HSNumber_6.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\title\\HSNumber_5.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\title\\HSNumber_7.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\title\\HSNumber_7.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\title\\HSNumber_8.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\title\\HSNumber_6.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\title\\HSNumber_9.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\title\\HSNumber_8.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\title\\HSNumber_9.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\title\\Selector.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\title\\Title.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\title\\Selector.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\title\\TitleScreen.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\title\\Zoom.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\title\\TitleScreen.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\title\\Zoom.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\birds\\large\\Bird_F0.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\birds\\large\\Birds.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\birds\\large\\Bird_F0.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\birds\\large\\Bird_F1.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\birds\\large\\Bird_F1.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\birds\\large\\Bird_F2.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\birds\\large\\Bird_F2.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\birds\\large\\Bird_F3.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\birds\\large\\Bird_F3.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\birds\\large\\Bird_Turn_01.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\birds\\large\\Bird_Turn_00.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\birds\\large\\Bird_Turn_00.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\birds\\large\\Bird_Turn_01.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\birds\\large\\Bird_Turn_02.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\birds\\large\\Bird_Turn_02.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\birds\\large\\Bird_Turn_04.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\birds\\large\\Bird_Turn_03.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\birds\\large\\Bird_Turn_03.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\birds\\large\\Bird_Turn_04.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\birds\\large\\Bird_Turn_05.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\birds\\large\\Bird_Upright.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\birds\\large\\Bird_Turn_05.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\birds\\large\\Bird_Upright.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\birds\\normal\\Birds.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\birds\\normal\\Bird_F0.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\birds\\normal\\Bird_F0.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\birds\\normal\\Bird_F1.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\birds\\normal\\Bird_F1.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\birds\\normal\\Bird_F2.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\birds\\normal\\Bird_F3.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\birds\\normal\\Bird_F2.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\birds\\normal\\Bird_F3.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\birds\\normal\\Bird_Turn_00.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\birds\\normal\\Bird_Turn_00.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\birds\\normal\\Bird_Turn_01.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\birds\\normal\\Bird_Turn_01.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\birds\\normal\\Bird_Turn_02.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\birds\\normal\\Bird_Turn_02.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\birds\\normal\\Bird_Turn_03.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\birds\\normal\\Bird_Turn_03.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\birds\\normal\\Bird_Turn_04.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\birds\\normal\\Bird_Turn_04.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\birds\\normal\\Bird_Turn_05.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\birds\\normal\\Bird_Turn_05.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\birds\\normal\\Bird_Upright.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\clappers\\large\\Clapper_F1.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\birds\\normal\\Bird_Upright.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\clappers\\large\\Clappers.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\clappers\\large\\Clapper_F1.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\clappers\\large\\Clapper_F2.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\clappers\\normal\\Clapper_F1.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\clappers\\normal\\Clappers.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\clappers\\normal\\Clapper_F1.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\clappers\\large\\Clapper_F2.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\clappers\\normal\\Clapper_F2.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\clappers\\normal\\Clapper_F2.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\keys\\normal\\Keys.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\keys\\normal\\Key_Rotate_F0.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\keys\\normal\\Key_Rotate_F1.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\keys\\normal\\Key_Rotate_F0.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\keys\\normal\\Key_Rotate_F1.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\keys\\normal\\Key_Rotate_F2.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\keys\\normal\\Key_Rotate_F2.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\keys\\normal\\Key_Rotate_F3.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\keys\\normal\\Key_Rotate_F4.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\keys\\normal\\Key_Rotate_F4.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\keys\\normal\\Key_Rotate_F3.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\keys\\normal\\Key_Rotate_F5.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\keys\\normal\\Key_Rotate_F5.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\keys\\normal\\Key_Rotate_F6.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\keys\\normal\\Key_Rotate_F6.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\keys\\normal\\Key_Rotate_F7.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\keys\\normal\\Key_Rotate_F7.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\keys\\normal\\Key_Spin_F0.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\keys\\normal\\Key_Spin_F0.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\keys\\normal\\Key_Spin_F1.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\keys\\normal\\Key_Spin_F1.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\keys\\normal\\Key_Spin_F2.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\keys\\normal\\Key_Spin_F3.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\keys\\normal\\Key_Spin_F2.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\keys\\large\\Keys.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\keys\\normal\\Key_Spin_F3.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\keys\\large\\Key_Rotate_F0.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\keys\\large\\Key_Rotate_F0.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\keys\\large\\Key_Rotate_F1.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\keys\\large\\Key_Rotate_F2.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\keys\\large\\Key_Rotate_F2.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\keys\\large\\Key_Rotate_F1.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\keys\\large\\Key_Rotate_F3.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\keys\\large\\Key_Rotate_F3.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\keys\\large\\Key_Rotate_F4.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\keys\\large\\Key_Rotate_F4.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\keys\\large\\Key_Rotate_F5.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\keys\\large\\Key_Rotate_F6.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\keys\\large\\Key_Rotate_F5.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\keys\\large\\Key_Rotate_F6.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\keys\\large\\Key_Rotate_F7.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\keys\\large\\Key_Rotate_F7.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\keys\\large\\Key_Spin_F0.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\keys\\large\\Key_Spin_F0.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\keys\\large\\Key_Spin_F1.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\keys\\large\\Key_Spin_F1.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\keys\\large\\Key_Spin_F3.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\keys\\large\\Key_Spin_F2.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\keys\\large\\Key_Spin_F2.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\keys\\large\\Key_Spin_F3.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\kong\\large\\Kong.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\kong\\large\\Kong_FacingRight_F0.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\kong\\large\\Kong_FacingRight_F0.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\kong\\large\\Kong_FacingRight_F1.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\kong\\large\\Kong_FacingRight_F1.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\kong\\large\\Kong_FacingRight_F2.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\kong\\large\\Kong_FacingRight_F2.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\kong\\large\\Kong_FacingRight_F3.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\kong\\large\\Kong_FacingRight_F3.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\kong\\large\\Kong_Falling_F0.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\kong\\large\\Kong_Falling_F0.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\kong\\large\\Kong_Falling_F1.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\kong\\large\\Kong_Normal.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\kong\\large\\Kong_Falling_F1.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\kong\\large\\Kong_Normal.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\kong\\large\\Lock_Chain_1.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\kong\\large\\Lock_Chain_2.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\kong\\large\\Lock_Chain_1.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\kong\\large\\Lock_Chain_2.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\kong\\large\\Lock_Chain_3.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\kong\\large\\Lock_Chain_3.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\kong\\large\\Lock_Chain_4.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\kong\\large\\Lock_Chain_4.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\kong\\normal\\Kong.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\kong\\normal\\Kong_FacingRight_F0.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\kong\\normal\\Kong_FacingRight_F1.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\kong\\normal\\Kong_FacingRight_F0.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\kong\\normal\\Kong_FacingRight_F1.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\kong\\normal\\Kong_FacingRight_F2.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\kong\\normal\\Kong_FacingRight_F2.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\kong\\normal\\Kong_FacingRight_F3.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\kong\\normal\\Kong_FacingRight_F3.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\kong\\normal\\Kong_Falling_F0.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\kong\\normal\\Kong_Falling_F0.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\kong\\normal\\Kong_Falling_F1.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\kong\\normal\\Kong_Normal.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\kong\\normal\\Kong_Falling_F1.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\kong\\normal\\Lock_Chain_1.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\kong\\normal\\Kong_Normal.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\kong\\normal\\Lock_Chain_2.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\kong\\normal\\Lock_Chain_1.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\kong\\normal\\Lock_Chain_2.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\kong\\normal\\Lock_Chain_3.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\kong\\normal\\Lock_Chain_3.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\kong\\normal\\Lock_Chain_4.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\kong\\normal\\Lock_Chain_4.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\numbers\\large\\Numbers.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\numbers\\large\\Number_0.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\numbers\\large\\Number_0.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\numbers\\large\\Number_1.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\numbers\\large\\Number_1.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\numbers\\large\\Number_2.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\numbers\\large\\Number_3.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\numbers\\large\\Number_3.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\numbers\\large\\Number_4.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\numbers\\large\\Number_2.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\numbers\\large\\Number_4.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\numbers\\large\\Number_5.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\numbers\\large\\Number_5.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\numbers\\large\\Number_6.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\numbers\\large\\Number_6.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\numbers\\large\\Number_7.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\numbers\\large\\Number_7.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\numbers\\large\\Number_8.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\numbers\\large\\Number_9.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\numbers\\large\\Number_8.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\others\\large\\GameA.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\numbers\\large\\Number_9.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\others\\large\\GameA.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\others\\large\\GameB.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\others\\large\\GameB.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\others\\large\\GameOver.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\others\\large\\GameOver.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\others\\large\\Others.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\numbers\\normal\\Number_0.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\numbers\\normal\\Numbers.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\numbers\\normal\\Number_0.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\numbers\\normal\\Number_1.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\numbers\\normal\\Number_1.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\numbers\\normal\\Number_3.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\numbers\\normal\\Number_2.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\numbers\\normal\\Number_2.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\numbers\\normal\\Number_4.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\numbers\\normal\\Number_3.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\numbers\\normal\\Number_4.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\numbers\\normal\\Number_5.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\numbers\\normal\\Number_5.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\numbers\\normal\\Number_6.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\numbers\\normal\\Number_6.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\numbers\\normal\\Number_7.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\numbers\\normal\\Number_8.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\numbers\\normal\\Number_7.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\numbers\\normal\\Number_8.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\numbers\\normal\\Number_9.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\numbers\\normal\\Number_9.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\others\\normal\\GameA.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\others\\normal\\GameB.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\others\\normal\\GameA.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\others\\normal\\GameB.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\others\\normal\\GameOver.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\others\\normal\\Pause.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\others\\normal\\GameOver.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\others\\normal\\Others.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\others\\normal\\Pause.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\player\\large\\Jnr_Climbing_Vine_F0.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\player\\large\\Jnr_Climbing_Vine_F1.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\player\\large\\Jnr_Climbing_Vine_F1.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\player\\large\\Jnr_Climbing_Vine_F0.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\player\\large\\Jnr_Idle_L_F0.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\player\\large\\Jnr_Idle_R_F0.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\player\\large\\Jnr_Idle_L_F0.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\player\\large\\Jnr_OnRope_F0.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\player\\large\\Jnr_Idle_R_F0.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\player\\large\\Jnr_OnRope_F0.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\player\\large\\Jnr_OnRope_F1.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\player\\large\\Jnr_OnRope_F1.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\player\\large\\Jnr_OnRope_F2.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\player\\large\\Jnr_OnRope_F2.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\player\\large\\Jnr_OnRope_F3.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\player\\large\\Jnr_OnRope_F3.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\player\\large\\Jnr_Walking_L_F1.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\player\\large\\Jnr_Walking_L_F2.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\player\\large\\Jnr_Walking_L_F2.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\player\\large\\Jnr_Walking_L_F1.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\player\\large\\Jnr_Walking_R_F1.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\player\\large\\Jnr_Walking_R_F1.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\player\\large\\Jnr_Walking_R_F2.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\player\\large\\Player.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\player\\large\\Jnr_Walking_R_F2.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\player\\normal\\Jnr_Climbing_Vine_F0.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\player\\normal\\Jnr_Climbing_Vine_F0.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\player\\normal\\Jnr_Climbing_Vine_F0_BottomHalf.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\player\\normal\\Jnr_Climbing_Vine_F0_BottomHalf.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\player\\normal\\Jnr_Climbing_Vine_F1.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\player\\normal\\Jnr_Climbing_Vine_F0_TopHalf.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\player\\normal\\Jnr_Climbing_Vine_F0_TopHalf.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\player\\normal\\Jnr_Climbing_Vine_F1.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\player\\normal\\Jnr_Climbing_Vine_F1_BottomHalf.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\player\\normal\\Jnr_Climbing_Vine_F1_TopHalf.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\player\\normal\\Jnr_Climbing_Vine_F1_BottomHalf.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\player\\normal\\Jnr_Idle_L_F0.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\player\\normal\\Jnr_Climbing_Vine_F1_TopHalf.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\player\\normal\\Jnr_Idle_L_F0.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\player\\normal\\Jnr_Idle_R_F0.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\player\\normal\\Jnr_OnRope_F0.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\player\\normal\\Jnr_Idle_R_F0.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\player\\normal\\Jnr_OnRope_F1.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\player\\normal\\Jnr_OnRope_F0.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\player\\normal\\Jnr_OnRope_F1.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\player\\normal\\Jnr_OnRope_F2.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\player\\normal\\Jnr_OnRope_F2.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\player\\normal\\Jnr_OnRope_F3.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\player\\normal\\Jnr_OnRope_F3.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\player\\normal\\Jnr_Walking_L_F1.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\player\\normal\\Jnr_Walking_L_F2.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\player\\normal\\Jnr_Walking_L_F1.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\player\\normal\\Jnr_Walking_R_F1.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\player\\normal\\Jnr_Walking_L_F2.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\player\\normal\\Jnr_Walking_R_F1.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\player\\normal\\Jnr_Walking_R_F2.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\player\\normal\\Jnr_Walking_R_F2.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\player\\normal\\Player.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\scenery\\large\\Scenerys.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\scenery\\large\\Scenery_00.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\scenery\\large\\Scenery_00.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\scenery\\large\\Scenery_02.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\scenery\\large\\Scenery_01.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\scenery\\large\\Scenery_02.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\scenery\\large\\Scenery_01.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\scenery\\large\\Scenery_03.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\scenery\\large\\Scenery_03.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\scenery\\large\\Scenery_04.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\scenery\\large\\Scenery_04.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\scenery\\large\\Scenery_05.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\scenery\\large\\Scenery_06.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\scenery\\large\\Scenery_05.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\scenery\\large\\Scenery_06.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\scenery\\large\\Scenery_07.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\scenery\\large\\Scenery_07.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\scenery\\large\\Scenery_09.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\scenery\\large\\Scenery_08.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\scenery\\large\\Scenery_08.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\scenery\\large\\Scenery_10.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\scenery\\large\\Scenery_11.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\scenery\\large\\Scenery_10.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\scenery\\large\\Scenery_09.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\scenery\\large\\Scenery_110x128.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\scenery\\large\\Scenery_110x128.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\scenery\\large\\Scenery_11.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\scenery\\large\\Scenery_12.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\scenery\\large\\Scenery_12.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\scenery\\large\\Scenery_13.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\scenery\\large\\Scenery_13.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\scenery\\large\\Scenery_14.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\scenery\\large\\Scenery_15.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\scenery\\large\\Scenery_14.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\scenery\\large\\Scenery_15.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\scenery\\normal\\Scenery.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\scenery\\normal\\Scenery.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\scenery\\normal\\Scenerys.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\scenery\\normal\\Scenery_Edge_L.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\scenery\\normal\\Scenery_Edge_L.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\scenery\\normal\\Scenery_Edge_R.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\scenery\\normal\\Scenery_Edge_R.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\scenery\\normal\\Scenery_Edge_R_Large.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\scenery\\normal\\Scenery_Edge_R_Large.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\scenery\\normal\\Scenery_Middle.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\scenery\\normal\\Scenery_Middle.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\sparks\\large\\Spark_F1.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\sparks\\large\\Sparks.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\sparks\\large\\Spark_F2.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\sparks\\large\\Spark_F2.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\sparks\\large\\Spark_F1.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\sparks\\normal\\Sparks.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\sparks\\normal\\Spark_F1.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\sparks\\normal\\Spark_F2.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\sparks\\normal\\Spark_F1.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\sparks\\normal\\Spark_F2.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\others\\large\\GameC.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\others\\normal\\GameC.png": {
+			"sdcard": false
+		},
+		"\\src\\images\\others\\large\\GameC.h": {
+			"sdcard": false
+		},
+		"\\src\\images\\others\\normal\\GameC.h": {
+			"sdcard": false
+		},
+		"\\Kong-II-Pokitto.bin": {
+			"sdcard": false
+		},
+		"\\Kong-II-Pokitto.eeprom": {
 			"sdcard": false
 		}
 	}
