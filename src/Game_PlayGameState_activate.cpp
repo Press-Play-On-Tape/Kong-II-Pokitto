@@ -13,11 +13,29 @@ void Game::playGame_Activate() {
 
     this->playGameVars.player.reset(this->cookie->viewSize);
 
-    this->playGameVars.clappersLowerDelay = (cookie->mode == GameMode::Easy ? CLAPPERS_LOWER_MAX_EASY : CLAPPERS_LOWER_MAX_HARD);
-    this->playGameVars.clappersUpperDelay = (cookie->mode == GameMode::Easy ? CLAPPERS_UPPER_MAX_EASY : CLAPPERS_UPPER_MAX_HARD);
-    this->playGameVars.sparksUpperDelay = (cookie->mode == GameMode::Easy ? SPARKS_LOWER_MAX_EASY : SPARKS_LOWER_MAX_HARD);
-    this->playGameVars.sparksUpperDelay = (cookie->mode == GameMode::Easy ? SPARKS_UPPER_MAX_EASY : SPARKS_UPPER_MAX_HARD);
-    this->playGameVars.birdsDelay = (cookie->mode == GameMode::Easy ? BIRDS_MAX_EASY : BIRDS_MAX_HARD);
+		switch (cookie->mode) {
+			case GameMode::Easy:
+				this->playGameVars.clappersLowerDelay = CLAPPERS_LOWER_MAX_EASY;
+				this->playGameVars.clappersUpperDelay = CLAPPERS_UPPER_MAX_EASY;
+				this->playGameVars.sparksUpperDelay = SPARKS_LOWER_MAX_EASY;
+				this->playGameVars.sparksUpperDelay = SPARKS_UPPER_MAX_EASY;
+				this->playGameVars.birdsDelay = BIRDS_MAX_EASY;
+				break;
+			case GameMode::Hard:
+				this->playGameVars.clappersLowerDelay = CLAPPERS_LOWER_MAX_HARD;
+				this->playGameVars.clappersUpperDelay = CLAPPERS_UPPER_MAX_HARD;
+				this->playGameVars.sparksUpperDelay = SPARKS_LOWER_MAX_HARD;
+				this->playGameVars.sparksUpperDelay = SPARKS_UPPER_MAX_HARD;
+				this->playGameVars.birdsDelay = BIRDS_MAX_HARD;
+				break;
+			case GameMode::Dead:
+				this->playGameVars.clappersLowerDelay = CLAPPERS_LOWER_MAX_DEAD;
+				this->playGameVars.clappersUpperDelay = CLAPPERS_UPPER_MAX_DEAD;
+				this->playGameVars.sparksUpperDelay = SPARKS_LOWER_MAX_DEAD;
+				this->playGameVars.sparksUpperDelay = SPARKS_UPPER_MAX_DEAD;
+				this->playGameVars.birdsDelay = BIRDS_MAX_DEAD;
+				break;
+		}
 
     this->playGameVars.lowerClappers.setDelayMax(this->playGameVars.clappersLowerDelay, true);
     this->playGameVars.lowerClappers.reset(this->cookie->viewSize, 107);

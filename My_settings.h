@@ -18,6 +18,6 @@
 #endif
 
 // Comment out IGNORE_COLLISIONS to include colllision detection ..
-#define _IGNORE_COLLISIONS
+//#define _IGNORE_COLLISIONS
 #define _ONE_KEY_ONLY
 #define _TWO_KEYS_ONLY

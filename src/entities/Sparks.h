@@ -1,7 +1,7 @@
 #pragma once
 
 #include "Pokitto.h"
-#include "../Utils/Enums.h"
+#include "../utils/Enums.h"
 #include "Spark.h"
 
 class Sparks {
