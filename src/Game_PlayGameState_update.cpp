@@ -487,6 +487,13 @@ void Game::playGame_Update() {
                 }
                 break;
 
+            case GameMode::Dead:
+                if (this->gameStats.score > this->cookie->deadScore) {
+                    this->cookie->deadScore = this->gameStats.score;
+                    this->cookie->saveCookie();
+                }
+                break;
+
         }
 
         #ifdef INCLUDE_SOUND 

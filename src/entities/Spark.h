@@ -1,8 +1,8 @@
 #pragma once
 
 #include "Pokitto.h"
-#include "../Utils/Enums.h"
-#include "../Utils/Utils.h"
+#include "../utils/Enums.h"
+#include "../utils/Utils.h"
 #include "../map/Coordinates.h"
 
 class Spark {
