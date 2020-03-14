@@ -43,6 +43,7 @@ namespace Images_Normal {
     const uint8_t * const PROGMEM Game_Icon[] = { 
     GameA,
     GameB,
+    GameC
     };
 
     const uint8_t * const PROGMEM Birds[] = { 

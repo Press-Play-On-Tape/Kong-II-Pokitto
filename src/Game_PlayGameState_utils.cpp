@@ -57,11 +57,19 @@ void Game::playGame_RenderScore(uint8_t yOffset) {
             PD::drawBitmap(92, 144, Images_Normal::Jnr_Walking_L_F2);
         }
 
-        if (this->cookie->mode == GameMode::Easy) {
-            PD::drawBitmap(127, 145, Images_Normal::GameA);
-        }
-        else {
-            PD::drawBitmap(127, 145, Images_Normal::GameB);
+        switch (this->cookie->mode) {
+
+            case GameMode::Easy:
+                PD::drawBitmap(127, 145, Images_Normal::GameA);
+                break;
+
+            case GameMode::Hard:
+                PD::drawBitmap(127, 145, Images_Normal::GameB);
+                break;
+
+            case GameMode::Dead:
+                PD::drawBitmap(127, 145, Images_Normal::GameC);
+                break;
 
         }
 
@@ -85,11 +93,19 @@ void Game::playGame_RenderScore(uint8_t yOffset) {
             PD::drawBitmap(85, 235 - yOffset, Images_Large::Jnr_Walking_L_F2);
         }
 
-        if (this->cookie->mode == GameMode::Easy) {
-            PD::drawBitmap(135, 235 - yOffset, Images_Large::GameA);
-        }
-        else {
-            PD::drawBitmap(135, 235 - yOffset, Images_Large::GameB);
+        switch (this->cookie->mode) {
+
+            case GameMode::Easy:
+                PD::drawBitmap(135, 235 - yOffset, Images_Large::GameA);
+                break;
+
+            case GameMode::Hard:
+                PD::drawBitmap(135, 235 - yOffset, Images_Large::GameB);
+                break;
+
+            case GameMode::Dead:
+                PD::drawBitmap(135, 235 - yOffset, Images_Large::GameC);
+                break;
 
         }
 

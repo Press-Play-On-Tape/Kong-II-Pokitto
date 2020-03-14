@@ -30,6 +30,7 @@ namespace Images_Large {
     const uint8_t * const PROGMEM Game_Icon[] = { 
     GameA,
     GameB,
+    GameB
     };
 
     const uint8_t * const PROGMEM Birds[] = { 

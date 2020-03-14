@@ -98,7 +98,7 @@
 			"-fno-delete-null-pointer-checks"
 		],
 		"ALL": [
-			"-std=c++14"
+			"-std=c++17"
 		]
 	},
 	"CFlags": {
@@ -5712,6 +5712,12 @@
 			"sdcard": false
 		},
 		"/src/images/title/TitleScreen_old.png": {
+			"sdcard": false
+		},
+		"/Kong-II2.bin": {
+			"sdcard": false
+		},
+		"/Assets/POP/Kong-II(2).pop": {
 			"sdcard": false
 		}
 	}

@@ -46,13 +46,26 @@ int main() {
 
 
 
-    // Has the cookie been initialised?
+    // Has the cookie been initialised?  This modified version allows
+    // the Game C score to be initialised without losing other scores.
 
-    if (cookie.initialised != COOKIE_INITIALISED) {
+    switch (cookie.initialised) {
 
-        cookie.initialise();
+        case COOKIE_INITIALISED:
+            cookie.deadScore = 0;
+            cookie.saveCookie();
+            break;
+
+        case COOKIE_INITIALISED + 1:
+            // do nothing
+            break;
+
+        default:
+            cookie.initialise();
+            break;
 
     }
+
 
 
     // Play game!

@@ -11,9 +11,9 @@ class GameCookie : public Pokitto::Cookie {
     	uint8_t initialised;
         uint16_t easyScore = 0;
         uint16_t hardScore = 0;
-				uint16_t deadScore = 0;
 		ViewSize viewSize = ViewSize::Normal;
 		GameMode mode = GameMode::Easy;
+		uint16_t deadScore = 0;
 
 
 	public:

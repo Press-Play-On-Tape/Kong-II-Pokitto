@@ -19,7 +19,7 @@ void Game::titleScreen_Activate() {
     this->playGameVars.frameRate = FRAME_RATE_MIN;
     PC::setFrameRate(this->playGameVars.frameRate);
 
-    titleScreenVars.position = 0;
+    titleScreenVars.position = static_cast<uint8_t>(cookie->mode);
 
 }
 
