@@ -5695,6 +5695,24 @@
 		},
 		"/Kong-II-Pokitto.eeprom": {
 			"sdcard": false
+		},
+		"/src/images/others/large/GameC.png": {
+			"sdcard": false
+		},
+		"/src/images/others/large/GameC.h": {
+			"sdcard": false
+		},
+		"/src/images/others/normal/GameC.h": {
+			"sdcard": false
+		},
+		"/src/images/others/normal/GameC.png": {
+			"sdcard": false
+		},
+		"/src/images/title/TitleScreen_old.h": {
+			"sdcard": false
+		},
+		"/src/images/title/TitleScreen_old.png": {
+			"sdcard": false
 		}
 	}
 }

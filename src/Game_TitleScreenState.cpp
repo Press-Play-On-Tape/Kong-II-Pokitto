@@ -119,7 +119,7 @@ void Game::titleScreen_Render() {
 
     for (uint8_t j = 4; j > 0; --j) {
 
-        PD::drawBitmap(77 - (j*5), 38, Images_Normal::HSNumbers[digits[j - 1]]);
+        PD::drawBitmap(77 - (j*5), 40, Images_Normal::HSNumbers[digits[j - 1]]);
 
     }
 
@@ -130,7 +130,7 @@ void Game::titleScreen_Render() {
 
     for (uint8_t j = 4; j > 0; --j) {
 
-        PD::drawBitmap(77 - (j*5), 45, Images_Normal::HSNumbers[digits[j - 1]]);
+        PD::drawBitmap(77 - (j*5), 49, Images_Normal::HSNumbers[digits[j - 1]]);
 
     }
 
