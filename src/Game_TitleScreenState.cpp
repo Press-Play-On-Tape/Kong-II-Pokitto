@@ -57,11 +57,12 @@ void Game::titleScreen_Update() {
                 this->cookie->saveCookie();
                 this->gameState = GameStateType::PlayGame_Activate; 
                 break;
-						case 2:
-								this->cookie->mode = GameMode::Dead;
-								this->cookie->saveCookie();
-								this->gameState = GameStateType::PlayGame_Activate;
-								break;
+                
+			case 2:
+				this->cookie->mode = GameMode::Dead;
+				this->cookie->saveCookie();
+				this->gameState = GameStateType::PlayGame_Activate;
+				break;
          
             case 3:
                 this->cookie->viewSize = (this->cookie->viewSize == ViewSize::Normal ? ViewSize::Large : ViewSize::Normal);

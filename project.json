@@ -98,7 +98,7 @@
 			"-fno-delete-null-pointer-checks"
 		],
 		"ALL": [
-			"-std=c++17"
+			"-std=c++14"
 		]
 	},
 	"CFlags": {
@@ -5693,58 +5693,7 @@
 		"/Assets/POP/Kong-II(1).pop": {
 			"sdcard": false
 		},
-		"/My_settings.h.S12542": {
-			"sdcard": false
-		},
-		"/src/utils/Enums.h.n12542": {
-			"sdcard": false
-		},
-		"/src/Game_PlayGameState_activate.cpp.i12542": {
-			"sdcard": false
-		},
-		"/src/utils/Enums.h.Z12542": {
-			"sdcard": false
-		},
-		"/src/Game_PlayGameState_activate.cpp.w12542": {
-			"sdcard": false
-		},
 		"/Kong-II-Pokitto.eeprom": {
-			"sdcard": false
-		},
-		"/src/images/title/TitleScreen_old.png": {
-			"sdcard": false
-		},
-		"/src/images/title/TitleScreen_old.h": {
-			"sdcard": false
-		},
-		"/src/Game_TitleScreenState.cpp.T12542": {
-			"sdcard": false
-		},
-		"/src/Game_TitleScreenState.cpp.d12542": {
-			"sdcard": false
-		},
-		"/src/Game_TitleScreenState.cpp.j12542": {
-			"sdcard": false
-		},
-		"/src/utils/GameCookie.h.C12542": {
-			"sdcard": false
-		},
-		"/src/Game_PlayGameState_update.cpp.B12542": {
-			"sdcard": false
-		},
-		"/src/Game_PlayGameState_update.cpp.f12542": {
-			"sdcard": false
-		},
-		"/src/Game_PlayGameState_update.cpp.H12542": {
-			"sdcard": false
-		},
-		"/src/utils/GameCookie.h.J12542": {
-			"sdcard": false
-		},
-		"/src/Game_TitleScreenState.cpp.y12542": {
-			"sdcard": false
-		},
-		"/src/Game_TitleScreenState.cpp.W12542": {
 			"sdcard": false
 		}
 	}
