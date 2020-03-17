@@ -52,12 +52,12 @@ int main() {
     switch (cookie.initialised) {
 
         case COOKIE_INITIALISED:
+            cookie.initialised = COOKIE_INITIALISED + 1;
             cookie.deadScore = 0;
             cookie.saveCookie();
             break;
 
-        case COOKIE_INITIALISED + 1:
-            // do nothing
+        case COOKIE_INITIALISED + 1:        
             break;
 
         default:
