@@ -1,6 +1,7 @@
 #pragma once
 
 #define PROJ_BUTTONS_POLLING_ONLY
+#define PROJ_EXT0_PWM_ENABLE
 
 #define PROJ_SCREENMODE             15
 #define PROJ_HIGH_RAM               HIGH_RAM_MUSIC
